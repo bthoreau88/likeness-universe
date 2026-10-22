@@ -7,6 +7,10 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- BEGIN:project-status -->
 # Project status & deploy — read before working
 
+**Full handoff:** see `likeness-site/CODEX_HANDOFF.md` for the complete package
+(project map, deploy model, architecture, asset + prompt inventory, changelog,
+open tasks, and a paste-ready starting prompt). The essentials follow.
+
 **Repo renames (July 2026).** This repo is now `likeness-universe` (was `dev-brandon`).
 Related renames: `2025May_Team04` → `quickphrase-midterm`, `OVS-OS` → `ovs-os`.
 GitHub redirects the old URLs, but update any clone's remote:
