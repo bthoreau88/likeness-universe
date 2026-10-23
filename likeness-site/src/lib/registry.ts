@@ -322,6 +322,30 @@ export type Expansion = {
 
 export const EXPANSIONS: Expansion[] = [
   {
+    id: "EXP_ASSET_SOURCING",
+    name: "Asset sourcing and adaptation",
+    category: "production planning",
+    use: "Reuse approved assets, compare free and paid sources, and reserve custom work for identity and story details.",
+    status: "PLAN READY",
+    gate: "Per-asset rights · total cost · target-specific import proof. No acquisitions yet.",
+  },
+  {
+    id: "EXP_BLENDER_INTERCHANGE",
+    name: "Blender interchange",
+    category: "asset preparation",
+    use: "Prepare a shared prop for web and Unreal with measured scale, materials, pivots, and traceable derivatives.",
+    status: "PROOF PENDING",
+    gate: "Staged source · GLB/FBX import checks · screenshots · manifest entry.",
+  },
+  {
+    id: "EXP_UNREAL_EVENT_PROOF",
+    name: "Room 14 event proof",
+    category: "game integration",
+    use: "Prove one inspect interaction, one evidence item, and a matching companion recap before expanding the room.",
+    status: "PROOF PENDING",
+    gate: "Versioned event · replay check · packaged build · measured performance.",
+  },
+  {
     id: "EXP_IMAGE_BLASTER",
     name: "Image-Blaster",
     category: "image-to-world",
@@ -359,6 +383,11 @@ export const EXPANSIONS: Expansion[] = [
 export type LogEntry = { tag: string; title: string; body: string };
 
 export const DEVLOG: LogEntry[] = [
+  {
+    tag: "PIPELINE",
+    title: "A shared production path",
+    body: "Added a source-first workflow for new material, agent handoffs, asset sourcing, Blender preparation, and Unreal integration. The next proof is one Room 14 interaction; engine work and further uploads remain pending.",
+  },
   {
     tag: "UNIVERSE",
     title: "Anthology restructure + cohesion pass",

@@ -1,5 +1,13 @@
 # SESSION_RESUME - Expansion Modules
 
+## Current session pointer - 2026-10-22
+
+Use `../../docs/production/README.md` and
+`../../docs/production/receipts/2026-10-22-pipeline-v001.md` for the current
+execution layer. Ten new uploads are inventoried; additional uploads remain
+pending. Existing Blender/Unreal modules below remain historical reference,
+not evidence of a working editor connection or completed engine milestone.
+
 ## Current Status
 
 Expansion package V002 created. These modules are optional enhancers:

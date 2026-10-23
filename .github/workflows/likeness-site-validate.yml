@@ -1,0 +1,41 @@
+name: LIKENESS source validation
+
+on:
+  pull_request:
+    branches: [claude/dreamy-hawking-VcoBe]
+    paths: ['likeness-site/**', '.github/workflows/likeness-site-validate.yml']
+  push:
+    branches: [claude/dreamy-hawking-VcoBe]
+    paths: ['likeness-site/**', '.github/workflows/likeness-site-validate.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: likeness-validation-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: likeness-site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: likeness-site/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run validate:production
+      - run: npm run test:production
+      - run: npm run lint
+      - run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /likeness-universe

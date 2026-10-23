@@ -178,6 +178,15 @@ touch out/.nojekyll                      # keep Pages from Jekyll-processing _ne
 Source changes themselves go through a **PR into `claude/dreamy-hawking-VcoBe`**,
 then rebuild+publish from the merged source.
 
+**2026-10-22 safe publisher addition:** prefer the guarded implementation of the
+same branch-based publish model in `scripts/production/publish.py`. Run
+`python3 scripts/production/publish.py --check`, then from a clean checkout of
+the merged canonical source run `python3 scripts/production/publish.py --publish
+--expected-source SOURCE_SHA --expected-pages PAGES_SHA` with the actual observed
+SHAs. It rebuilds, validates and rejects changed tips. See
+`docs/production/WORKFLOW.md` for the release verification and rollback steps.
+The new source-validation Action does not deploy or change Pages settings.
+
 ---
 
 ## 8. ASSET INVENTORY (all assets live in `likeness-site/public/`)
@@ -306,4 +315,24 @@ This is how new on-brand assets are made.
   `gh-pages`. Don't touch `main` (Android app).
 - Both agents read `likeness-site/AGENTS.md` (project status + deploy model) and
   this file on clone.
+
+---
+
+## 13. PRODUCTION PIPELINE AND PASSBACK (2026-10-22 addition)
+
+Read `docs/production/README.md` after this file for the additive execution layer:
+upload reconciliation, Codex/Claude exchange receipts, Blender delivery, Unreal
+proof, public-domain/free/paid asset decisions, validation and safe publishing.
+Use `docs/production/templates/SESSION.md` for each exchange. The current audit
+and unresolved state-schema conflicts are in `docs/production/AUDIT_AND_INTAKE.md`.
+
+The first ten uploads are inventoried in `data/production/intake-batch-001.json`;
+more files are expected. New batches are create-only. Older package instructions
+to use `main`, install Vite or restore biomech framing are not adopted.
+`data/production/asset-plan.json` contains candidates, not acquired/approved assets.
+Accepted assets still require entries in `handoff/data/asset_manifest.csv`.
+
+Run `npm run validate:production` and `npm run test:production` along with lint
+and the base-path static build. No new branching runtime, microphone, paid
+generation, Blender model or Unreal build is implied by these pipeline docs.
 

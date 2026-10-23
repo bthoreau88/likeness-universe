@@ -32,3 +32,13 @@ existing pages (e.g. the `/street` route).
 - The base path must match the repo name; if the repo is renamed again, rebuild with the
   new `NEXT_PUBLIC_BASE_PATH` or every asset link 404s.
 <!-- END:project-status -->
+
+## Production execution layer (2026-10-22)
+
+After CODEX_HANDOFF.md, read `docs/production/README.md` and the latest receipt
+under `docs/production/receipts/`. Use the exchange template for Codex/Claude
+passbacks. Uploads are reconciled in immutable intake batches, not copied over
+the application. Site-facing content still belongs in `src/lib/registry.ts`.
+Run `npm run validate:production` and `npm run test:production` before lint/build.
+Blender/Unreal completion requires actual versioned artifacts and proof.
+The source-validation workflow is separate from branch-based Pages publishing.
