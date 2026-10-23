@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "batch_status": "open_more_uploads_expected",
+  "files": [
+    {
+      "name": "01-OVS_LIKENESS_TAPE03_CLEAN_STARTER_PACKAGE_V0023.zip",
+      "bytes": 26541,
+      "sha256": "4207435760f71d15cd0d0361e091333416a482441114cf988f73a9c6d56f22cd",
+      "status": "reference_selected_requirements",
+      "duplicate_of": null,
+      "members": [
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLEAN_PACKAGE/README.md",
+          "bytes": 1464,
+          "sha256": "01ec70d84a60ca8e0621a688ecfcbe451562a931465c008b4288eed0f26e46c8"
+        },
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLEAN_PACKAGE/01_GITHUB_REPO_STARTER_PACK.md",
+          "bytes": 5257,
+          "sha256": "c7ff54a99d600ee12f4a90037156d246dabd4e8316a4b2b3cd85765d9cce5eea"
+        },
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLEAN_PACKAGE/02_CLAUDE_MASTER_PROMPT_NONDESTRUCTIVE.md",
+          "bytes": 4442,
+          "sha256": "18f081179b42adfd6ce7b4f4f390c4f685594736b3b2e02b02b20cc8bb8eba33"
+        },
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLEAN_PACKAGE/03_IG_10_POST_CAMPAIGN_PROMPTS_CAPTIONS.md",
+          "bytes": 7991,
+          "sha256": "ce918ce420fa8d046d1bf776b5493b55baacb61f9607df09b7f2b378a2e4c347"
+        },
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLEAN_PACKAGE/04_GAMEPLAY_MOCKUP_PROMPTS_12.md",
+          "bytes": 6521,
+          "sha256": "77c96509e4a17b9a8af2280e127371308f071afe86990249013ce84b518d8b57"
+        },
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLEAN_PACKAGE/05_PROJECT_BOARD_ISSUES_AND_MILESTONES.md",
+          "bytes": 4301,
+          "sha256": "bd03cd374c9eb3bb32ef65dd48ed75ea525d4a4d83b2c040dcbc5bad84853877"
+        },
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLEAN_PACKAGE/06_BRANCHING_DATA_STARTER_SCHEMA.json",
+          "bytes": 4025,
+          "sha256": "504ee50c6122fc11bb173806b21353b5b47cd1ed7fe1b03a8b3d2af73e7412f8"
+        },
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLEAN_PACKAGE/07_ROOM14_VERTICAL_SLICE_TASKLIST.md",
+          "bytes": 1677,
+          "sha256": "be7abf50d8508b9c53f612210c1c2cb4567c1ef4e2b0b0db449568c5706dc856"
+        },
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLEAN_PACKAGE/OVS_LIKENESS_TAPE03_CLEAN_PACKAGE_MASTER.md",
+          "bytes": 31701,
+          "sha256": "4708bcf8d8991384757461911b05811e7f46a22262e57ee339cc332edd86e2ab"
+        }
+      ]
+    },
+    {
+      "name": "02-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002.pdf",
+      "bytes": 40066,
+      "sha256": "c5504c3e15caeacf44d369435efca397b43535da25bc64a2c319eb141d3aaa09",
+      "status": "narrative_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "03-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_PROJECT_INTEGRATION_V2.pdf",
+      "bytes": 103875,
+      "sha256": "3a573f5599e4e8baa0e1e763256e47ecc9415abd71f646445a16902c497a0f7e",
+      "status": "integration_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "04-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_2_CLAUDE_SOUND_EXPANSION.pdf",
+      "bytes": 73436,
+      "sha256": "eb1518b507303e4c98bacc9aaa5042581a8a5b0901d0f67ac8b7783d50693ba5",
+      "status": "sound_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "05-LIKENESS-__-OVS-TAPE-03.html",
+      "bytes": 29262,
+      "sha256": "75f01fc4657fe7c0ba2e87f49264496facc12b6b652dbf050ab97de2e15354dc",
+      "status": "archival_alternate",
+      "duplicate_of": null
+    },
+    {
+      "name": "06-OVS_LIKENESS_TAPE03_CLAUDE_NONDESTRUCTIVE_HANDOFF_V002_2.md",
+      "bytes": 6444,
+      "sha256": "1682e18b54a441ec1cb04635ebb26bb07db22d872b6586a997e97a38c423a43d",
+      "status": "rules_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "07-OVS_LIKENESS_TAPE03_V0022_CLAUDE_HANDOFF_BUNDLE.zip",
+      "bytes": 40268,
+      "sha256": "4cd6631cb8f858251c7240f327602820e528e624836af468f245601943b6e30f",
+      "status": "overlapping_archive_distinct_pdf_revision",
+      "duplicate_of": null,
+      "members": [
+        {
+          "name": "OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_2_CLAUDE_SOUND_EXPANSION.pdf",
+          "bytes": 50537,
+          "sha256": "f3d055f4278a1166865e2b904dadb3401dc7780bdbc7a35cec6181c1e7d423ee"
+        },
+        {
+          "name": "OVS_LIKENESS_TAPE03_CLAUDE_NONDESTRUCTIVE_HANDOFF_V002_2.md",
+          "bytes": 6444,
+          "sha256": "1682e18b54a441ec1cb04635ebb26bb07db22d872b6586a997e97a38c423a43d"
+        },
+        {
+          "name": "tape03_branching_patch_v0022.json",
+          "bytes": 3030,
+          "sha256": "a36da81773befd091a3e4f11ccb186ad6b6a89f00a01ff7dc99a439a7c100e8f"
+        }
+      ]
+    },
+    {
+      "name": "08-tape03_branching_patch_v0022.json",
+      "bytes": 3030,
+      "sha256": "a36da81773befd091a3e4f11ccb186ad6b6a89f00a01ff7dc99a439a7c100e8f",
+      "status": "quarantined_design_fixture",
+      "duplicate_of": null
+    },
+    {
+      "name": "09-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_EXPANDED_V2.pdf",
+      "bytes": 63050,
+      "sha256": "b6ded9394b0e9e3560ee18e24d4127998673b3f265eee73b8f5393318d44ae64",
+      "status": "expanded_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "10-LIKENESS-__-OVS-TAPE-03.html",
+      "bytes": 29262,
+      "sha256": "75f01fc4657fe7c0ba2e87f49264496facc12b6b652dbf050ab97de2e15354dc",
+      "status": "duplicate_archival_alternate",
+      "duplicate_of": "05-LIKENESS-__-OVS-TAPE-03.html"
+    }
+  ],
+  "duplicate_groups": [
+    [
+      "05-LIKENESS-__-OVS-TAPE-03.html",
+      "10-LIKENESS-__-OVS-TAPE-03.html"
+    ],
+    [
+      "06-OVS_LIKENESS_TAPE03_CLAUDE_NONDESTRUCTIVE_HANDOFF_V002_2.md",
+      "07-OVS_LIKENESS_TAPE03_V0022_CLAUDE_HANDOFF_BUNDLE.zip::OVS_LIKENESS_TAPE03_CLAUDE_NONDESTRUCTIVE_HANDOFF_V002_2.md"
+    ],
+    [
+      "07-OVS_LIKENESS_TAPE03_V0022_CLAUDE_HANDOFF_BUNDLE.zip::tape03_branching_patch_v0022.json",
+      "08-tape03_branching_patch_v0022.json"
+    ]
+  ]
+}

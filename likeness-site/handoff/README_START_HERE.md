@@ -1,5 +1,12 @@
 # LIKENESS : THE GAME - OVS Agent Handoff Package V001
 
+> Current execution addendum (2026-10-22): read
+> `../docs/production/README.md` after `../CODEX_HANDOFF.md` and `../AGENTS.md`.
+> It reconciles this historical package with the live Next.js site and adds
+> Codex/Claude exchange receipts, asset sourcing, Blender/Unreal proof gates,
+> and safe deployment. Existing templates and registries remain reference inputs;
+> old Vite/engine-version assumptions do not override the current verified stack.
+
 Start here. This package defines the production workflow, folder structure, registries, prompts, and agent rules for building LIKENESS : THE GAME and the matching interactive Three.js web companion.
 
 ## Order of Operations

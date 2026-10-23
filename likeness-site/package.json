@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:production": "node scripts/production/validate.mjs",
+    "test:production": "node --test scripts/production/*.test.mjs && python3 -m unittest discover -s scripts/production -p 'test_*.py'"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

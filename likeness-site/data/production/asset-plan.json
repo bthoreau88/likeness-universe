@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "status": "planning_only_no_acquisitions",
+  "assets": [
+    {
+      "id": "PROP_KEY14_001",
+      "strategy": "adapt",
+      "targets": [
+        "web",
+        "unreal",
+        "capture"
+      ],
+      "status": "candidate",
+      "rights_status": "unverified",
+      "qc_status": "not_tested",
+      "reason": "Reuse a generic licensed brass key shell; author the worn 14 tag only if needed.",
+      "source_lane": "Poly Haven / Fab / existing OVS",
+      "source_sha256": null,
+      "license_record": null,
+      "approved_targets": [],
+      "estimated_price": null,
+      "estimated_cleanup_hours": null,
+      "estimated_custom_hours": null
+    },
+    {
+      "id": "PROP_LOCKET_001",
+      "strategy": "adapt",
+      "targets": [
+        "unreal",
+        "capture"
+      ],
+      "status": "candidate",
+      "rights_status": "unverified",
+      "qc_status": "not_tested",
+      "reason": "Source locket geometry; author the narrative tintype and inspect detail.",
+      "source_lane": "Fab / owned source",
+      "source_sha256": null,
+      "license_record": null,
+      "approved_targets": [],
+      "estimated_price": null,
+      "estimated_cleanup_hours": null,
+      "estimated_custom_hours": null
+    },
+    {
+      "id": "PROP_TAPE_001",
+      "strategy": "adapt",
+      "targets": [
+        "web",
+        "unreal",
+        "capture"
+      ],
+      "status": "candidate",
+      "rights_status": "unverified",
+      "qc_status": "not_tested",
+      "reason": "Use a cassette shell or proxy to prove inspect; customize only narrative evidence surfaces.",
+      "source_lane": "existing OVS / Fab / CC0 shortlist",
+      "source_sha256": null,
+      "license_record": null,
+      "approved_targets": [],
+      "estimated_price": null,
+      "estimated_cleanup_hours": null,
+      "estimated_custom_hours": null
+    },
+    {
+      "id": "PROP_MIRROR_001",
+      "strategy": "source",
+      "targets": [
+        "unreal",
+        "capture"
+      ],
+      "status": "candidate",
+      "rights_status": "unverified",
+      "qc_status": "not_tested",
+      "reason": "Source a simple mirror frame; implement delayed reflection as a mechanic rather than purchasing a monster effect.",
+      "source_lane": "Poly Haven / Fab",
+      "source_sha256": null,
+      "license_record": null,
+      "approved_targets": [],
+      "estimated_price": null,
+      "estimated_cleanup_hours": null,
+      "estimated_custom_hours": null
+    },
+    {
+      "id": "PROP_DEVICE_001",
+      "strategy": "custom",
+      "targets": [
+        "unreal",
+        "capture"
+      ],
+      "status": "candidate",
+      "rights_status": "unverified",
+      "qc_status": "not_tested",
+      "reason": "Unique readable silhouette may need custom construction; use proxy until its interaction is proven.",
+      "source_lane": "OVS Blender lab",
+      "source_sha256": null,
+      "license_record": null,
+      "approved_targets": [],
+      "estimated_price": null,
+      "estimated_cleanup_hours": null,
+      "estimated_custom_hours": null
+    },
+    {
+      "id": "LOC_DELLWOOD_ROOM14_001",
+      "strategy": "adapt",
+      "targets": [
+        "unreal",
+        "capture"
+      ],
+      "status": "candidate",
+      "rights_status": "unverified",
+      "qc_status": "not_tested",
+      "reason": "Reuse modular walls, furniture and surfaces; author impossible spatial details after greybox validation.",
+      "source_lane": "ambientCG / Poly Haven / Fab",
+      "source_sha256": null,
+      "license_record": null,
+      "approved_targets": [],
+      "estimated_price": null,
+      "estimated_cleanup_hours": null,
+      "estimated_custom_hours": null
+    },
+    {
+      "id": "CHR_THOREAU_001",
+      "strategy": "custom",
+      "targets": [
+        "unreal",
+        "capture"
+      ],
+      "status": "candidate",
+      "rights_status": "unverified",
+      "qc_status": "not_tested",
+      "reason": "Identity-critical face/performance requires approved authority; reuse compatible base rig/body only after review.",
+      "source_lane": "OVS authority references",
+      "source_sha256": null,
+      "license_record": null,
+      "approved_targets": [],
+      "estimated_price": null,
+      "estimated_cleanup_hours": null,
+      "estimated_custom_hours": null
+    },
+    {
+      "id": "CHR_DRYA_001",
+      "strategy": "custom",
+      "targets": [
+        "unreal",
+        "capture"
+      ],
+      "status": "candidate",
+      "rights_status": "unverified",
+      "qc_status": "not_tested",
+      "reason": "Preserve game identity; reuse a compatible rig but never substitute a generic purchased face.",
+      "source_lane": "OVS authority references",
+      "source_sha256": null,
+      "license_record": null,
+      "approved_targets": [],
+      "estimated_price": null,
+      "estimated_cleanup_hours": null,
+      "estimated_custom_hours": null
+    },
+    {
+      "id": "AUDIO_ROOM14_PLAN_001",
+      "strategy": "reuse",
+      "targets": [
+        "web",
+        "unreal",
+        "capture"
+      ],
+      "status": "candidate",
+      "rights_status": "unverified",
+      "qc_status": "not_tested",
+      "reason": "Audit existing original room cues before sourcing licensed ambience or recording missing transients.",
+      "source_lane": "OVS original cues / Freesound per-file review",
+      "source_sha256": null,
+      "license_record": null,
+      "approved_targets": [],
+      "estimated_price": null,
+      "estimated_cleanup_hours": null,
+      "estimated_custom_hours": null
+    }
+  ]
+}
