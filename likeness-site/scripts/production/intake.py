@@ -18,15 +18,33 @@ def digest(stream):
     return value.hexdigest()
 
 
-def inventory(folder):
+def inventory(folder, previous_batches=()):
     records = []
     seen = {}
+    previous_pairs = set()
+    history = {}
+    previous_refs = []
+    skipped = []
+    for receipt in previous_batches:
+        data = json.loads(receipt.read_text(encoding='utf-8'))
+        if data.get('schema_version') != 1 or not isinstance(data.get('files'), list):
+            raise ValueError(f'Unsupported previous batch: {receipt.name}')
+        with receipt.open('rb') as stream:
+            previous_refs.append({'name': receipt.name, 'sha256': digest(stream)})
+        for item in data['files']:
+            previous_pairs.add((item['name'], item['sha256']))
+            history.setdefault(item['sha256'], []).append(receipt.name + '::' + item['name'])
+            for member in item.get('members', []):
+                history.setdefault(member['sha256'], []).append(receipt.name + '::' + item['name'] + '::' + member['name'])
     # Deliberately shallow: a missing HTML companion directory is not source code.
     for path in sorted(folder.iterdir()):
         if path.is_symlink() or not path.is_file():
             continue
         with path.open('rb') as stream:
             sha = digest(stream)
+        if (path.name, sha) in previous_pairs:
+            skipped.append({'name': path.name, 'sha256': sha})
+            continue
         item = {"name": path.name, "bytes": path.stat().st_size, "sha256": sha,
                 "status": "pending_reconciliation", "duplicate_of": seen.get(sha)}
         seen.setdefault(sha, path.name)
@@ -60,13 +78,19 @@ def inventory(folder):
         by_hash.setdefault(item['sha256'], []).append(item['name'])
         for member in item.get('members', []):
             by_hash.setdefault(member['sha256'], []).append(item['name'] + '::' + member['name'])
-    return {"schema_version": 1, "batch_status": "open_more_uploads_expected",
-            "files": records, "duplicate_groups": [v for v in by_hash.values() if len(v) > 1]}
+    # Previous batches stay immutable. Only groups touching this new batch appear.
+    groups = [refs + history.get(sha, []) for sha, refs in by_hash.items()
+              if len(refs) + len(history.get(sha, [])) > 1]
+    result = {"schema_version": 1, "batch_status": "open_more_uploads_expected",
+              "files": records, "duplicate_groups": groups}
+    if previous_refs:
+        result.update(previous_batches=previous_refs, skipped_previous=skipped)
+    return result
 
 
-def write_inventory(folder, output):
+def write_inventory(folder, output, previous_batches=()):
     # Compute everything before writing; never overwrite an earlier intake receipt.
-    result = inventory(folder)
+    result = inventory(folder, previous_batches)
     with output.open('x', encoding='utf-8') as stream:
         json.dump(result, stream, indent=2, ensure_ascii=False)
         stream.write('\n')
@@ -77,6 +101,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('folder', type=Path)
     parser.add_argument('output', type=Path)
+    parser.add_argument('--previous-batch', type=Path, action='append', default=[],
+                        help='Skip unchanged name/hash pairs; repeat for each earlier batch.')
     args = parser.parse_args()
-    result = write_inventory(args.folder, args.output)
+    result = write_inventory(args.folder, args.output, args.previous_batch)
     print(f"Inventoried {len(result['files'])} files; no content extracted or executed.")

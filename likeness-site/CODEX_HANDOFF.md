@@ -336,3 +336,12 @@ Run `npm run validate:production` and `npm run test:production` along with lint
 and the base-path static build. No new branching runtime, microphone, paid
 generation, Blender model or Unreal build is implied by these pipeline docs.
 
+**Batch 002 (2026-10-23):** ten further files are reconciled in
+`docs/production/INTAKE_BATCH_002.md`. All 205 file occurrences in the three
+handoff ZIPs map to existing paths; do not restore their older registries or
+reinstall their Vite starter. The four prompt PDFs have a physical-page source
+index in `data/production/prompt-source-index.json`; Eden Cut remains an alternate
+reference. See `docs/production/PROMPT_SOURCE_ROUTING.md` before selecting prompts.
+Intake supports repeatable `--previous-batch` arguments to skip unchanged uploads
+without losing changed revisions. Preserve batch 001 and append later batches.
+
