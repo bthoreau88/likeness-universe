@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "page_numbering": "physical_pdf_pages_1_based",
+  "relationship_note": "Edition relationship declared by covers; semantic equivalence and canon adoption are not established.",
+  "sources": [
+    {
+      "id": "DNA_CORE_FULL",
+      "file": "10-OVS_LIKENESS_DNA_PROMPT_LIBRARY_FULL.pdf",
+      "sha256": "ba24f8a0e997ef02c884b03634c6d983e100ce9a5099531e21816ef13fd8645b",
+      "family": "core",
+      "page_count": 46,
+      "adoption": "reference_only",
+      "auto_import": false,
+      "declared_source_edition": null,
+      "sections": [
+        {
+          "id": "use_guide",
+          "pages": [
+            2,
+            2
+          ]
+        },
+        {
+          "id": "master_blocks",
+          "pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "character_boards",
+          "pages": [
+            5,
+            8
+          ]
+        },
+        {
+          "id": "location_object_boards",
+          "pages": [
+            9,
+            12
+          ]
+        },
+        {
+          "id": "key_stills",
+          "pages": [
+            13,
+            21
+          ]
+        },
+        {
+          "id": "shot_boards",
+          "pages": [
+            22,
+            26
+          ]
+        },
+        {
+          "id": "trailer",
+          "pages": [
+            27,
+            34
+          ]
+        },
+        {
+          "id": "b_roll",
+          "pages": [
+            35,
+            36
+          ]
+        },
+        {
+          "id": "performance",
+          "pages": [
+            37,
+            41
+          ]
+        },
+        {
+          "id": "campaign",
+          "pages": [
+            42,
+            43
+          ]
+        },
+        {
+          "id": "repair",
+          "pages": [
+            44,
+            44
+          ]
+        },
+        {
+          "id": "cross_reference_template",
+          "pages": [
+            45,
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DNA_CORE_V002",
+      "file": "06-OVS_LIKENESS_DNA_PROMPT_LIBRARY_V002_REGENERATED.pdf",
+      "sha256": "e5a84c44c8ce5ef4a43667ec585c94e16b7e163445ce9fb8111e31da1873883a",
+      "family": "core",
+      "page_count": 139,
+      "adoption": "reference_only",
+      "auto_import": false,
+      "declared_source_edition": "DNA_CORE_FULL",
+      "sections": [
+        {
+          "id": "use_guide",
+          "pages": [
+            8,
+            8
+          ]
+        },
+        {
+          "id": "master_blocks",
+          "pages": [
+            9,
+            19
+          ]
+        },
+        {
+          "id": "character_boards",
+          "pages": [
+            20,
+            30
+          ]
+        },
+        {
+          "id": "location_object_boards",
+          "pages": [
+            31,
+            41
+          ]
+        },
+        {
+          "id": "key_stills",
+          "pages": [
+            42,
+            69
+          ]
+        },
+        {
+          "id": "shot_boards",
+          "pages": [
+            70,
+            80
+          ]
+        },
+        {
+          "id": "trailer",
+          "pages": [
+            81,
+            100
+          ]
+        },
+        {
+          "id": "b_roll",
+          "pages": [
+            101,
+            109
+          ]
+        },
+        {
+          "id": "performance",
+          "pages": [
+            110,
+            122
+          ]
+        },
+        {
+          "id": "campaign",
+          "pages": [
+            123,
+            129
+          ]
+        },
+        {
+          "id": "repair",
+          "pages": [
+            130,
+            135
+          ]
+        },
+        {
+          "id": "cross_reference_template",
+          "pages": [
+            136,
+            138
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DNA_EDEN_FULL",
+      "file": "08-OVS_LIKENESS_EDEN_CUT_DNA_PROMPT_LIBRARY_FULL_POLISHED.pdf",
+      "sha256": "475ab3697f52f99a5475683a65c7cc4423b21d521b55c03aa333c52a214c6242",
+      "family": "alternate_eden",
+      "page_count": 96,
+      "adoption": "reference_only",
+      "auto_import": false,
+      "declared_source_edition": null,
+      "sections": [
+        {
+          "id": "use_guide",
+          "pages": [
+            2,
+            2
+          ]
+        },
+        {
+          "id": "master_blocks",
+          "pages": [
+            3,
+            7
+          ]
+        },
+        {
+          "id": "character_boards",
+          "pages": [
+            8,
+            15
+          ]
+        },
+        {
+          "id": "object_boards",
+          "pages": [
+            16,
+            21
+          ]
+        },
+        {
+          "id": "location_boards",
+          "pages": [
+            22,
+            25
+          ]
+        },
+        {
+          "id": "stills",
+          "pages": [
+            26,
+            43
+          ]
+        },
+        {
+          "id": "seedance",
+          "pages": [
+            44,
+            77
+          ]
+        },
+        {
+          "id": "kling",
+          "pages": [
+            78,
+            91
+          ]
+        },
+        {
+          "id": "campaign",
+          "pages": [
+            92,
+            95
+          ]
+        },
+        {
+          "id": "cross_reference",
+          "pages": [
+            96,
+            96
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DNA_EDEN_V002",
+      "file": "09-OVS_LIKENESS_EDEN_CUT_PROMPT_LIBRARY_V002_REGENERATED.pdf",
+      "sha256": "01abe3823936505695e19236ceaf0c88ab59b4f3e394cb01e41b5246b1999391",
+      "family": "alternate_eden",
+      "page_count": 103,
+      "adoption": "reference_only",
+      "auto_import": false,
+      "declared_source_edition": "DNA_EDEN_FULL",
+      "sections": [
+        {
+          "id": "use_guide",
+          "pages": [
+            8,
+            8
+          ]
+        },
+        {
+          "id": "master_blocks",
+          "pages": [
+            9,
+            13
+          ]
+        },
+        {
+          "id": "character_boards",
+          "pages": [
+            14,
+            21
+          ]
+        },
+        {
+          "id": "object_boards",
+          "pages": [
+            22,
+            27
+          ]
+        },
+        {
+          "id": "location_boards",
+          "pages": [
+            28,
+            31
+          ]
+        },
+        {
+          "id": "stills",
+          "pages": [
+            32,
+            49
+          ]
+        },
+        {
+          "id": "seedance",
+          "pages": [
+            50,
+            83
+          ]
+        },
+        {
+          "id": "kling",
+          "pages": [
+            84,
+            97
+          ]
+        },
+        {
+          "id": "campaign",
+          "pages": [
+            98,
+            101
+          ]
+        },
+        {
+          "id": "cross_reference",
+          "pages": [
+            102,
+            102
+          ]
+        }
+      ]
+    }
+  ]
+}

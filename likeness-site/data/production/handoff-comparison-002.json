@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "source_baseline_sha": "0932dbbce73de4ee75a75423083763694df0071d",
+  "comparison": "exact_bytes_no_extraction_or_import",
+  "packages": [
+    {
+      "file": "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip",
+      "sha256": "882f9bae5949a997603ef8e260ec8240a807622da8b2bd509289707ee2083a38",
+      "file_count": 51,
+      "exact_match_count": 45,
+      "changed": [
+        {
+          "path": "README_START_HERE.md",
+          "uploaded_sha256": "b522f17b90d969eac87cdc44af3ebf9675099e4a4653da60f964090c1315a10d",
+          "existing_sha256": "d475895d6d49dcea5b0cf337d76d1286732f2d58f57f788ae94835c5db5d29f4"
+        },
+        {
+          "path": "agents/TASK_BOARD.md",
+          "uploaded_sha256": "f0a802c86989a50a6e55f467bc44859afe0d696c44ec24d8c4407f98437fd4d7",
+          "existing_sha256": "a65427123bba31c8fbc749f77e6bfb4c3307be3cfd1476bf9d976a221d224de1"
+        },
+        {
+          "path": "agents/SESSION_RESUME.md",
+          "uploaded_sha256": "dc16d40dd5be1863d38b1af1162aa2940f6054f6473f90b8c7af142eb52fbc23",
+          "existing_sha256": "24045b3e58b0f3ca6f4d56e3dfcd8d4d2574bca62a1ed5c926d12bda1b9c6cf1"
+        },
+        {
+          "path": "data/asset_manifest.csv",
+          "uploaded_sha256": "393070e2f2b0d9c0305620457b97e02d455379c543c08939ee24f62c8c7f6458",
+          "existing_sha256": "e783b525027c300288ea441ab95c02d16edf9a4953390f2cbcf804168fa3d55c"
+        },
+        {
+          "path": "data/expansion_registry.csv",
+          "uploaded_sha256": "1389edcaa36a5551ea62a5189bd17208cf335d3479a495ffbad12e2417cf744c",
+          "existing_sha256": "5d116969a00e3db0106b779db24fb8615769ccca944a601b8f273eaf4580617a"
+        },
+        {
+          "path": "expansions/unreal_engine_guide/README_UE_GUIDE_REFERENCE.md",
+          "uploaded_sha256": "7d8bac601b6d6ddfa869891c1907856a5e1837397b4ca3da847c03fac06303da",
+          "existing_sha256": "c7f14001bebf4062ae1c7c055981b65340fd96e1dbc06b6918f9481ffc4cc46b"
+        }
+      ],
+      "absent": []
+    },
+    {
+      "file": "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip",
+      "sha256": "1bc3ff510a3cf316883c107d7d0f242beef02520353801b514f3036f85fee1b0",
+      "file_count": 88,
+      "exact_match_count": 84,
+      "changed": [
+        {
+          "path": "README_START_HERE.md",
+          "uploaded_sha256": "8cb2053e576a1e4ddfbd4bc27a86817e2024cab49909509c251c66508bea44ea",
+          "existing_sha256": "d475895d6d49dcea5b0cf337d76d1286732f2d58f57f788ae94835c5db5d29f4"
+        },
+        {
+          "path": "agents/SESSION_RESUME.md",
+          "uploaded_sha256": "601ffafde87194108de28012750180eba3154ac9c6b2585da6b7276b1be3724d",
+          "existing_sha256": "24045b3e58b0f3ca6f4d56e3dfcd8d4d2574bca62a1ed5c926d12bda1b9c6cf1"
+        },
+        {
+          "path": "data/asset_manifest.csv",
+          "uploaded_sha256": "393070e2f2b0d9c0305620457b97e02d455379c543c08939ee24f62c8c7f6458",
+          "existing_sha256": "e783b525027c300288ea441ab95c02d16edf9a4953390f2cbcf804168fa3d55c"
+        },
+        {
+          "path": "expansions/unreal_engine_guide/README_UE_GUIDE_REFERENCE.md",
+          "uploaded_sha256": "7d8bac601b6d6ddfa869891c1907856a5e1837397b4ca3da847c03fac06303da",
+          "existing_sha256": "c7f14001bebf4062ae1c7c055981b65340fd96e1dbc06b6918f9481ffc4cc46b"
+        }
+      ],
+      "absent": []
+    },
+    {
+      "file": "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip",
+      "sha256": "b4db2571b216e6f6011ba0efaad279e8e1ede1d5336740daeed58dcddaa68586",
+      "file_count": 66,
+      "exact_match_count": 62,
+      "changed": [
+        {
+          "path": "README_START_HERE.md",
+          "uploaded_sha256": "3066c597d1551ecb3e8ed9ea9830dd17edeb056a7e513a56d3fd3f679ee05ba3",
+          "existing_sha256": "d475895d6d49dcea5b0cf337d76d1286732f2d58f57f788ae94835c5db5d29f4"
+        },
+        {
+          "path": "agents/SESSION_RESUME.md",
+          "uploaded_sha256": "601ffafde87194108de28012750180eba3154ac9c6b2585da6b7276b1be3724d",
+          "existing_sha256": "24045b3e58b0f3ca6f4d56e3dfcd8d4d2574bca62a1ed5c926d12bda1b9c6cf1"
+        },
+        {
+          "path": "data/asset_manifest.csv",
+          "uploaded_sha256": "393070e2f2b0d9c0305620457b97e02d455379c543c08939ee24f62c8c7f6458",
+          "existing_sha256": "e783b525027c300288ea441ab95c02d16edf9a4953390f2cbcf804168fa3d55c"
+        },
+        {
+          "path": "expansions/unreal_engine_guide/README_UE_GUIDE_REFERENCE.md",
+          "uploaded_sha256": "7d8bac601b6d6ddfa869891c1907856a5e1837397b4ca3da847c03fac06303da",
+          "existing_sha256": "c7f14001bebf4062ae1c7c055981b65340fd96e1dbc06b6918f9481ffc4cc46b"
+        }
+      ],
+      "absent": []
+    }
+  ]
+}

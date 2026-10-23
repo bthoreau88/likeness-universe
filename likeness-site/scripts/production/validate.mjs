@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { createHash } from "node:crypto";
 
 const root = fileURLToPath(new URL("../../", import.meta.url));
 const directory = path.join(root, "data/production");
@@ -42,11 +43,45 @@ export function validateBatch(batch) {
   for (const file of batch.files) if (file.duplicate_of) requireValue(batch.files.some(other => other.name === file.duplicate_of && other.sha256 === file.sha256), "Invalid duplicate relationship");
 }
 
+export function validateSources(index, batches) {
+  requireValue(index.schema_version === 1 && Array.isArray(index.sources), "Invalid prompt source index");
+  const files = batches.flatMap(batch => batch.files);
+  const ids = new Set();
+  for (const source of index.sources) {
+    requireValue(typeof source.id === "string" && !ids.has(source.id), "Duplicate or missing prompt source ID");
+    ids.add(source.id);
+    requireValue(files.some(file => file.name === source.file && file.sha256 === source.sha256), "Prompt source is not tied to inventoried bytes");
+    requireValue(["core", "alternate_eden"].includes(source.family), "Invalid source family");
+    requireValue(source.adoption === "reference_only" && source.auto_import === false, "References cannot silently become runtime content");
+    requireValue(Number.isSafeInteger(source.page_count) && source.page_count > 0 && Array.isArray(source.sections), "Invalid source pagination");
+    const sections = new Set();
+    for (const section of source.sections) {
+      requireValue(typeof section.id === "string" && !sections.has(section.id), "Duplicate or missing section ID");
+      sections.add(section.id);
+      requireValue(Array.isArray(section.pages) && section.pages.length === 2 && section.pages.every(Number.isSafeInteger), "Invalid section pages");
+      const [start, end] = section.pages;
+      requireValue(start >= 1 && end >= start && end <= source.page_count, "Section pages outside source PDF");
+    }
+  }
+  for (const source of index.sources) {
+    if (source.declared_source_edition) requireValue(index.sources.some(parent => parent.id === source.declared_source_edition && parent.id !== source.id && parent.family === source.family), "Invalid source-edition relationship");
+  }
+}
+
 export function main() {
   validateAssets(load("asset-plan.json"));
   const batches = readdirSync(directory).filter(name => /^intake-batch-.*\.json$/.test(name));
   requireValue(batches.length > 0, "No intake batches");
-  for (const name of batches) validateBatch(load(name));
+  const batchData = batches.map(name => load(name));
+  for (const batch of batchData) {
+    validateBatch(batch);
+    for (const previous of batch.previous_batches ?? []) {
+      requireValue(batches.includes(previous.name), "Previous intake receipt is missing");
+      const sha = createHash("sha256").update(readFileSync(path.join(directory, previous.name))).digest("hex");
+      requireValue(sha === previous.sha256, "Previous intake receipt changed after reference");
+    }
+  }
+  validateSources(load("prompt-source-index.json"), batchData);
   console.log(`Production metadata valid: ${batches.length} intake batch(es); candidates remain separate from accepted assets.`);
 }
 

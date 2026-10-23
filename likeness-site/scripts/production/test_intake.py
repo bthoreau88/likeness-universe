@@ -1,4 +1,5 @@
 import importlib.util
+import json
 from pathlib import Path
 import tempfile
 import unittest
@@ -10,6 +11,43 @@ spec.loader.exec_module(intake)
 
 
 class IntakeTests(unittest.TestCase):
+    def test_prior_files_skipped_but_same_name_new_revision_included(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            uploads = root / 'uploads'
+            uploads.mkdir()
+            (uploads / 'keep.txt').write_text('same')
+            (uploads / 'revise.txt').write_text('old')
+            previous = root / 'batch-001.json'
+            intake.write_inventory(uploads, previous)
+            before = previous.read_bytes()
+            (uploads / 'revise.txt').write_text('new')
+            result = intake.inventory(uploads, [previous])
+            self.assertEqual([f['name'] for f in result['files']], ['revise.txt'])
+            self.assertEqual([f['name'] for f in result['skipped_previous']], ['keep.txt'])
+            self.assertEqual(previous.read_bytes(), before)
+
+    def test_renamed_duplicate_keeps_cross_batch_lineage(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            uploads = root / 'uploads'
+            uploads.mkdir()
+            (uploads / 'original.txt').write_text('same')
+            previous = root / 'batch-001.json'
+            intake.write_inventory(uploads, previous)
+            (uploads / 'renamed.txt').write_text('same')
+            result = intake.inventory(uploads, [previous])
+            self.assertEqual(len(result['files']), 1)
+            self.assertEqual(result['duplicate_groups'], [['renamed.txt', 'batch-001.json::original.txt']])
+
+    def test_invalid_prior_schema_rejected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            previous = root / 'prior.json'
+            previous.write_text(json.dumps({'schema_version': 99, 'files': []}))
+            with self.assertRaises(ValueError):
+                intake.inventory(root, [previous])
+
     def test_cross_archive_duplicates_and_no_extraction(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

@@ -1,0 +1,1455 @@
+{
+  "schema_version": 1,
+  "batch_status": "open_more_uploads_expected",
+  "files": [
+    {
+      "name": "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip",
+      "bytes": 135610,
+      "sha256": "882f9bae5949a997603ef8e260ec8240a807622da8b2bd509289707ee2083a38",
+      "status": "historical_package_all_paths_present",
+      "duplicate_of": null,
+      "members": [
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/README_START_HERE.md",
+          "bytes": 2110,
+          "sha256": "b522f17b90d969eac87cdc44af3ebf9675099e4a4653da60f964090c1315a10d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/00_OVS_Production_Workflow.md",
+          "bytes": 16443,
+          "sha256": "6bb6a84e0d7c640a3a1849fd98979928b2ce1039700c8a95a83d955f57836921"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/01_Project_Foundation_Template.md",
+          "bytes": 793,
+          "sha256": "b5fdd27ca88b145227899685865d876f86df225ec3a8246f3a0d66649c821618"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/02_Game_Design_Template.md",
+          "bytes": 672,
+          "sha256": "a92776b1f778a4a9ba43ceed8f05c7eed93fbd8cec6c57c316fc7d228bc77122"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/03_Character_Reference_4Step_Template.md",
+          "bytes": 2229,
+          "sha256": "212d46475205548ffbd4e01208b34402b4cba576ee0d3c26b2e820b44aa27f56"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/04_Environment_And_Level_Template.md",
+          "bytes": 913,
+          "sha256": "2d6c280d42dd4f8af32614fff1c95a0281a5c04bc828de7029eceeded6052b76"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/05_Mechanics_Template.md",
+          "bytes": 704,
+          "sha256": "93d33ac1cd4d9e042424490e1df7c5e7ab991edd296ae3677015c5d5526d0e6a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/06_Narrative_Template.md",
+          "bytes": 701,
+          "sha256": "c53bb53b7ac87b1fa9a86df9dfe9ecb76c7403e4224c720c0978828ee943cfbb"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/07_Art_Direction_Style_Bible.md",
+          "bytes": 1206,
+          "sha256": "ee6fa8ccb983b9658cf5a30cd17876e0c75ce38d581c0f0061070b4c133d7e9f"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/08_QA_QC_Checklists.md",
+          "bytes": 1074,
+          "sha256": "377166bcb64132e01e18204eda414768b16b73c5bd176be650f7918d1b9de13c"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/09_Agent_Handoff_Prompt_Block.md",
+          "bytes": 2043,
+          "sha256": "91b90bc197928aa289d5bf4bf331c4ed19553957376ca3714990eba5eea39b84"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/10_ThreeJS_Fable_Web_Handoff.md",
+          "bytes": 1698,
+          "sha256": "24b5f9b68fbc3f53124b3174370174e3e4c3a892a36ee16b081a1bd2fcc0b138"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/11_Unreal_Claude_Setup.md",
+          "bytes": 1243,
+          "sha256": "8305505596e09fc9f6cbe0174a97f1001a41a4c9e6feebaa773adc02751d12fa"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/12_Expansion_Source_Matrix.md",
+          "bytes": 2502,
+          "sha256": "777ecaef3db602f1f0fecfcbdfd991e9fafea6f195319b6db271017023c75e9a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/12_Expansion_Workflow_Modules.md",
+          "bytes": 5416,
+          "sha256": "51aa8a82a4e700e2fcd7eb68800ec567e78f583a0766dfdb89e76c01b8f0e7f0"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/13_Gaussian_Splat_Image_To_World_Module.md",
+          "bytes": 2960,
+          "sha256": "757765a100a7be47f48e2eeaa4cb9b0d1693026a5664c19a06cff0cbd97a92d6"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/14_Higgsfield_Campaign_Reference_Module.md",
+          "bytes": 2993,
+          "sha256": "1b6f036248c387a07c7b4bb0520d3ffe4c47e76e1e2618be0607da3393ac81c8"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/15_Unreal_Engine_Guide_Reference_Module.md",
+          "bytes": 1930,
+          "sha256": "f56f7cba70fdc0f2d972bf91b43eb6691ea05d21c5086557239f85de62554908"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/AGENTS.md",
+          "bytes": 785,
+          "sha256": "d07246641ff60ee37efa2458e391d03056ec9927afff7feb8ab1c1d85b04d617"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/CLAUDE.md",
+          "bytes": 715,
+          "sha256": "2d1aea8f06ff25b1ef44087a861321c3709a3bc3319605e145c3459858be4536"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/CODEX.md",
+          "bytes": 524,
+          "sha256": "3a70d1545e04289c550a0d0a4416f24f31afdf56570ebdb360f24e7db9f981a9"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/FABLE_THREEJS_PROMPT.md",
+          "bytes": 1698,
+          "sha256": "24b5f9b68fbc3f53124b3174370174e3e4c3a892a36ee16b081a1bd2fcc0b138"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/TASK_BOARD.md",
+          "bytes": 2173,
+          "sha256": "f0a802c86989a50a6e55f467bc44859afe0d696c44ec24d8c4407f98437fd4d7"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/expansion_prompts/EXPANSION_MODULES_AGENT_PROMPT.md",
+          "bytes": 1803,
+          "sha256": "2af06aceeeffbdd46d2a6aa8d64612e8d03bc260ff22169fc0bd2c7c6b6ccb53"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/SESSION_RESUME.md",
+          "bytes": 1050,
+          "sha256": "dc16d40dd5be1863d38b1af1162aa2940f6054f6473f90b8c7af142eb52fbc23"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/package_manifest.json",
+          "bytes": 3283,
+          "sha256": "5010eb5d6c8808ba0d032133a212189104c2a510ecd98d13cf9298d4a646ff76"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/README_asset_drop_rules.md",
+          "bytes": 522,
+          "sha256": "e50d076d2154bafc8c1959dabe7401dd270a3f98abce75fee9c4a603b81d53b3"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/characters/_DROP_CHARACTER_REFERENCES_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/environments/_DROP_ENVIRONMENT_REFERENCES_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/props/_DROP_PROP_REFERENCES_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/audio/_DROP_AUDIO_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/ui/_DROP_UI_ASSETS_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/exports/README_exports.md",
+          "bytes": 170,
+          "sha256": "8577d8650751fc626b54cb63b79a3486ae98b64c7e52ac2312287f310e6d6aa0"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/exports/pdfs/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+          "bytes": 28285,
+          "sha256": "d7cf9eda7eb225bdb36f629454a1c1290258c7fefae9903f03172b308ba6a9f1"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/exports/pdfs/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+          "bytes": 29375,
+          "sha256": "f5e4cb5fc8a1cecd91fadc01410c7f2fe585b23f0755b8863bd6b1594d7e5364"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/unreal/Content_OVS_LIKENESS_STRUCTURE.txt",
+          "bytes": 181,
+          "sha256": "2eed1f150831f5dd29f8e821705c45cb1f5f25b2103cdb92529cecc97432706d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/web/THREEJS_APP_STRUCTURE.txt",
+          "bytes": 172,
+          "sha256": "16e07a67d1f015013e7787d2fd6b735aacb86ec2e8a70170179e1167a92fb0b2"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/build_notes/_SESSION_NOTES_GO_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/asset_manifest.csv",
+          "bytes": 428,
+          "sha256": "393070e2f2b0d9c0305620457b97e02d455379c543c08939ee24f62c8c7f6458"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/character_registry.csv",
+          "bytes": 628,
+          "sha256": "269ca9ed8929c87f13ee3ee38860605c071cbdcfbd53c834874bbc318425c26d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/mechanics_registry.csv",
+          "bytes": 575,
+          "sha256": "8fca22001a662c0ffbecb0bff7ac23eda34a0b7acd3a48f76e9f5b8ca70e6881"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/level_registry.csv",
+          "bytes": 524,
+          "sha256": "468287195f7e745c2f01a629bea7dafdfd1a15975b171ace77c91b92086def33"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/prompt_registry.csv",
+          "bytes": 465,
+          "sha256": "400b21426654d3d47eb411c8e57acddf05bc942c55ed5369c420760532dc388a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/narrative_beats.csv",
+          "bytes": 550,
+          "sha256": "d4083fc330b23098de19672d5f450181b9652f1d4a647ca92dae614c1e7a25ea"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/expansion_registry.csv",
+          "bytes": 1402,
+          "sha256": "1389edcaa36a5551ea62a5189bd17208cf335d3479a495ffbad12e2417cf744c"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+          "bytes": 28285,
+          "sha256": "d7cf9eda7eb225bdb36f629454a1c1290258c7fefae9903f03172b308ba6a9f1"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/expansions/image_blaster/README_IMAGE_BLASTER_STAGING.md",
+          "bytes": 139,
+          "sha256": "813de5bc28123248eb1b8f91d24b8d90a795b8552656b9a9c2aa3f0bb0d88cea"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/expansions/nano_gaussian_splatting/README_NANOGS_TESTS.md",
+          "bytes": 140,
+          "sha256": "423a391dd27e31aeaa8831ae91688408e414da86473a9d1c33758db9fed0eb65"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/expansions/higgsfield_skills/README_HIGGSFIELD_OVS.md",
+          "bytes": 131,
+          "sha256": "909f89bf97512a1a14108722222e06f33bf27cc9c274fb2117fb3a621b0a63e8"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/expansions/unreal_engine_guide/README_UE_GUIDE_REFERENCE.md",
+          "bytes": 155,
+          "sha256": "7d8bac601b6d6ddfa869891c1907856a5e1837397b4ca3da847c03fac06303da"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+          "bytes": 29375,
+          "sha256": "f5e4cb5fc8a1cecd91fadc01410c7f2fe585b23f0755b8863bd6b1594d7e5364"
+        }
+      ]
+    },
+    {
+      "name": "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip",
+      "bytes": 195812,
+      "sha256": "1bc3ff510a3cf316883c107d7d0f242beef02520353801b514f3036f85fee1b0",
+      "status": "historical_package_all_paths_present",
+      "duplicate_of": null,
+      "members": [
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/README_START_HERE.md",
+          "bytes": 3295,
+          "sha256": "8cb2053e576a1e4ddfbd4bc27a86817e2024cab49909509c251c66508bea44ea"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/00_OVS_Production_Workflow.md",
+          "bytes": 16443,
+          "sha256": "6bb6a84e0d7c640a3a1849fd98979928b2ce1039700c8a95a83d955f57836921"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/01_Project_Foundation_Template.md",
+          "bytes": 793,
+          "sha256": "b5fdd27ca88b145227899685865d876f86df225ec3a8246f3a0d66649c821618"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/02_Game_Design_Template.md",
+          "bytes": 672,
+          "sha256": "a92776b1f778a4a9ba43ceed8f05c7eed93fbd8cec6c57c316fc7d228bc77122"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/03_Character_Reference_4Step_Template.md",
+          "bytes": 2229,
+          "sha256": "212d46475205548ffbd4e01208b34402b4cba576ee0d3c26b2e820b44aa27f56"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/04_Environment_And_Level_Template.md",
+          "bytes": 913,
+          "sha256": "2d6c280d42dd4f8af32614fff1c95a0281a5c04bc828de7029eceeded6052b76"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/05_Mechanics_Template.md",
+          "bytes": 704,
+          "sha256": "93d33ac1cd4d9e042424490e1df7c5e7ab991edd296ae3677015c5d5526d0e6a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/06_Narrative_Template.md",
+          "bytes": 701,
+          "sha256": "c53bb53b7ac87b1fa9a86df9dfe9ecb76c7403e4224c720c0978828ee943cfbb"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/07_Art_Direction_Style_Bible.md",
+          "bytes": 1206,
+          "sha256": "ee6fa8ccb983b9658cf5a30cd17876e0c75ce38d581c0f0061070b4c133d7e9f"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/08_QA_QC_Checklists.md",
+          "bytes": 1074,
+          "sha256": "377166bcb64132e01e18204eda414768b16b73c5bd176be650f7918d1b9de13c"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/09_Agent_Handoff_Prompt_Block.md",
+          "bytes": 2043,
+          "sha256": "91b90bc197928aa289d5bf4bf331c4ed19553957376ca3714990eba5eea39b84"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/10_ThreeJS_Fable_Web_Handoff.md",
+          "bytes": 1698,
+          "sha256": "24b5f9b68fbc3f53124b3174370174e3e4c3a892a36ee16b081a1bd2fcc0b138"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/11_Unreal_Claude_Setup.md",
+          "bytes": 1243,
+          "sha256": "8305505596e09fc9f6cbe0174a97f1001a41a4c9e6feebaa773adc02751d12fa"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/12_Expansion_Source_Matrix.md",
+          "bytes": 2502,
+          "sha256": "777ecaef3db602f1f0fecfcbdfd991e9fafea6f195319b6db271017023c75e9a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/12_Expansion_Workflow_Modules.md",
+          "bytes": 5416,
+          "sha256": "51aa8a82a4e700e2fcd7eb68800ec567e78f583a0766dfdb89e76c01b8f0e7f0"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/13_Gaussian_Splat_Image_To_World_Module.md",
+          "bytes": 2960,
+          "sha256": "757765a100a7be47f48e2eeaa4cb9b0d1693026a5664c19a06cff0cbd97a92d6"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/14_Higgsfield_Campaign_Reference_Module.md",
+          "bytes": 2993,
+          "sha256": "1b6f036248c387a07c7b4bb0520d3ffe4c47e76e1e2618be0607da3393ac81c8"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/15_Unreal_Engine_Guide_Reference_Module.md",
+          "bytes": 1930,
+          "sha256": "f56f7cba70fdc0f2d972bf91b43eb6691ea05d21c5086557239f85de62554908"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/16_Blender_MCP_FAL_Asset_Fabrication_Module.md",
+          "bytes": 8520,
+          "sha256": "8c3a574d833510d1863d405963dbd3a8cbf4d263ba10ec15055686c4e5cae6df"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/17_Milestone_01_Build_Kickoff.md",
+          "bytes": 4258,
+          "sha256": "9be29a11ac76c38f1aa6c5cc29fdc0cb01cc7de7f7827a61a3c70c0d33fef2bb"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/AGENTS.md",
+          "bytes": 785,
+          "sha256": "d07246641ff60ee37efa2458e391d03056ec9927afff7feb8ab1c1d85b04d617"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/CLAUDE.md",
+          "bytes": 715,
+          "sha256": "2d1aea8f06ff25b1ef44087a861321c3709a3bc3319605e145c3459858be4536"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/CODEX.md",
+          "bytes": 524,
+          "sha256": "3a70d1545e04289c550a0d0a4416f24f31afdf56570ebdb360f24e7db9f981a9"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/FABLE_THREEJS_PROMPT.md",
+          "bytes": 1698,
+          "sha256": "24b5f9b68fbc3f53124b3174370174e3e4c3a892a36ee16b081a1bd2fcc0b138"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/TASK_BOARD.md",
+          "bytes": 2628,
+          "sha256": "a65427123bba31c8fbc749f77e6bfb4c3307be3cfd1476bf9d976a221d224de1"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/expansion_prompts/EXPANSION_MODULES_AGENT_PROMPT.md",
+          "bytes": 1803,
+          "sha256": "2af06aceeeffbdd46d2a6aa8d64612e8d03bc260ff22169fc0bd2c7c6b6ccb53"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/expansion_prompts/BLENDER_MCP_FAL_AGENT_PROMPT.md",
+          "bytes": 1881,
+          "sha256": "53898d7847eb91a2f52c249ef7e42f22fd1b8027b4188683fe9b20c7469160a0"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/SESSION_RESUME.md",
+          "bytes": 1411,
+          "sha256": "601ffafde87194108de28012750180eba3154ac9c6b2585da6b7276b1be3724d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/MILESTONE_01_AGENT_PROMPT.md",
+          "bytes": 1852,
+          "sha256": "767c68161092343cf5dda2d8d5d989c9e6192170dc53b53e8631349a4a5a0d3c"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/MILESTONE_01_ACCEPTANCE_REPORT_TEMPLATE.md",
+          "bytes": 721,
+          "sha256": "13e4eff9efbfc56605ab7ea707bbba3aa9ae5679bf475291ebe3985c1de75198"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/package_manifest.json",
+          "bytes": 3283,
+          "sha256": "5010eb5d6c8808ba0d032133a212189104c2a510ecd98d13cf9298d4a646ff76"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/README_asset_drop_rules.md",
+          "bytes": 522,
+          "sha256": "e50d076d2154bafc8c1959dabe7401dd270a3f98abce75fee9c4a603b81d53b3"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/characters/_DROP_CHARACTER_REFERENCES_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/environments/_DROP_ENVIRONMENT_REFERENCES_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/props/_DROP_PROP_REFERENCES_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/audio/_DROP_AUDIO_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/ui/_DROP_UI_ASSETS_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/README_exports.md",
+          "bytes": 170,
+          "sha256": "8577d8650751fc626b54cb63b79a3486ae98b64c7e52ac2312287f310e6d6aa0"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/pdfs/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+          "bytes": 28285,
+          "sha256": "d7cf9eda7eb225bdb36f629454a1c1290258c7fefae9903f03172b308ba6a9f1"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/pdfs/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+          "bytes": 29375,
+          "sha256": "f5e4cb5fc8a1cecd91fadc01410c7f2fe585b23f0755b8863bd6b1594d7e5364"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/pdfs/OVS_LIKENESS_THE_GAME_Blender_MCP_FAL_Module_V003.pdf",
+          "bytes": 7199,
+          "sha256": "40eb2f8786749fa8f69a569612768ddcd17e2c4a00082000645056e529907e82"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/pdfs/OVS_LIKENESS_THE_GAME_Milestone_01_Starter_V004.pdf",
+          "bytes": 10640,
+          "sha256": "1b7119854de73bd68607fcfe75f0f26bc611c9db91a3851903020f849e3265e8"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/unreal/Content_OVS_LIKENESS_STRUCTURE.txt",
+          "bytes": 181,
+          "sha256": "2eed1f150831f5dd29f8e821705c45cb1f5f25b2103cdb92529cecc97432706d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/unreal/milestone_01/M01_UNREAL_STARTER_PLAN.md",
+          "bytes": 664,
+          "sha256": "845e55d272b8132716dcb379cd40aafd668a36b8ae9a3beeb32d95bfb920076d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/THREEJS_APP_STRUCTURE.txt",
+          "bytes": 172,
+          "sha256": "16e07a67d1f015013e7787d2fd6b735aacb86ec2e8a70170179e1167a92fb0b2"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/src/data/registryLoader.js",
+          "bytes": 179,
+          "sha256": "0c9518c39da86ad03a14e337051b9d451038fce09cf23cbd670ac115143964ca"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/src/scene/OVSSceneController.js",
+          "bytes": 2089,
+          "sha256": "61f65ec7f56079b4feadc1cb2ee16bcec19db04551d131730d612f87f22036ab"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/src/main.js",
+          "bytes": 640,
+          "sha256": "1b7e1315001dcede38b786733a549eccb3c1db6dd9d5a650a9762b3619096640"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/src/style.css",
+          "bytes": 664,
+          "sha256": "69042283416621abc478fa0161598de15322871a607632ec4971b7aa4b1dbfcb"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/public/data/project_meta.json",
+          "bytes": 239,
+          "sha256": "be004c1c2d2bd041b21ab99b1fce5f728eafe876241cb98d0108725c04ac6bad"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/public/data/asset_manifest.json",
+          "bytes": 912,
+          "sha256": "e23ba29f6cfbc6f4003f47f995371b18e8b74be536e9e53032e916f69c34da59"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/public/data/character_registry.json",
+          "bytes": 1052,
+          "sha256": "0b247633e6a09ba975ec551f5b7d721562e203c43d86d94fa92094d06dcd5eaf"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/public/data/mechanics_registry.json",
+          "bytes": 949,
+          "sha256": "a21536381f149e08b1e633ed367a5a29ac03db89c9d7db02d163add559a7b95d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/public/data/level_registry.json",
+          "bytes": 902,
+          "sha256": "080be46ba6df912fee2c47c7021386de0f6fb84ad79e150f9d17530ad3992a98"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/public/data/narrative_beats.json",
+          "bytes": 978,
+          "sha256": "7060a5192679a3ff93ed0f4ee638f7b0e7dde63b6cf8fa8fb1cbfabcea60145c"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/package.json",
+          "bytes": 357,
+          "sha256": "9182b35ba9aea3c3ca90f21b0b46606dff188257472c3265a8f742dd2694c329"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/milestone_01_starter/index.html",
+          "bytes": 319,
+          "sha256": "c056a3d8d36a607868fe58da558b3223586f118cf469dac95e71277f6e091c80"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/build_notes/_SESSION_NOTES_GO_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/asset_manifest.csv",
+          "bytes": 428,
+          "sha256": "393070e2f2b0d9c0305620457b97e02d455379c543c08939ee24f62c8c7f6458"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/character_registry.csv",
+          "bytes": 628,
+          "sha256": "269ca9ed8929c87f13ee3ee38860605c071cbdcfbd53c834874bbc318425c26d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/mechanics_registry.csv",
+          "bytes": 575,
+          "sha256": "8fca22001a662c0ffbecb0bff7ac23eda34a0b7acd3a48f76e9f5b8ca70e6881"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/level_registry.csv",
+          "bytes": 524,
+          "sha256": "468287195f7e745c2f01a629bea7dafdfd1a15975b171ace77c91b92086def33"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/prompt_registry.csv",
+          "bytes": 465,
+          "sha256": "400b21426654d3d47eb411c8e57acddf05bc942c55ed5369c420760532dc388a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/narrative_beats.csv",
+          "bytes": 550,
+          "sha256": "d4083fc330b23098de19672d5f450181b9652f1d4a647ca92dae614c1e7a25ea"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/expansion_registry.csv",
+          "bytes": 1682,
+          "sha256": "5d116969a00e3db0106b779db24fb8615769ccca944a601b8f273eaf4580617a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/blender_asset_workflow_registry.csv",
+          "bytes": 1291,
+          "sha256": "2a620e914169876825555faa91fef13987658e7a378cf27c773306112f5b6525"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/milestone_01_task_board.csv",
+          "bytes": 931,
+          "sha256": "cf13043ed6adc8a11850762cdc02313097b10d13e0bf6971d6c00e6a17544925"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+          "bytes": 28285,
+          "sha256": "d7cf9eda7eb225bdb36f629454a1c1290258c7fefae9903f03172b308ba6a9f1"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/image_blaster/README_IMAGE_BLASTER_STAGING.md",
+          "bytes": 139,
+          "sha256": "813de5bc28123248eb1b8f91d24b8d90a795b8552656b9a9c2aa3f0bb0d88cea"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/nano_gaussian_splatting/README_NANOGS_TESTS.md",
+          "bytes": 140,
+          "sha256": "423a391dd27e31aeaa8831ae91688408e414da86473a9d1c33758db9fed0eb65"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/higgsfield_skills/README_HIGGSFIELD_OVS.md",
+          "bytes": 131,
+          "sha256": "909f89bf97512a1a14108722222e06f33bf27cc9c274fb2117fb3a621b0a63e8"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/unreal_engine_guide/README_UE_GUIDE_REFERENCE.md",
+          "bytes": 155,
+          "sha256": "7d8bac601b6d6ddfa869891c1907856a5e1837397b4ca3da847c03fac06303da"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/01_bake_high_to_low.md",
+          "bytes": 569,
+          "sha256": "4e43fc9f4e09d0e6b2be6e335b0ea7c00a4a77903fa109386e494680031a5d6a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/02_generate_draft_character_from_images.md",
+          "bytes": 497,
+          "sha256": "774d0324e20fd0f0e02b99461f91350eb9eb4e99759ada42124df772deaf62b4"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/03_pbr_material_test_corner.md",
+          "bytes": 443,
+          "sha256": "822e0d4a7f9506093c14e44771ca870c1258da4c3e008980cfbe4eaaafbc7b1e"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/04_controlled_toon_outline_test.md",
+          "bytes": 453,
+          "sha256": "0e08ba9201bca8bb7cf38fcbfa6a173320f83ae9a9239474d56f329e3b893808"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/05_procedural_iridescent_test.md",
+          "bytes": 381,
+          "sha256": "b7f38904e226a42751980f2e720dd349ebc2359d8e6278de1316ab3b5d7cb07e"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/06_multistage_prop_animation.md",
+          "bytes": 442,
+          "sha256": "b7c2481c43974e2324cd3f4387d3dc2f68c0f4c32d44a4ca3b6482443fca5980"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/07_geometry_nodes_scatter_dressing.md",
+          "bytes": 524,
+          "sha256": "abf0e47b601d32a14e9b285cb0b5370abcb04b9b40cd80f7a9f2addc3ff62a45"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/tests/BLENDER_ASSET_QA_CHECKLIST.md",
+          "bytes": 983,
+          "sha256": "7abb767a7424e0b5a00eaa4903f11a19c860118be726cda6eafd4dfbd602ca18"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/README_BLENDER_MCP_FAL.md",
+          "bytes": 525,
+          "sha256": "19597665b6d52a1dd9a991208d1f391c6734a03c43aa159e0bef60c344ae7785"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+          "bytes": 29375,
+          "sha256": "f5e4cb5fc8a1cecd91fadc01410c7f2fe585b23f0755b8863bd6b1594d7e5364"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/OVS_LIKENESS_THE_GAME_Blender_MCP_FAL_Module_V003.pdf",
+          "bytes": 7199,
+          "sha256": "40eb2f8786749fa8f69a569612768ddcd17e2c4a00082000645056e529907e82"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/package_manifest_v003.json",
+          "bytes": 617,
+          "sha256": "a55781c47c07e7c6cf77a22fa90f656621519c9774e760ef15deee03c357e440"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/scripts/create_milestone_01_scaffold.py",
+          "bytes": 513,
+          "sha256": "74433e8ea2f85a2e2c0676ed28ebb492ace25b2ed1351d20a8241d6f980149de"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/qa/milestone_01/SESSION_REPORT_TEMPLATE.md",
+          "bytes": 721,
+          "sha256": "13e4eff9efbfc56605ab7ea707bbba3aa9ae5679bf475291ebe3985c1de75198"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/package_manifest_v004.json",
+          "bytes": 321,
+          "sha256": "4a0e36273be66320ee4ebca48f06c1f2b58a765ced0db990a6b7b49cd9efadc1"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/OVS_LIKENESS_THE_GAME_Milestone_01_Starter_V004.pdf",
+          "bytes": 10640,
+          "sha256": "1b7119854de73bd68607fcfe75f0f26bc611c9db91a3851903020f849e3265e8"
+        }
+      ]
+    },
+    {
+      "name": "03-TAPE-03-VOL-05-AAA-Resource-Gap-Bible.pdf",
+      "bytes": 1148460,
+      "sha256": "12ae8ba512eb779e110d9702d1a6e6aab97d83b37d69493944c8a9a8efd53dc4",
+      "status": "resource_reference_claims_unverified",
+      "duplicate_of": null
+    },
+    {
+      "name": "04-OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+      "bytes": 29375,
+      "sha256": "f5e4cb5fc8a1cecd91fadc01410c7f2fe585b23f0755b8863bd6b1594d7e5364",
+      "status": "duplicate_existing_expansion_pdf",
+      "duplicate_of": null
+    },
+    {
+      "name": "05-Room-14-__-LIKENESS-_-THE-GAME-OVS.html",
+      "bytes": 13876,
+      "sha256": "b5286a7bff488061a805f13ef28656158837f953ba2638bf2270846bf81ab58a",
+      "status": "saved_html_reference_missing_companions",
+      "duplicate_of": null
+    },
+    {
+      "name": "06-OVS_LIKENESS_DNA_PROMPT_LIBRARY_V002_REGENERATED.pdf",
+      "bytes": 325186,
+      "sha256": "e5a84c44c8ce5ef4a43667ec585c94e16b7e163445ce9fb8111e31da1873883a",
+      "status": "core_prompt_reformatted_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip",
+      "bytes": 156542,
+      "sha256": "b4db2571b216e6f6011ba0efaad279e8e1ede1d5336740daeed58dcddaa68586",
+      "status": "historical_package_all_paths_present",
+      "duplicate_of": null,
+      "members": [
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/README_START_HERE.md",
+          "bytes": 2643,
+          "sha256": "3066c597d1551ecb3e8ed9ea9830dd17edeb056a7e513a56d3fd3f679ee05ba3"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/package_manifest.json",
+          "bytes": 3283,
+          "sha256": "5010eb5d6c8808ba0d032133a212189104c2a510ecd98d13cf9298d4a646ff76"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+          "bytes": 28285,
+          "sha256": "d7cf9eda7eb225bdb36f629454a1c1290258c7fefae9903f03172b308ba6a9f1"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+          "bytes": 29375,
+          "sha256": "f5e4cb5fc8a1cecd91fadc01410c7f2fe585b23f0755b8863bd6b1594d7e5364"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/OVS_LIKENESS_THE_GAME_Blender_MCP_FAL_Module_V003.pdf",
+          "bytes": 7199,
+          "sha256": "40eb2f8786749fa8f69a569612768ddcd17e2c4a00082000645056e529907e82"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/package_manifest_v003.json",
+          "bytes": 617,
+          "sha256": "a55781c47c07e7c6cf77a22fa90f656621519c9774e760ef15deee03c357e440"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/00_OVS_Production_Workflow.md",
+          "bytes": 16443,
+          "sha256": "6bb6a84e0d7c640a3a1849fd98979928b2ce1039700c8a95a83d955f57836921"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/01_Project_Foundation_Template.md",
+          "bytes": 793,
+          "sha256": "b5fdd27ca88b145227899685865d876f86df225ec3a8246f3a0d66649c821618"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/02_Game_Design_Template.md",
+          "bytes": 672,
+          "sha256": "a92776b1f778a4a9ba43ceed8f05c7eed93fbd8cec6c57c316fc7d228bc77122"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/03_Character_Reference_4Step_Template.md",
+          "bytes": 2229,
+          "sha256": "212d46475205548ffbd4e01208b34402b4cba576ee0d3c26b2e820b44aa27f56"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/04_Environment_And_Level_Template.md",
+          "bytes": 913,
+          "sha256": "2d6c280d42dd4f8af32614fff1c95a0281a5c04bc828de7029eceeded6052b76"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/05_Mechanics_Template.md",
+          "bytes": 704,
+          "sha256": "93d33ac1cd4d9e042424490e1df7c5e7ab991edd296ae3677015c5d5526d0e6a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/06_Narrative_Template.md",
+          "bytes": 701,
+          "sha256": "c53bb53b7ac87b1fa9a86df9dfe9ecb76c7403e4224c720c0978828ee943cfbb"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/07_Art_Direction_Style_Bible.md",
+          "bytes": 1206,
+          "sha256": "ee6fa8ccb983b9658cf5a30cd17876e0c75ce38d581c0f0061070b4c133d7e9f"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/08_QA_QC_Checklists.md",
+          "bytes": 1074,
+          "sha256": "377166bcb64132e01e18204eda414768b16b73c5bd176be650f7918d1b9de13c"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/09_Agent_Handoff_Prompt_Block.md",
+          "bytes": 2043,
+          "sha256": "91b90bc197928aa289d5bf4bf331c4ed19553957376ca3714990eba5eea39b84"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/10_ThreeJS_Fable_Web_Handoff.md",
+          "bytes": 1698,
+          "sha256": "24b5f9b68fbc3f53124b3174370174e3e4c3a892a36ee16b081a1bd2fcc0b138"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/11_Unreal_Claude_Setup.md",
+          "bytes": 1243,
+          "sha256": "8305505596e09fc9f6cbe0174a97f1001a41a4c9e6feebaa773adc02751d12fa"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/12_Expansion_Source_Matrix.md",
+          "bytes": 2502,
+          "sha256": "777ecaef3db602f1f0fecfcbdfd991e9fafea6f195319b6db271017023c75e9a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/12_Expansion_Workflow_Modules.md",
+          "bytes": 5416,
+          "sha256": "51aa8a82a4e700e2fcd7eb68800ec567e78f583a0766dfdb89e76c01b8f0e7f0"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/13_Gaussian_Splat_Image_To_World_Module.md",
+          "bytes": 2960,
+          "sha256": "757765a100a7be47f48e2eeaa4cb9b0d1693026a5664c19a06cff0cbd97a92d6"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/14_Higgsfield_Campaign_Reference_Module.md",
+          "bytes": 2993,
+          "sha256": "1b6f036248c387a07c7b4bb0520d3ffe4c47e76e1e2618be0607da3393ac81c8"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/15_Unreal_Engine_Guide_Reference_Module.md",
+          "bytes": 1930,
+          "sha256": "f56f7cba70fdc0f2d972bf91b43eb6691ea05d21c5086557239f85de62554908"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/16_Blender_MCP_FAL_Asset_Fabrication_Module.md",
+          "bytes": 8520,
+          "sha256": "8c3a574d833510d1863d405963dbd3a8cbf4d263ba10ec15055686c4e5cae6df"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/AGENTS.md",
+          "bytes": 785,
+          "sha256": "d07246641ff60ee37efa2458e391d03056ec9927afff7feb8ab1c1d85b04d617"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/CLAUDE.md",
+          "bytes": 715,
+          "sha256": "2d1aea8f06ff25b1ef44087a861321c3709a3bc3319605e145c3459858be4536"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/CODEX.md",
+          "bytes": 524,
+          "sha256": "3a70d1545e04289c550a0d0a4416f24f31afdf56570ebdb360f24e7db9f981a9"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/FABLE_THREEJS_PROMPT.md",
+          "bytes": 1698,
+          "sha256": "24b5f9b68fbc3f53124b3174370174e3e4c3a892a36ee16b081a1bd2fcc0b138"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/TASK_BOARD.md",
+          "bytes": 2628,
+          "sha256": "a65427123bba31c8fbc749f77e6bfb4c3307be3cfd1476bf9d976a221d224de1"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/SESSION_RESUME.md",
+          "bytes": 1411,
+          "sha256": "601ffafde87194108de28012750180eba3154ac9c6b2585da6b7276b1be3724d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/README_asset_drop_rules.md",
+          "bytes": 522,
+          "sha256": "e50d076d2154bafc8c1959dabe7401dd270a3f98abce75fee9c4a603b81d53b3"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/exports/README_exports.md",
+          "bytes": 170,
+          "sha256": "8577d8650751fc626b54cb63b79a3486ae98b64c7e52ac2312287f310e6d6aa0"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/unreal/Content_OVS_LIKENESS_STRUCTURE.txt",
+          "bytes": 181,
+          "sha256": "2eed1f150831f5dd29f8e821705c45cb1f5f25b2103cdb92529cecc97432706d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/web/THREEJS_APP_STRUCTURE.txt",
+          "bytes": 172,
+          "sha256": "16e07a67d1f015013e7787d2fd6b735aacb86ec2e8a70170179e1167a92fb0b2"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/build_notes/_SESSION_NOTES_GO_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/asset_manifest.csv",
+          "bytes": 428,
+          "sha256": "393070e2f2b0d9c0305620457b97e02d455379c543c08939ee24f62c8c7f6458"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/character_registry.csv",
+          "bytes": 628,
+          "sha256": "269ca9ed8929c87f13ee3ee38860605c071cbdcfbd53c834874bbc318425c26d"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/mechanics_registry.csv",
+          "bytes": 575,
+          "sha256": "8fca22001a662c0ffbecb0bff7ac23eda34a0b7acd3a48f76e9f5b8ca70e6881"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/level_registry.csv",
+          "bytes": 524,
+          "sha256": "468287195f7e745c2f01a629bea7dafdfd1a15975b171ace77c91b92086def33"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/prompt_registry.csv",
+          "bytes": 465,
+          "sha256": "400b21426654d3d47eb411c8e57acddf05bc942c55ed5369c420760532dc388a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/narrative_beats.csv",
+          "bytes": 550,
+          "sha256": "d4083fc330b23098de19672d5f450181b9652f1d4a647ca92dae614c1e7a25ea"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/expansion_registry.csv",
+          "bytes": 1682,
+          "sha256": "5d116969a00e3db0106b779db24fb8615769ccca944a601b8f273eaf4580617a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/blender_asset_workflow_registry.csv",
+          "bytes": 1291,
+          "sha256": "2a620e914169876825555faa91fef13987658e7a378cf27c773306112f5b6525"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/image_blaster/README_IMAGE_BLASTER_STAGING.md",
+          "bytes": 139,
+          "sha256": "813de5bc28123248eb1b8f91d24b8d90a795b8552656b9a9c2aa3f0bb0d88cea"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/nano_gaussian_splatting/README_NANOGS_TESTS.md",
+          "bytes": 140,
+          "sha256": "423a391dd27e31aeaa8831ae91688408e414da86473a9d1c33758db9fed0eb65"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/higgsfield_skills/README_HIGGSFIELD_OVS.md",
+          "bytes": 131,
+          "sha256": "909f89bf97512a1a14108722222e06f33bf27cc9c274fb2117fb3a621b0a63e8"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/unreal_engine_guide/README_UE_GUIDE_REFERENCE.md",
+          "bytes": 155,
+          "sha256": "7d8bac601b6d6ddfa869891c1907856a5e1837397b4ca3da847c03fac06303da"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/README_BLENDER_MCP_FAL.md",
+          "bytes": 525,
+          "sha256": "19597665b6d52a1dd9a991208d1f391c6734a03c43aa159e0bef60c344ae7785"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/01_bake_high_to_low.md",
+          "bytes": 569,
+          "sha256": "4e43fc9f4e09d0e6b2be6e335b0ea7c00a4a77903fa109386e494680031a5d6a"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/02_generate_draft_character_from_images.md",
+          "bytes": 497,
+          "sha256": "774d0324e20fd0f0e02b99461f91350eb9eb4e99759ada42124df772deaf62b4"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/03_pbr_material_test_corner.md",
+          "bytes": 443,
+          "sha256": "822e0d4a7f9506093c14e44771ca870c1258da4c3e008980cfbe4eaaafbc7b1e"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/04_controlled_toon_outline_test.md",
+          "bytes": 453,
+          "sha256": "0e08ba9201bca8bb7cf38fcbfa6a173320f83ae9a9239474d56f329e3b893808"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/05_procedural_iridescent_test.md",
+          "bytes": 381,
+          "sha256": "b7f38904e226a42751980f2e720dd349ebc2359d8e6278de1316ab3b5d7cb07e"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/06_multistage_prop_animation.md",
+          "bytes": 442,
+          "sha256": "b7c2481c43974e2324cd3f4387d3dc2f68c0f4c32d44a4ca3b6482443fca5980"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/07_geometry_nodes_scatter_dressing.md",
+          "bytes": 524,
+          "sha256": "abf0e47b601d32a14e9b285cb0b5370abcb04b9b40cd80f7a9f2addc3ff62a45"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/tests/BLENDER_ASSET_QA_CHECKLIST.md",
+          "bytes": 983,
+          "sha256": "7abb767a7424e0b5a00eaa4903f11a19c860118be726cda6eafd4dfbd602ca18"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/exports/pdfs/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+          "bytes": 28285,
+          "sha256": "d7cf9eda7eb225bdb36f629454a1c1290258c7fefae9903f03172b308ba6a9f1"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/exports/pdfs/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+          "bytes": 29375,
+          "sha256": "f5e4cb5fc8a1cecd91fadc01410c7f2fe585b23f0755b8863bd6b1594d7e5364"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/exports/pdfs/OVS_LIKENESS_THE_GAME_Blender_MCP_FAL_Module_V003.pdf",
+          "bytes": 7199,
+          "sha256": "40eb2f8786749fa8f69a569612768ddcd17e2c4a00082000645056e529907e82"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/characters/_DROP_CHARACTER_REFERENCES_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/environments/_DROP_ENVIRONMENT_REFERENCES_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/props/_DROP_PROP_REFERENCES_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/audio/_DROP_AUDIO_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/ui/_DROP_UI_ASSETS_HERE.txt",
+          "bytes": 71,
+          "sha256": "f37f455520c4a3eb6e45f3dd996813e686205dfdc1a059d5d5815614d2e89f15"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/expansion_prompts/EXPANSION_MODULES_AGENT_PROMPT.md",
+          "bytes": 1803,
+          "sha256": "2af06aceeeffbdd46d2a6aa8d64612e8d03bc260ff22169fc0bd2c7c6b6ccb53"
+        },
+        {
+          "name": "LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/expansion_prompts/BLENDER_MCP_FAL_AGENT_PROMPT.md",
+          "bytes": 1881,
+          "sha256": "53898d7847eb91a2f52c249ef7e42f22fd1b8027b4188683fe9b20c7469160a0"
+        }
+      ]
+    },
+    {
+      "name": "08-OVS_LIKENESS_EDEN_CUT_DNA_PROMPT_LIBRARY_FULL_POLISHED.pdf",
+      "bytes": 248723,
+      "sha256": "475ab3697f52f99a5475683a65c7cc4423b21d521b55c03aa333c52a214c6242",
+      "status": "alternate_eden_prompt_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "09-OVS_LIKENESS_EDEN_CUT_PROMPT_LIBRARY_V002_REGENERATED.pdf",
+      "bytes": 253962,
+      "sha256": "01abe3823936505695e19236ceaf0c88ab59b4f3e394cb01e41b5246b1999391",
+      "status": "alternate_eden_prompt_reformatted_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "10-OVS_LIKENESS_DNA_PROMPT_LIBRARY_FULL.pdf",
+      "bytes": 170644,
+      "sha256": "ba24f8a0e997ef02c884b03634c6d983e100ce9a5099531e21816ef13fd8645b",
+      "status": "core_prompt_reference",
+      "duplicate_of": null
+    }
+  ],
+  "duplicate_groups": [
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/00_OVS_Production_Workflow.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/00_OVS_Production_Workflow.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/00_OVS_Production_Workflow.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/01_Project_Foundation_Template.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/01_Project_Foundation_Template.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/01_Project_Foundation_Template.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/02_Game_Design_Template.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/02_Game_Design_Template.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/02_Game_Design_Template.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/03_Character_Reference_4Step_Template.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/03_Character_Reference_4Step_Template.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/03_Character_Reference_4Step_Template.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/04_Environment_And_Level_Template.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/04_Environment_And_Level_Template.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/04_Environment_And_Level_Template.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/05_Mechanics_Template.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/05_Mechanics_Template.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/05_Mechanics_Template.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/06_Narrative_Template.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/06_Narrative_Template.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/06_Narrative_Template.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/07_Art_Direction_Style_Bible.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/07_Art_Direction_Style_Bible.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/07_Art_Direction_Style_Bible.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/08_QA_QC_Checklists.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/08_QA_QC_Checklists.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/08_QA_QC_Checklists.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/09_Agent_Handoff_Prompt_Block.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/09_Agent_Handoff_Prompt_Block.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/09_Agent_Handoff_Prompt_Block.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/10_ThreeJS_Fable_Web_Handoff.md",
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/FABLE_THREEJS_PROMPT.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/10_ThreeJS_Fable_Web_Handoff.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/FABLE_THREEJS_PROMPT.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/10_ThreeJS_Fable_Web_Handoff.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/FABLE_THREEJS_PROMPT.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/11_Unreal_Claude_Setup.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/11_Unreal_Claude_Setup.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/11_Unreal_Claude_Setup.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/12_Expansion_Source_Matrix.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/12_Expansion_Source_Matrix.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/12_Expansion_Source_Matrix.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/12_Expansion_Workflow_Modules.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/12_Expansion_Workflow_Modules.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/12_Expansion_Workflow_Modules.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/13_Gaussian_Splat_Image_To_World_Module.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/13_Gaussian_Splat_Image_To_World_Module.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/13_Gaussian_Splat_Image_To_World_Module.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/14_Higgsfield_Campaign_Reference_Module.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/14_Higgsfield_Campaign_Reference_Module.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/14_Higgsfield_Campaign_Reference_Module.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/docs/15_Unreal_Engine_Guide_Reference_Module.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/15_Unreal_Engine_Guide_Reference_Module.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/15_Unreal_Engine_Guide_Reference_Module.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/AGENTS.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/AGENTS.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/AGENTS.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/CLAUDE.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/CLAUDE.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/CLAUDE.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/CODEX.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/CODEX.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/CODEX.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/agents/expansion_prompts/EXPANSION_MODULES_AGENT_PROMPT.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/expansion_prompts/EXPANSION_MODULES_AGENT_PROMPT.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/expansion_prompts/EXPANSION_MODULES_AGENT_PROMPT.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/package_manifest.json",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/package_manifest.json",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/package_manifest.json"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/README_asset_drop_rules.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/README_asset_drop_rules.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/README_asset_drop_rules.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/characters/_DROP_CHARACTER_REFERENCES_HERE.txt",
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/environments/_DROP_ENVIRONMENT_REFERENCES_HERE.txt",
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/props/_DROP_PROP_REFERENCES_HERE.txt",
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/audio/_DROP_AUDIO_HERE.txt",
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/assets/ui/_DROP_UI_ASSETS_HERE.txt",
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/build_notes/_SESSION_NOTES_GO_HERE.txt",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/characters/_DROP_CHARACTER_REFERENCES_HERE.txt",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/environments/_DROP_ENVIRONMENT_REFERENCES_HERE.txt",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/props/_DROP_PROP_REFERENCES_HERE.txt",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/audio/_DROP_AUDIO_HERE.txt",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/assets/ui/_DROP_UI_ASSETS_HERE.txt",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/build_notes/_SESSION_NOTES_GO_HERE.txt",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/build_notes/_SESSION_NOTES_GO_HERE.txt",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/characters/_DROP_CHARACTER_REFERENCES_HERE.txt",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/environments/_DROP_ENVIRONMENT_REFERENCES_HERE.txt",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/props/_DROP_PROP_REFERENCES_HERE.txt",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/audio/_DROP_AUDIO_HERE.txt",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/assets/ui/_DROP_UI_ASSETS_HERE.txt"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/exports/README_exports.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/README_exports.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/exports/README_exports.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/exports/pdfs/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/pdfs/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/exports/pdfs/OVS_LIKENESS_THE_GAME_Production_Bible_V001.pdf"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/exports/pdfs/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/pdfs/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+      "04-OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/exports/pdfs/OVS_LIKENESS_THE_GAME_Expansion_Modules_V002.pdf"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/unreal/Content_OVS_LIKENESS_STRUCTURE.txt",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/unreal/Content_OVS_LIKENESS_STRUCTURE.txt",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/unreal/Content_OVS_LIKENESS_STRUCTURE.txt"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/web/THREEJS_APP_STRUCTURE.txt",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/web/THREEJS_APP_STRUCTURE.txt",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/web/THREEJS_APP_STRUCTURE.txt"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/asset_manifest.csv",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/asset_manifest.csv",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/asset_manifest.csv"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/character_registry.csv",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/character_registry.csv",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/character_registry.csv"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/mechanics_registry.csv",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/mechanics_registry.csv",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/mechanics_registry.csv"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/level_registry.csv",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/level_registry.csv",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/level_registry.csv"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/prompt_registry.csv",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/prompt_registry.csv",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/prompt_registry.csv"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/data/narrative_beats.csv",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/narrative_beats.csv",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/narrative_beats.csv"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/expansions/image_blaster/README_IMAGE_BLASTER_STAGING.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/image_blaster/README_IMAGE_BLASTER_STAGING.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/image_blaster/README_IMAGE_BLASTER_STAGING.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/expansions/nano_gaussian_splatting/README_NANOGS_TESTS.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/nano_gaussian_splatting/README_NANOGS_TESTS.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/nano_gaussian_splatting/README_NANOGS_TESTS.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/expansions/higgsfield_skills/README_HIGGSFIELD_OVS.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/higgsfield_skills/README_HIGGSFIELD_OVS.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/higgsfield_skills/README_HIGGSFIELD_OVS.md"
+    ],
+    [
+      "01-LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V002_EXPANSIONS/expansions/unreal_engine_guide/README_UE_GUIDE_REFERENCE.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/unreal_engine_guide/README_UE_GUIDE_REFERENCE.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/unreal_engine_guide/README_UE_GUIDE_REFERENCE.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/docs/16_Blender_MCP_FAL_Asset_Fabrication_Module.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/docs/16_Blender_MCP_FAL_Asset_Fabrication_Module.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/TASK_BOARD.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/TASK_BOARD.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/expansion_prompts/BLENDER_MCP_FAL_AGENT_PROMPT.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/expansion_prompts/BLENDER_MCP_FAL_AGENT_PROMPT.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/SESSION_RESUME.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/agents/SESSION_RESUME.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/agents/MILESTONE_01_ACCEPTANCE_REPORT_TEMPLATE.md",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/qa/milestone_01/SESSION_REPORT_TEMPLATE.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/pdfs/OVS_LIKENESS_THE_GAME_Blender_MCP_FAL_Module_V003.pdf",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/OVS_LIKENESS_THE_GAME_Blender_MCP_FAL_Module_V003.pdf",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/OVS_LIKENESS_THE_GAME_Blender_MCP_FAL_Module_V003.pdf",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/exports/pdfs/OVS_LIKENESS_THE_GAME_Blender_MCP_FAL_Module_V003.pdf"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/exports/pdfs/OVS_LIKENESS_THE_GAME_Milestone_01_Starter_V004.pdf",
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/OVS_LIKENESS_THE_GAME_Milestone_01_Starter_V004.pdf"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/expansion_registry.csv",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/expansion_registry.csv"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/data/blender_asset_workflow_registry.csv",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/data/blender_asset_workflow_registry.csv"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/01_bake_high_to_low.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/01_bake_high_to_low.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/02_generate_draft_character_from_images.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/02_generate_draft_character_from_images.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/03_pbr_material_test_corner.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/03_pbr_material_test_corner.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/04_controlled_toon_outline_test.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/04_controlled_toon_outline_test.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/05_procedural_iridescent_test.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/05_procedural_iridescent_test.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/06_multistage_prop_animation.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/06_multistage_prop_animation.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/prompts/07_geometry_nodes_scatter_dressing.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/prompts/07_geometry_nodes_scatter_dressing.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/tests/BLENDER_ASSET_QA_CHECKLIST.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/tests/BLENDER_ASSET_QA_CHECKLIST.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/expansions/blender_mcp_fal/README_BLENDER_MCP_FAL.md",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/expansions/blender_mcp_fal/README_BLENDER_MCP_FAL.md"
+    ],
+    [
+      "02-LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V004_MILESTONE_01/package_manifest_v003.json",
+      "07-LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP.zip::LIKENESS_THE_GAME_OVS_HANDOFF_V003_BLENDER_MCP/package_manifest_v003.json"
+    ]
+  ],
+  "previous_batches": [
+    {
+      "name": "intake-batch-001.json",
+      "sha256": "458c588a0f8680ac55a3cddafa0ce28a2a3a62b03dadbd980d5bfd04b5d3fe77"
+    }
+  ],
+  "skipped_previous": [
+    {
+      "name": "01-OVS_LIKENESS_TAPE03_CLEAN_STARTER_PACKAGE_V0023.zip",
+      "sha256": "4207435760f71d15cd0d0361e091333416a482441114cf988f73a9c6d56f22cd"
+    },
+    {
+      "name": "02-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002.pdf",
+      "sha256": "c5504c3e15caeacf44d369435efca397b43535da25bc64a2c319eb141d3aaa09"
+    },
+    {
+      "name": "03-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_PROJECT_INTEGRATION_V2.pdf",
+      "sha256": "3a573f5599e4e8baa0e1e763256e47ecc9415abd71f646445a16902c497a0f7e"
+    },
+    {
+      "name": "04-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_2_CLAUDE_SOUND_EXPANSION.pdf",
+      "sha256": "eb1518b507303e4c98bacc9aaa5042581a8a5b0901d0f67ac8b7783d50693ba5"
+    },
+    {
+      "name": "05-LIKENESS-__-OVS-TAPE-03.html",
+      "sha256": "75f01fc4657fe7c0ba2e87f49264496facc12b6b652dbf050ab97de2e15354dc"
+    },
+    {
+      "name": "06-OVS_LIKENESS_TAPE03_CLAUDE_NONDESTRUCTIVE_HANDOFF_V002_2.md",
+      "sha256": "1682e18b54a441ec1cb04635ebb26bb07db22d872b6586a997e97a38c423a43d"
+    },
+    {
+      "name": "07-OVS_LIKENESS_TAPE03_V0022_CLAUDE_HANDOFF_BUNDLE.zip",
+      "sha256": "4cd6631cb8f858251c7240f327602820e528e624836af468f245601943b6e30f"
+    },
+    {
+      "name": "08-tape03_branching_patch_v0022.json",
+      "sha256": "a36da81773befd091a3e4f11ccb186ad6b6a89f00a01ff7dc99a439a7c100e8f"
+    },
+    {
+      "name": "09-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_EXPANDED_V2.pdf",
+      "sha256": "b6ded9394b0e9e3560ee18e24d4127998673b3f265eee73b8f5393318d44ae64"
+    },
+    {
+      "name": "10-LIKENESS-__-OVS-TAPE-03.html",
+      "sha256": "75f01fc4657fe7c0ba2e87f49264496facc12b6b652dbf050ab97de2e15354dc"
+    }
+  ]
+}
