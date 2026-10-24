@@ -40,6 +40,12 @@ Use actual reviewed SHAs printed by `--check`. The publisher reinstalls locked d
 
 If someone publishes during the build, stop, fetch and reconcile; never substitute their new Pages SHA into an old export. Re-run from freshly merged source. Checks across two Git refs are not an atomic lock; collaborators must avoid publishing simultaneously. A normal push rejects divergent Pages history.
 
+The publisher also excludes temporary copy artifacts matching the observed
+`.filename.SIXCHAR` pattern unless the path is an explicitly tracked public asset.
+This addresses temporary media-copy files observed during export preparation.
+It preserves approved assets and `.nojekyll`; it does not remove source files or
+relax the requirement for a clean source checkout.
+
 Verify `pages build and deployment` for the newly pushed Pages SHA, then inspect the live `/`, `/devlog/`, `/room-14/`, and base-path assets. Check `production-release.json` identifies the merged source. A green source validation run is not a green deployment. On a failed Pages run inspect logs first; retry a transient failure once, tied to the same artifact, instead of an uncontrolled empty-commit loop.
 
 ## Rollback

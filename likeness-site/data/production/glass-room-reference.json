@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "id": "REF_GLASS_ROOM_MAP_001",
+  "source_file": "03-9213BD52-A631-4713-AD6D-10D2E3E3C8D1.png",
+  "source_sha256": "3418f23130e18bb788102d8cad2f602c21953c36b407572c1667c8c0e6951c0e",
+  "status": "concept_reference",
+  "project_assignment": "unresolved",
+  "runtime_enabled": false,
+  "direction_shown": false,
+  "nodes": [
+    {
+      "id": "interrogation",
+      "label": "Interrogation Room"
+    },
+    {
+      "id": "tension",
+      "label": "Tension Rises"
+    },
+    {
+      "id": "false_reality",
+      "label": "False Reality Ending"
+    },
+    {
+      "id": "silence",
+      "label": "Echoing Silence"
+    },
+    {
+      "id": "loop_triggered",
+      "label": "Loop Triggered"
+    },
+    {
+      "id": "self_loss",
+      "label": "Self-Loss Ending"
+    },
+    {
+      "id": "trust",
+      "label": "Trust Built"
+    },
+    {
+      "id": "revelation",
+      "label": "Revelation Ending"
+    }
+  ],
+  "connections": [
+    {
+      "endpoints": [
+        "interrogation",
+        "tension"
+      ],
+      "condition": null,
+      "effects": null
+    },
+    {
+      "endpoints": [
+        "tension",
+        "false_reality"
+      ],
+      "condition": null,
+      "effects": null
+    },
+    {
+      "endpoints": [
+        "interrogation",
+        "silence"
+      ],
+      "condition": null,
+      "effects": null
+    },
+    {
+      "endpoints": [
+        "silence",
+        "loop_triggered"
+      ],
+      "condition": null,
+      "effects": null
+    },
+    {
+      "endpoints": [
+        "loop_triggered",
+        "self_loss"
+      ],
+      "condition": null,
+      "effects": null
+    },
+    {
+      "endpoints": [
+        "interrogation",
+        "trust"
+      ],
+      "condition": null,
+      "effects": null
+    },
+    {
+      "endpoints": [
+        "trust",
+        "revelation"
+      ],
+      "condition": null,
+      "effects": null
+    }
+  ],
+  "unresolved": [
+    "entry condition",
+    "edge direction",
+    "player actions",
+    "state domains",
+    "thresholds and effects",
+    "retry and loop behavior",
+    "ending prerequisites",
+    "canon assignment"
+  ],
+  "observation": "Eight nodes and seven undirected connections; no drawn cycle. Loop Triggered is a label, not an implemented cycle."
+}

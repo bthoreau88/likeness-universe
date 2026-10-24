@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "batch_status": "open_more_uploads_expected",
+  "files": [
+    {
+      "name": "01-PROJECT-DARK-KNIGHT-ENTERNAL.pdf",
+      "bytes": 541278,
+      "sha256": "8662ff6b0148dcfad25989b24f3460b6beca68ee0cab3e523495317f42fa9aed",
+      "status": "separate_dark_knight_concept_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "02-Thoreau-s-Mind-Split-Summerized.pdf",
+      "bytes": 175640,
+      "sha256": "2403ccadb40fa8cb5f6adb2bf94d3ef0b93424bdae70a2196fe4c0fbfb6f85e7",
+      "status": "separate_mind_split_concept_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "03-9213BD52-A631-4713-AD6D-10D2E3E3C8D1.png",
+      "bytes": 61349,
+      "sha256": "3418f23130e18bb788102d8cad2f602c21953c36b407572c1667c8c0e6951c0e",
+      "status": "glass_room_conceptual_graph_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "04-OVS_Gameverse_Integration_Addendum_v1_2.pdf",
+      "bytes": 19677,
+      "sha256": "6158961326254a7aa86fec3d3a5be9968c3db6d6833b181c4e4c97da6c00dc6d",
+      "status": "gameverse_integration_reference_no_canon_promotion",
+      "duplicate_of": null
+    },
+    {
+      "name": "05-I-want-to-make-a-game-in-the-vain-of-mouthwashing-....pdf",
+      "bytes": 99506,
+      "sha256": "e9c318a8b47dfb6db6c5836e71177b9ef053c047de35d6c6802e513b9d192206",
+      "status": "earlier_escape_room_city_concept_reference",
+      "duplicate_of": null
+    },
+    {
+      "name": "06-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002.pdf",
+      "bytes": 40066,
+      "sha256": "c5504c3e15caeacf44d369435efca397b43535da25bc64a2c319eb141d3aaa09",
+      "status": "duplicate_prior_branching_bible",
+      "duplicate_of": null
+    },
+    {
+      "name": "07-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_2_CLAUDE_SOUND_EXPANSION.pdf",
+      "bytes": 73436,
+      "sha256": "eb1518b507303e4c98bacc9aaa5042581a8a5b0901d0f67ac8b7783d50693ba5",
+      "status": "duplicate_prior_sound_expansion_bible",
+      "duplicate_of": null
+    }
+  ],
+  "duplicate_groups": [
+    [
+      "06-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002.pdf",
+      "intake-batch-001.json::02-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002.pdf"
+    ],
+    [
+      "07-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_2_CLAUDE_SOUND_EXPANSION.pdf",
+      "intake-batch-001.json::04-OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002_2_CLAUDE_SOUND_EXPANSION.pdf"
+    ]
+  ],
+  "previous_batches": [
+    {
+      "name": "intake-batch-001.json",
+      "sha256": "458c588a0f8680ac55a3cddafa0ce28a2a3a62b03dadbd980d5bfd04b5d3fe77"
+    },
+    {
+      "name": "intake-batch-002.json",
+      "sha256": "37b383286f68a127e6f1260ed906960791b26d325487fe8123566c364467b881"
+    },
+    {
+      "name": "intake-batch-003.json",
+      "sha256": "e2c6c6cfd7a656b700b82f6d6a5841ff303bad0cd5fb0116f157c27338a53ce9"
+    }
+  ],
+  "skipped_previous": []
+}

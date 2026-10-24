@@ -345,3 +345,12 @@ reference. See `docs/production/PROMPT_SOURCE_ROUTING.md` before selecting promp
 Intake supports repeatable `--previous-batch` arguments to skip unchanged uploads
 without losing changed revisions. Preserve batch 001 and append later batches.
 
+**Batches 003/004 (2026-10-24):** the pending nine-file upload and subsequent
+seven-file upload are reconciled in `docs/production/INTAKE_BATCHES_003_004.md`.
+There are now 36 upload records, including reuploads. `GAME_FULL_SOURCE_AUDIT.md`
+reviews the 17-file source-only package; no Unreal project/build is included.
+`GLASS_ROOM_REFERENCE.md` preserves the undirected concept map without inventing
+branch conditions, and `AUDIO_AND_TRAINING.md` maps learning to production proofs.
+Separate project concepts remain references. No engine code or canon was promoted.
+Use batch 005 for further inputs and read the newest session receipt.
+

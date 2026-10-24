@@ -2,6 +2,7 @@
 import argparse
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import subprocess
@@ -26,6 +27,25 @@ def tips():
 def assert_tips(observed, source, pages):
     if observed.get(f'refs/heads/{SOURCE}') != source or observed.get('refs/heads/gh-pages') != pages:
         raise RuntimeError('Source or Pages moved. Fetch/reconcile and rebuild; do not reuse this export.')
+
+
+def copy_export(output, destination, tracked_public):
+    """Omit observed temporary copy files, preserving explicitly tracked assets."""
+    omitted = []
+
+    def ignore(directory, names):
+        excluded = []
+        for name in names:
+            relative = (Path(directory) / name).relative_to(output).as_posix()
+            if ((Path(directory) / name).is_file()
+                    and re.fullmatch(r'\..+\.[A-Za-z0-9]{6}', name)
+                    and relative not in tracked_public):
+                excluded.append(name)
+                omitted.append(relative)
+        return excluded
+
+    shutil.copytree(output, destination, dirs_exist_ok=True, ignore=ignore)
+    return omitted
 
 
 def publish(source, pages):
@@ -61,7 +81,13 @@ def publish(source, pages):
                     shutil.rmtree(child)
                 else:
                     child.unlink()
-            shutil.copytree(output, worktree, dirs_exist_ok=True)
+            tracked = run('git', 'ls-files', '-z', '--', 'likeness-site/public')
+            public_prefix = 'likeness-site/public/'
+            tracked_public = {name[len(public_prefix):] for name in tracked.split('\0')
+                              if name.startswith(public_prefix)}
+            omitted = copy_export(output, worktree, tracked_public)
+            if omitted:
+                print(f'Excluded {len(omitted)} untracked temporary export copy artifact(s).')
             if cname is not None and not (worktree / 'CNAME').exists():
                 (worktree / 'CNAME').write_bytes(cname)
             run('git', 'add', '-A', cwd=worktree)

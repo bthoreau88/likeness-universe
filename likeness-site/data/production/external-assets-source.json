@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "provider": "Google Drive",
+  "name": "LIKENESS THE GAME ASSETS.zip",
+  "mime_type": "application/zip",
+  "provider_reported_bytes": 570673828,
+  "provider_modified_time": "2026-10-24T17:23:59.865Z",
+  "status": "pending_content_intake_download_limit",
+  "download_limit_bytes": 268435456,
+  "download_error": "413 file exceeds connector download limit",
+  "source_sha256": null,
+  "members_verified": false,
+  "rights_verified": false,
+  "engine_ready": false,
+  "locator_policy": "Private provider locator retained in conversation, not published in this repository.",
+  "next_input": "An extracted asset folder or independently usable archives below the connector limit; preserve originals and include an asset manifest."
+}
