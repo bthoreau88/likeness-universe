@@ -55,6 +55,7 @@ needs to reference it (the parity check will then enforce it everywhere).
 | Locket | `PROP_LOCKET_001` | adapt | Sketchfab / Fab jewelry | Author the tintype image |
 | Cassette | `PROP_TAPE_001` | adapt | Sketchfab / Fab cassette | Author the label |
 | Already on the PC | various | reuse | Fab downloads: Apartment Tech Props, Glasses, Realistic Rendering | Paragon Morigesh and Tentacles VFX are off-tone; keep out of production |
+| Old LIKENESS builds and assets | various | reuse after triage | [LEGACY_SALVAGE.md](LEGACY_SALVAGE.md): archive, inventory, triage by folder | Most furniture/material folders retire in favor of CC0; your own source files and recordings are kept |
 | Night exterior HDRI | — lighting | source | Poly Haven HDRIs (CC0) | — |
 | Room tone, HVAC hum, fluorescent buzz | `AUDIO_ROOM14_PLAN_001` | reuse → source | Existing OVS recordings; Freesound (check each file's license) | Sonniss GDC bundles (read the bundle license) |
 | UI type | — UI | source | Google Fonts (check each family's license) | — |

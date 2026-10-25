@@ -92,8 +92,9 @@ Status words follow the passback rules: **verified** means a screenshot or log w
 1. SYNC (never skip, never re-derive):
      cd C:\OVS\LIKENESS_THE_GAME\_foundation
      git fetch origin claude/dreamy-hawking-VcoBe --depth 1
-     git archive FETCH_HEAD likeness-site/handoff -o ..\_handoff_latest.zip
+     git archive FETCH_HEAD likeness-site/handoff likeness-site/docs/production likeness-site/scripts/production -o ..\_handoff_latest.zip
      cd .. ; Expand-Archive _handoff_latest.zip -DestinationPath _handoff_latest -Force
+   The archive also carries docs/production (this file) and scripts/production.
    Copy likeness-site/handoff/unreal/cpp_rowstructs/Source/LikenessTheGame/** over
    LikenessTheGame\Source\LikenessTheGame\ (overwrite). Copy handoff/data/*.csv over data\.
 2. If any .h/.cpp changed: close the editor, full build (trap 1). Read the result.
@@ -124,6 +125,7 @@ One task per session. Do not start the next until the previous passback is accep
 | GL-10 | HUMAN | DRYA via `DRYA_BUILD_PACKET.md` (4-step references gate first) | Identity review signed off by Brandon; no generic purchased face | G04 |
 | GL-11 | PC | Packaged development build + continuous capture: enter → inspect → mirror → tape → recap | Build hash, machine spec, frame time, video file; editor stills alone do not count | **G05 exit** |
 | GL-12 | CLOUD | Companion parity: devlog/press reflect only verified status | Lint + build green; no claim above its evidence | G06 |
+| GL-13 | PC + HUMAN | Legacy salvage: archive old projects untouched, inventory them, triage by folder ([LEGACY_SALVAGE.md](LEGACY_SALVAGE.md)). Read-only; can run any time, in parallel with GL-01..GL-12 | Each original archived with a SHA-256; inventory JSON written; every top-level Content folder has KEEP / REWORK / REFERENCE / RETIRE; nothing migrated before triage is reviewed | G01/G03 |
 
 Keep out of the first slice: hallway/office access, multiplayer, microphone input, final
 character art, save-system migration, branching beyond one event.
