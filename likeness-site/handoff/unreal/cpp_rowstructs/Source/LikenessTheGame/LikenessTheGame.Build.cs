@@ -1,6 +1,7 @@
 // LikenessTheGame.Build.cs — primary game module for LIKENESS : THE GAME.
 // Compiles the DataTable row structs (Public/LikenessRows.h) and the data-driven
-// inspect component (OVSInteractorComponent). UMG/Slate are needed for the widget.
+// inspect/interact component (OVSInteractorComponent), the hide spot and the wardrobe.
+// UMG/Slate are needed for the widget; EnhancedInput for the interact binding.
 
 using UnrealBuildTool;
 
@@ -20,6 +21,6 @@ public class LikenessTheGame : ModuleRules
 			"SlateCore"
 		});
 
-		PrivateDependencyModuleNames.AddRange(new string[] { });
+		PrivateDependencyModuleNames.AddRange(new string[] { "EnhancedInput" });
 	}
 }

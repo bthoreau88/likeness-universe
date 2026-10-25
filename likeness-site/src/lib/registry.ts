@@ -230,6 +230,15 @@ export const BEATS: Beat[] = [
     webUnlock: "/evidence",
   },
   {
+    id: "BEAT_ARGUMENT_RESIDUE_001",
+    name: "Argument Residue",
+    status: "IDEA",
+    characters: ["THOREAU", "DRYA"],
+    trigger: "Inspect the locket or the coffee",
+    roomState: "STATE_01 · RESIDUE",
+    webUnlock: "/evidence",
+  },
+  {
     id: "BEAT_MIRROR_LAG_001",
     name: "The Mirror Answers Late",
     status: "IDEA",
@@ -246,6 +255,24 @@ export const BEATS: Beat[] = [
     trigger: "Play the tape",
     roomState: "STATE_04 · TAPE CONTRADICTION",
     webUnlock: "/tapes",
+  },
+  {
+    id: "BEAT_DOUBLE_OCCUPANCY_001",
+    name: "Double Occupancy",
+    status: "IDEA",
+    characters: ["THOREAU", "DRYA", "DARK THOREAU"],
+    trigger: "The lamp goes out after the tape",
+    roomState: "STATE_05 · DOUBLE OCCUPANCY",
+    webUnlock: "/characters",
+  },
+  {
+    id: "BEAT_FINAL_MEMORY_LOCK_001",
+    name: "Final Memory Lock",
+    status: "IDEA",
+    characters: ["THOREAU", "DRYA"],
+    trigger: "Sign the ledger",
+    roomState: "STATE_06 · MEMORY LOCK",
+    webUnlock: "/motel",
   },
 ];
 

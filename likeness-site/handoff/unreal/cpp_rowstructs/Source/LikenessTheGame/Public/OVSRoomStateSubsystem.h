@@ -19,7 +19,11 @@ enum class EOVSRoomState : uint8
 {
 	STATE_00_NORMAL             UMETA(DisplayName = "00 Normal"),
 	STATE_02_MIRROR_LAG         UMETA(DisplayName = "02 Mirror Lag"),
-	STATE_04_TAPE_CONTRADICTION UMETA(DisplayName = "04 Tape Contradiction")
+	STATE_04_TAPE_CONTRADICTION UMETA(DisplayName = "04 Tape Contradiction"),
+	// Story pass v001 (handoff/story). Append only: earlier values keep their numbers.
+	STATE_01_RESIDUE            UMETA(DisplayName = "01 Residue"),
+	STATE_05_DOUBLE_OCCUPANCY   UMETA(DisplayName = "05 Double Occupancy"),
+	STATE_06_MEMORY_LOCK        UMETA(DisplayName = "06 Memory Lock")
 };
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnOVSRoomStateChanged, EOVSRoomState, OldState, EOVSRoomState, NewState);
