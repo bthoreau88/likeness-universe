@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "batch_status": "open_more_uploads_expected",
+  "files": [
+    {
+      "name": "2cae6075-OVS_INTERACTIVE_STORY_TOOLKIT_v1.0.zip",
+      "bytes": 17893,
+      "sha256": "8d137fd9a2e2e7ab5b757abfc5f0d0a0549569e4aa10c012eb469bc403ae4f4a",
+      "status": "pending_reconciliation",
+      "duplicate_of": null,
+      "members": [
+        {
+          "name": "OVS_INTERACTIVE_STORY_TOOLKIT_v1.0.pdf",
+          "bytes": 5732,
+          "sha256": "2d74c7ce0a4f82147a594813c31755f7c9328df3d6f4c7879a5b447f6f71cb1a"
+        },
+        {
+          "name": "ovs_glassroom_flowchart.png",
+          "bytes": 4883,
+          "sha256": "13d199e85a3e8d5c03b4c1821a04c68b0790880d07997e1e71bba7f38a960a65"
+        },
+        {
+          "name": "nano_prompt_blocks.txt",
+          "bytes": 411,
+          "sha256": "7048e6f4eaf7a2a83d2dc294307b84106c5dcece18fd970c1d02bfe85bf89403"
+        },
+        {
+          "name": "kling_prompt_blocks.txt",
+          "bytes": 345,
+          "sha256": "af65f21b10d80968a1e42fdc8fe63fc65144a8437962f3e1424cacf30550bdc9"
+        },
+        {
+          "name": "ink_dialogue_sample.txt",
+          "bytes": 284,
+          "sha256": "6a2345129fa7bebe523faf5ea4f80b88d53ca7e09a110bf2963a3f0d9b86e5bb"
+        },
+        {
+          "name": "sample_branching_json.json",
+          "bytes": 478,
+          "sha256": "66e88107685c8dc0fd3395a03d2ede2faa3a0826617d2a065fda7caee1da3b4b"
+        },
+        {
+          "name": "storyboard_mockup_placeholder.png",
+          "bytes": 4822,
+          "sha256": "71fd4c7358055f65737490b29017e1dbcc7303bead3296f7ad0878770ddacee3"
+        }
+      ]
+    },
+    {
+      "name": "94a4bfbe-these_handz_game_bible.html",
+      "bytes": 61667,
+      "sha256": "005ba3780513395efd6c5e07dc1f45d275bbe6e8c4e0f0e88f05a4ca29172207",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    },
+    {
+      "name": "9848e74b-OVS_LIKENESS_GAME_Character_Prompt_System_V001.pdf",
+      "bytes": 91486,
+      "sha256": "3fe3d7e515eb28bfb5324a2148cd247b90e9892395804b943e64adbdc82b6373",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    },
+    {
+      "name": "9bd8a625-LKN_GAME_UNIFY_G03A_OVS_OS_PRODUCTION_DOSSIER_V001.pdf",
+      "bytes": 156108,
+      "sha256": "83ba148646980a174b09836b59f186c939dee918c40d01c47a98a9589d1c5194",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    },
+    {
+      "name": "b1a24386-Creating_a_short_video_game_similar_to.docx",
+      "bytes": 74675,
+      "sha256": "bb79e3fe1515f45cc2a3295cac533cc3ab9b3cee7f486efc5b6b0303c6d02c1f",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    }
+  ],
+  "duplicate_groups": [],
+  "previous_batches": [
+    {
+      "name": "intake-batch-001.json",
+      "sha256": "458c588a0f8680ac55a3cddafa0ce28a2a3a62b03dadbd980d5bfd04b5d3fe77"
+    },
+    {
+      "name": "intake-batch-002.json",
+      "sha256": "37b383286f68a127e6f1260ed906960791b26d325487fe8123566c364467b881"
+    },
+    {
+      "name": "intake-batch-003.json",
+      "sha256": "e2c6c6cfd7a656b700b82f6d6a5841ff303bad0cd5fb0116f157c27338a53ce9"
+    },
+    {
+      "name": "intake-batch-004.json",
+      "sha256": "93b5a8b94d4462103b88df06227820d138b814032d9485dd738bb153096af829"
+    },
+    {
+      "name": "intake-batch-005.json",
+      "sha256": "9d3d9f5fa947a6a506ceabdf1ec9f267276856ab97a90accda45aed794c81d68"
+    }
+  ],
+  "skipped_previous": []
+}

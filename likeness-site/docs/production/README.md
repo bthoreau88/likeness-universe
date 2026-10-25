@@ -47,3 +47,8 @@ NEXT_PUBLIC_BASE_PATH=/likeness-universe npm run build
 ```
 
 No new branching runtime, microphone, paid service, plugin installation, Blender file, or Unreal map is delivered by this milestone. Those require their respective evidence gates. The existing game handoff already contains Blender and Unreal plans; this layer connects and verifies their deliveries rather than creating another parallel scaffold.
+
+Intake 006 (2026-10-25): inspiration inputs, the Hitman translation, the G03A asset
+vocabulary and the asset-archive triage are in [INSPIRATION_INTAKE_006.md](INSPIRATION_INTAKE_006.md).
+The Drive asset archive above is now hashed and listed in
+`data/production/external-assets-inventory-001.json`: concept stills only, no engine files.

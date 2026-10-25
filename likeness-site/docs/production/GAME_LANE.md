@@ -127,6 +127,7 @@ One task per session. Do not start the next until the previous passback is accep
 | GL-11 | PC | Packaged development build + continuous capture: enter → inspect → mirror → tape → recap | Build hash, machine spec, frame time, video file; editor stills alone do not count | **G05 exit** |
 | GL-12 | CLOUD | Companion parity: devlog/press reflect only verified status | Lint + build green; no claim above its evidence | G06 |
 | GL-13 | PC + HUMAN | Legacy salvage: archive old projects untouched, inventory them, triage by folder ([LEGACY_SALVAGE.md](LEGACY_SALVAGE.md)). Read-only; can run any time, in parallel with GL-01..GL-12 | Each original archived with a SHA-256; inventory JSON written; every top-level Content folder has KEEP / REWORK / REFERENCE / RETIRE; nothing migrated before triage is reviewed | G01/G03 |
+| GL-14 | PC + HUMAN | Archive intake: run `zip_inventory.py` on each Drive asset archive downloaded to the workstation; Brandon picks GL-07 layout references and answers the open questions in [INSPIRATION_INTAKE_006.md](INSPIRATION_INTAKE_006.md) §5–§7. Read-only | SHA-256 + counts passed back; no extraction into any project | G01 |
 
 Keep out of the first slice: hallway/office access, multiplayer, microphone input, final
 character art, save-system migration, branching beyond one event.

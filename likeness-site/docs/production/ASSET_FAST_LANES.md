@@ -100,3 +100,12 @@ effects). "Free to download" is not "free to ship."
 
 Restricted or paid source files stay off this public repository — only license records
 and permitted captures come back here.
+
+## Asset classes (from the G03A dossier)
+
+Label every asset in a passback **A / PROXY** (proves a mechanic; stays visibly tagged),
+**B / SUPPORT** (doors, walls, furniture; needs provenance and a replacement policy) or
+**C / HERO** (the make list above; human authority, no silent substitution). Missing
+provenance means `BLOCKED_PROVENANCE`, and a `NOT_FOUND` search never authorizes
+inventing a HERO asset. Full mapping:
+[INSPIRATION_INTAKE_006.md](INSPIRATION_INTAKE_006.md) §3.

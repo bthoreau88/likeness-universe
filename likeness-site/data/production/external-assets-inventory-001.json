@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "supersedes_status_of": "external-assets-source.json",
+  "note": "external-assets-source.json is left unchanged as the record of the 2026-10-24 connector block. This file adds the workstation-side verification.",
+  "archives": [
+    {
+      "name": "LIKENESS THE GAME ASSETS.zip",
+      "provider": "Google Drive",
+      "provider_reported_bytes": 570673828,
+      "verified_copy": "workstation download archive (path withheld)",
+      "verified_bytes": 570673828,
+      "source_sha256": "13dffa31a32b127c5a3204c5f2d8c83053650ffded9511be19a0a6619def8300",
+      "verified_on": "2026-10-25",
+      "method": "read-only zip listing + SHA-256 on the workstation; never extracted",
+      "members_total": 356,
+      "members_macos_metadata": 178,
+      "members_content": 178,
+      "content_by_extension": { "png": 146, "jpg": 5, "heic": 19, "dng": 1, "mp4": 4, "mov": 3 },
+      "content_uncompressed_bytes_approx": 572700000,
+      "contains_engine_or_3d_files": false,
+      "visual_sample": "contact sheet of 38 of 151 PNG/JPG members (every 4th by name)",
+      "observed_categories": [
+        "AI-generated in-engine-style gameplay stills of THOREAU and DRYA in Room 14, hallway, bathroom mirror, office",
+        "Isometric room cutaway concepts (Room 14 variants, archive/office, hallway, screening room)",
+        "Face consistency sheets (DRYA; one male sheet whose identity needs Brandon's confirmation)",
+        "UI mockups: tape scrubber, Room 14 public-cut status panel, character select",
+        "Evidence still: cassette, key with 14 fob, papers",
+        "LIKENESS logotype variants (Tape 003 key art, organic flesh lettering)",
+        "Corruption-form THOREAU (forehead eye and vein markings)",
+        "Off-tone biomech/cyborg stills (DRYA with robotic arms)",
+        "Third-party game screenshot and an unrelated gas-mask still",
+        "Phone photos (HEIC/DNG) and screen recordings; two generated videos"
+      ],
+      "rights_verified": false,
+      "engine_ready": false,
+      "status": "inventoried_reference_only",
+      "disposition_doc": "../../docs/production/INSPIRATION_INTAKE_006.md"
+    },
+    {
+      "name": "OVS INTERACTIVE MULTIVERSE GAMES (STORY TIE-INS).zip",
+      "provider": "Google Drive",
+      "provider_reported_bytes": 239931554,
+      "provider_modified_time": "2026-10-25T21:49:49.005Z",
+      "source_sha256": null,
+      "members_verified": false,
+      "status": "pending_content_intake",
+      "blocker": "Not present on the workstation; not downloaded by the cloud session. Run the same read-only zip inventory after it is downloaded to the workstation.",
+      "rights_verified": false,
+      "engine_ready": false
+    }
+  ],
+  "locator_policy": "Private provider locators and workstation paths are kept out of this repository."
+}
