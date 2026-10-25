@@ -46,6 +46,7 @@ Status words follow the passback rules: **verified** means a screenshot or log w
 | Room State subsystem | staged | `handoff/unreal/cpp_rowstructs/Source/LikenessTheGame/Public/OVSRoomStateSubsystem.h` — never compiled on the PC |
 | Mirror lag | spec only | `handoff/mechanics/MECH_MIRROR_LAG_SPEC.md` |
 | DRYA | packet only | `handoff/expansions/character_refs/DRYA_BUILD_PACKET.md` |
+| Legacy inventory (GL-13) | verified (scan) | Old game builds are template-only. THOREAU MetaHuman exists 9 times in 5+ revisions — canon pick pending (HUMAN). Archive blocked on disk space. See `receipts/2026-10-25-GL-13-legacy-inventory.md` |
 
 ---
 
