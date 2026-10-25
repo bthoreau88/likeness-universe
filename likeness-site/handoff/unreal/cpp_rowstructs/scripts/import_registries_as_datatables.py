@@ -1,12 +1,21 @@
 # import_registries_as_datatables.py
-# Run INSIDE the UE editor (via the MCP execute_python_code tool, or the
-# editor's Python console) AFTER the LikenessTheGame C++ module has compiled
-# so that unreal.CharacterRow et al. exist.
+# Run INSIDE the UE editor (MCP execute_python_code or the Python console) AFTER the
+# LikenessTheGame C++ module is built, so unreal.CharacterRow et al. exist.
 #
-# Imports each canonical registry CSV as a DataTable at /Game/OVS_LIKENESS/09_Data,
-# binding the matching native row struct. Row Name = the CSV's first column (the ID).
+# Creates/refreshes one DataTable per canonical registry at /Game/OVS_LIKENESS/09_Data,
+# bound to its native row struct. Row Name = the CSV's first column (the canonical ID).
 #
-# Single source of truth: C:/OVS/LIKENESS_THE_GAME/data/*.csv
+# Why not AssetImportTask: the CSV importer only treats the first column as the row key
+# when its header is literally "Name". Ours are character_id / asset_id / ..., so
+# import_asset_tasks returns no objects and creates nothing (observed on UE 5.8).
+# This version creates the asset with the struct bound, then fills it from the CSV text
+# with the first header renamed to "Name" in memory. The CSV files are never modified.
+#
+# Re-running is safe: an existing table is refilled in place (no delete, which triggers
+# a slow reference scan). Single source of truth: C:/OVS/LIKENESS_THE_GAME/data/*.csv
+
+import csv
+import io
 
 import unreal
 
@@ -27,46 +36,41 @@ MAPPING = [
 ]
 
 eal = unreal.EditorAssetLibrary
+asset_tools = unreal.AssetToolsHelpers.get_asset_tools()
 if not eal.does_directory_exist(DEST):
     eal.make_directory(DEST)
 
-asset_tools = unreal.AssetToolsHelpers.get_asset_tools()
+
+def csv_for_unreal(path):
+    with open(path, newline="", encoding="utf-8") as f:
+        rows = list(csv.reader(f))
+    if not rows:
+        return ""
+    rows[0][0] = "Name"  # UE row-key convention; file on disk is untouched
+    buf = io.StringIO()
+    csv.writer(buf).writerows(rows)
+    return buf.getvalue()
+
+
 results = []
-
 for csv_file, dt_name, row_type in MAPPING:
-    csv_path = CSV_DIR + csv_file
-
-    factory = unreal.DataTableFactory()
-    # Bind the row struct. Property is exposed as "struct"; fall back to "Struct".
-    script_struct = row_type.static_struct()
-    try:
-        factory.set_editor_property("struct", script_struct)
-    except Exception:
-        factory.set_editor_property("Struct", script_struct)
-
-    task = unreal.AssetImportTask()
-    task.filename = csv_path
-    task.destination_path = DEST
-    task.destination_name = dt_name
-    task.replace_existing = True
-    task.automated = True
-    task.save = True
-    task.factory = factory
-
-    asset_tools.import_asset_tasks([task])
-
     full = DEST + "/" + dt_name
-    ok = eal.does_asset_exist(full)
-    row_count = 0
-    if ok:
+    if eal.does_asset_exist(full):
         dt = eal.load_asset(full)
-        try:
-            row_count = len(unreal.DataTableFunctionLibrary.get_data_table_row_names(dt))
-        except Exception:
-            row_count = -1
-    results.append((dt_name, "OK" if ok else "FAIL", row_count))
+    else:
+        factory = unreal.DataTableFactory()
+        factory.set_editor_property("struct", row_type.static_struct())
+        dt = asset_tools.create_asset(dt_name, DEST, unreal.DataTable, factory)
+    if dt is None:
+        results.append((dt_name, "FAIL", 0, "could not create or load asset"))
+        continue
+    ok = unreal.DataTableFunctionLibrary.fill_data_table_from_csv_string(dt, csv_for_unreal(CSV_DIR + csv_file))
+    eal.save_asset(full)
+    names = unreal.DataTableFunctionLibrary.get_data_table_row_names(dt)
+    status = "OK" if (ok and len(names) > 0) else "WARN"
+    results.append((dt_name, status, len(names), str(names[0]) if names else "none"))
 
 print("=== DataTable import results ===")
-for name, status, rows in results:
-    print("{0:<24} {1:<5} rows={2}".format(name, status, rows))
-print("Done. Verify each DT opens with correct columns and the ID as Row Name.")
+for name, status, rows, first in results:
+    print("{0:<24} {1:<5} rows={2:<3} first_row={3}".format(name, status, rows, first))
+print("Done. Re-run after any CSV edit; tables refill in place.")

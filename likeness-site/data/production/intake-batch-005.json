@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "batch_status": "open_more_uploads_expected",
+  "files": [
+    {
+      "name": "5f32aaa7-tape03_vol05_resources.html",
+      "bytes": 92232,
+      "sha256": "65d399d2926953acc1ce1885e30789962c12e529fd3a74d776f69e17385b9efa",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    },
+    {
+      "name": "95b394fe-tape-03-ovs-v002-final.pdf",
+      "bytes": 267942,
+      "sha256": "ed9442db109b6e82d0410b7dac73186d9bbf1fe369deabd765d57a1d5f9d846d",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    },
+    {
+      "name": "a40cfd39-tape-03-ovs-v002.pdf",
+      "bytes": 197932,
+      "sha256": "bbac8c1a14c8950e8579022bb4c4fd9494f76588659a74df1c2fecee2a418181",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    },
+    {
+      "name": "c18b0f02-tape-03-prompts-master.pdf",
+      "bytes": 298169,
+      "sha256": "efcc821977b43503c17bc217998938aef306e96f8e26b999270876dce81bab88",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    },
+    {
+      "name": "e05fbf5e-tape-03-vol03-week1.pdf",
+      "bytes": 330101,
+      "sha256": "042ac01b475421d8a034bcdda592dcfb927d1cc438d3cbb36bfd3327e4c15880",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    },
+    {
+      "name": "e4c3705b-tape-03-ovs-v002-final.pdf",
+      "bytes": 267942,
+      "sha256": "6564703798bd3b8b0edf4a354176b1ec31150ddd0d79b86915ba897a3758724e",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    },
+    {
+      "name": "eb540111-tape03_vol05_resources.pdf",
+      "bytes": 324531,
+      "sha256": "fc4018916de635cd0774f86f924c49ea577862ee879eb33ad4946dfc95297641",
+      "status": "pending_reconciliation",
+      "duplicate_of": null
+    }
+  ],
+  "duplicate_groups": [],
+  "previous_batches": [
+    {
+      "name": "intake-batch-001.json",
+      "sha256": "458c588a0f8680ac55a3cddafa0ce28a2a3a62b03dadbd980d5bfd04b5d3fe77"
+    },
+    {
+      "name": "intake-batch-002.json",
+      "sha256": "37b383286f68a127e6f1260ed906960791b26d325487fe8123566c364467b881"
+    },
+    {
+      "name": "intake-batch-003.json",
+      "sha256": "e2c6c6cfd7a656b700b82f6d6a5841ff303bad0cd5fb0116f157c27338a53ce9"
+    },
+    {
+      "name": "intake-batch-004.json",
+      "sha256": "93b5a8b94d4462103b88df06227820d138b814032d9485dd738bb153096af829"
+    }
+  ],
+  "skipped_previous": []
+}
