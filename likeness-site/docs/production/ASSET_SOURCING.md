@@ -40,3 +40,9 @@ Reserve custom work for identity-critical faces and performance, impossible room
 ## Asset acceptance
 
 Source candidate -> recorded license -> staged cleanup -> Blender QC -> engine/web import test -> manifest entry -> approved target-specific promotion. Keep acquisition status, rights status and technical QC separate. Every accepted derivative retains source lineage; no candidate entry silently becomes `ENGINE_READY`.
+
+## Room 14 applied (2026-10-25)
+
+[ASSET_FAST_LANES.md](ASSET_FAST_LANES.md) applies this decision rule to the actual Room 14
+kit: an eight-row make list (identity, story surfaces, the device, the mirror mechanic) and
+a source-first table for everything else, plus Unreal/Blender channel notes.

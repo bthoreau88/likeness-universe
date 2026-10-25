@@ -354,3 +354,12 @@ branch conditions, and `AUDIO_AND_TRAINING.md` maps learning to production proof
 Separate project concepts remain references. No engine code or canon was promoted.
 Use batch 005 for further inputs and read the newest session receipt.
 
+## 14. GAME LANE (2026-10-25 addition)
+
+Everything above covers the website. The game (UE 5.8 Room 14 vertical slice) has its own
+handoff: `docs/production/GAME_LANE.md` — lanes, current state, the ten build traps that each
+cost a session, the PC session ritual, the GL-01..GL-12 finish-line queue and paste-ready
+prompts for a cloud session and a PC session. Asset decisions for the room:
+`docs/production/ASSET_FAST_LANES.md`. Registry drift between this site, the canon CSVs and
+the staged C++ is now caught by `scripts/production/registry-parity.mjs` in
+`npm run validate:production`.

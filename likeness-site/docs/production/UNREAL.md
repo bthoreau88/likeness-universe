@@ -24,3 +24,10 @@ The static Pages site cannot receive live game state without an explicitly desig
 Deliver map/build revision, source SHA, accepted asset hashes, event fixture, QA log and screenshot/video proof. Record packaged-build performance; initial proposed target is 1080p/60fps on the chosen workstation, with a lower-effects comparison, not an advertised hardware promise. Keep imported content staged until measured acceptance. Roll back the sandbox changes by a new source-control revert; do not replace the live map or delete existing assets.
 
 Reference: [Epic FBX pipeline](https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-static-mesh-pipeline-in-unreal-engine). Other engine APIs must be verified against documentation for the installed engine before implementation.
+
+## Current state and known traps (2026-10-25)
+
+What has actually happened on the workstation, the build traps learned the hard way (Live
+Coding vs new classes, compile memory, API macro, DataTable key column, MCP node limits),
+and the session ritual are in [GAME_LANE.md](GAME_LANE.md) §2–§4. Read them before any PC
+session.

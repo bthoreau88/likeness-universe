@@ -33,3 +33,11 @@ Public source repositories get only permitted artifacts and metadata, not restri
 The same asset ID, measured scale and material intent must survive both imports. Failures stay staged with `NEEDS_REPAIR` and a targeted repair task. For characters, the existing Ideation -> Clean Sheet -> Parts -> Views and human identity review remain mandatory. Do not use a generic purchased face as THOREAU or DRYA.
 
 References: [Blender glTF manual](https://docs.blender.org/manual/en/latest/addons/import_export/scene_gltf2.html), [Epic FBX static mesh pipeline](https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-static-mesh-pipeline-in-unreal-engine). Resolve to installed versions before scripting exporter APIs; Epic documents FBX 2020.2 compatibility and collision caveats.
+
+## Fast path (2026-10-25)
+
+Most Room 14 props should arrive sourced, so the usual Blender job is a short adaptation
+pass (scale, pivot, material cleanup, a story decal) rather than modeling. See
+[ASSET_FAST_LANES.md](ASSET_FAST_LANES.md) for which items are source vs make. A Blender MCP
+bridge is an optional accelerator for scene setup and exports; it does not change the
+delivery tree or QC evidence above.

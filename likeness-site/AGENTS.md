@@ -42,3 +42,11 @@ the application. Site-facing content still belongs in `src/lib/registry.ts`.
 Run `npm run validate:production` and `npm run test:production` before lint/build.
 Blender/Unreal completion requires actual versioned artifacts and proof.
 The source-validation workflow is separate from branch-based Pages publishing.
+
+## Game lane (2026-10-25)
+
+For Unreal/Blender work read `docs/production/GAME_LANE.md`: which lane a task belongs to
+(CLOUD repo agent, PC agent with the Unreal MCP bridge, or HUMAN), current game state with
+evidence status, the known build traps, and the finish-line task queue. Canon IDs live in
+`handoff/data/*.csv`; `npm run validate:production` now also fails when the site, the asset
+plan, the C++ row structs or the room-state enum drift from that canon.
