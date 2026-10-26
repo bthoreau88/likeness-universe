@@ -9,7 +9,7 @@ look at the five evidence objects, and trigger an inspect prompt whose text come
 the registry (not hardcoded).
 
 ## Scope (do only this)
-- **Room 14 greybox**: correct real-world scale (a motel room ~3.5m × 5m), door to the
+- **Room 14 greybox**: correct real-world scale (a motel room ~3.5m × 5m) *[superseded 2026-10-26: the founder-locked G02 envelope is 5.4864 × 3.81 × 2.5908 m; see docs/production/receipts/2026-10-26-room14-founder-decisions.md]*, door to the
   bathroom, door to the hallway. BSP/blocking volumes or simple static meshes.
 - **Hallway greybox**: a short corridor with the numbered Room 14 door; one sconce light
   placeholder.

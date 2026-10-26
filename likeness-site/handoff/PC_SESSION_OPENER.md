@@ -34,7 +34,7 @@ healthy. Then commit (`chore: initialize foundation`).
 
 ## MESSAGE 3 — Milestone 02 only (Room 14 greybox) — after M01 passes
 Now Milestone 02 ONLY — Room 14 greybox (see handoff MILESTONE_02_ROOM14_GREYBOX.md).
-Greybox Room 14 + a connected hallway at real-world scale (~3.5m x 5m room). First-person
+Greybox Room 14 + a connected hallway at real-world scale (~3.5m x 5m room) *[superseded 2026-10-26: the founder-locked G02 envelope is 5.4864 × 3.81 × 2.5908 m; see docs/production/receipts/2026-10-26-room14-founder-decisions.md]*. First-person
 pawn: walk + look, collisions hold. Motivated PLACEHOLDER lighting only (one warm lamp in
 Room 14, one fluorescent in the bathroom — no skylight dump). Add a data-driven inspect
 trace: BP_OVS_InteractableBase line-traces from the camera; on hit, WBP_OVS_InspectUI
