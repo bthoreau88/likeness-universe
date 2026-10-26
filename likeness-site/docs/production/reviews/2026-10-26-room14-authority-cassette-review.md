@@ -134,3 +134,9 @@ from Room 14.**
 4. Supply the acquisition record for `Deko_MatrixDemo`.
 5. Decide whether the 7 unpublished source commits on the branch should go through a PR or be
    published as they are. Neither has happened.
+
+---
+
+**Update 2026-10-26:** Brandon answered the open questions. Decisions 1, 2 and 5 are approved,
+3 awaits his yes on the recommendation, and 4 stays open (non-blocking). See
+[receipts/2026-10-26-room14-founder-decisions.md](../receipts/2026-10-26-room14-founder-decisions.md).
