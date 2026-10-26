@@ -363,3 +363,10 @@ prompts for a cloud session and a PC session. Asset decisions for the room:
 `docs/production/ASSET_FAST_LANES.md`. Registry drift between this site, the canon CSVs and
 the staged C++ is now caught by `scripts/production/registry-parity.mjs` in
 `npm run validate:production`.
+
+## 15. STORY (2026-10-26 addition)
+
+The story pass lives in `handoff/story/` (bible, screenplay *A Night for Four*, game map).
+Treat it as a draft until GAME_LANE GL-16 records Brandon's sign-off. New canon from it is
+limited to three `IDEA` beats, three appended room states and `MECH_HIDE_001`, and the parity
+check enforces them.

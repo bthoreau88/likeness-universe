@@ -43,9 +43,11 @@ Status words follow the passback rules: **verified** means a screenshot or log w
 | 5 evidence props | reported | tags `[PROP_*_001, OVS_Interactable]`, asset ID at index 0 |
 | Inspect UI widget | reported | `/Game/M02/UI/WBP_OVS_InspectUI` with `TXT_Name`, `TXT_Line`, `RootCanvas`, `UpdateInspect` |
 | Inspect logic | **blocked** | Two competing versions exist: a hand-wired Blueprint graph in `BP_FirstPersonCharacter` that the editor log shows failing to compile, and a C++ component the PC re-derived (`RunTrace`/`TraceRange`) instead of pulling the staged one (`DoInspect`/`TraceDistance`). On-screen inspect text has not been shown. → task GL-01 |
-| Room State subsystem | staged | `handoff/unreal/cpp_rowstructs/Source/LikenessTheGame/Public/OVSRoomStateSubsystem.h` — never compiled on the PC |
+| Room State subsystem | staged, **compile-checked** | `handoff/unreal/cpp_rowstructs/Source/LikenessTheGame/Public/OVSRoomStateSubsystem.h`. The whole staged module (subsystem, interactor, hide spot, wardrobe) built with UE 5.8 on the workstation in a throwaway project (exit 0, no warnings, 2026-10-26). Not yet built inside the game project |
 | Mirror lag | spec only | `handoff/mechanics/MECH_MIRROR_LAG_SPEC.md` |
 | DRYA | packet only | `handoff/expansions/character_refs/DRYA_BUILD_PACKET.md` |
+| Story v001 | draft, HUMAN sign-off pending | `handoff/story/`: bible, 42-page episode screenplay *A Night for Four*, scene → beat map. Three beats + `MECH_HIDE_001` added to canon as `IDEA` |
+| Hide spot / wardrobe / interact prompt | staged, compile-checked | `handoff/unreal/cpp_rowstructs/INSTALL_HIDE_AND_WARDROBE.md` → task GL-15 |
 | Legacy inventory (GL-13) | verified (scan) | Old game builds are template-only. THOREAU MetaHuman exists 9 times in 5+ revisions — canon pick pending (HUMAN). Archive blocked on disk space. See `receipts/2026-10-25-GL-13-legacy-inventory.md` |
 
 ---
@@ -128,6 +130,8 @@ One task per session. Do not start the next until the previous passback is accep
 | GL-12 | CLOUD | Companion parity: devlog/press reflect only verified status | Lint + build green; no claim above its evidence | G06 |
 | GL-13 | PC + HUMAN | Legacy salvage: archive old projects untouched, inventory them, triage by folder ([LEGACY_SALVAGE.md](LEGACY_SALVAGE.md)). Read-only; can run any time, in parallel with GL-01..GL-12 | Each original archived with a SHA-256; inventory JSON written; every top-level Content folder has KEEP / REWORK / REFERENCE / RETIRE; nothing migrated before triage is reviewed | G01/G03 |
 | GL-14 | PC + HUMAN | Archive intake: run `zip_inventory.py` on each Drive asset archive downloaded to the workstation; Brandon picks GL-07 layout references and answers the open questions in [INSPIRATION_INTAKE_006.md](INSPIRATION_INTAKE_006.md) §5–§7. Read-only | SHA-256 + counts passed back; no extraction into any project | G01 |
+| GL-15 | PC | Install the hide spot, wardrobe and interact prompt per [INSTALL_HIDE_AND_WARDROBE.md](../../handoff/unreal/cpp_rowstructs/INSTALL_HIDE_AND_WARDROBE.md); after GL-01 (inspect must work first) | `OVSHide: … entered/left` log lines; slat-view screenshot; prompt screenshot; inspect still works | G05 (partial) |
+| GL-16 | HUMAN | Story sign-off: answer [STORY_BIBLE.md](../../handoff/story/STORY_BIBLE.md) §11 (real THOREAU as antagonist, names, episode role, public repo) | Decisions recorded in a receipt; bible status changed from draft | G01 |
 
 Keep out of the first slice: hallway/office access, multiplayer, microphone input, final
 character art, save-system migration, branching beyond one event.

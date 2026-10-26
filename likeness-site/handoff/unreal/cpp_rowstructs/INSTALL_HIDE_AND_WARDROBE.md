@@ -14,6 +14,9 @@ Inspect behavior is unchanged. Story context: `handoff/story/SCREENPLAY_TO_GAME.
 
 **New UCLASSes mean a full build. Live Coding can't add them** (GAME_LANE trap). Close the editor first.
 
+Compile status: the staged module (commit `2e5471f`) built with UE 5.8 Development Editor
+in a throwaway project on the workstation (exit 0, no warnings). PIE behavior is not yet verified.
+
 ---
 
 ## 1 · Copy the source (editor CLOSED)

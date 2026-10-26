@@ -50,3 +50,10 @@ For Unreal/Blender work read `docs/production/GAME_LANE.md`: which lane a task b
 evidence status, the known build traps, and the finish-line task queue. Canon IDs live in
 `handoff/data/*.csv`; `npm run validate:production` now also fails when the site, the asset
 plan, the C++ row structs or the room-state enum drift from that canon.
+
+## Story (2026-10-26)
+
+Story canon draft lives in `handoff/story/`: `STORY_BIBLE.md` (the twisted love story, the
+truth layer, house rules, locks), `A_NIGHT_FOR_FOUR.fountain` (the episode screenplay;
+Fountain plain text) and `SCREENPLAY_TO_GAME.md` (scene → beat/state/mechanic map). It is a
+HUMAN-lane draft until Brandon signs off (GAME_LANE GL-16). No combat, no bodies, no guards.
