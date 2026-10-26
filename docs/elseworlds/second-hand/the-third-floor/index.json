@@ -1,0 +1,26 @@
+{
+  "schema": "likeness.universe.elseworld-discovery.v1",
+  "id": "LKN-EW-TF",
+  "name": "LIKENESS : THE THIRD FLOOR",
+  "episode": "THE DUPLICATE",
+  "canonical": false,
+  "canonEffect": "NONE",
+  "status": "V002_G03A_PREPARED_HUMAN_REVIEW_PENDING",
+  "lineage": "LIKENESS : SECOND HAND / experimental alternative",
+  "authorityRepo": "bthoreau88/OVS-OS",
+  "authorityDraftPr": "https://github.com/bthoreau88/OVS-OS/pull/305",
+  "authorityBranch": "chatgpt/lkn-second-hand-elseworld-third-floor-g03a-v001",
+  "authorityDirectory": "projects/likeness/second-hand/lab/elseworlds/the-third-floor/",
+  "V002ScriptSha256": "6a2583ef404eed685eb2791824208f9220143ec0c6013f006ae63410c85b9bba",
+  "sceneCount": 10,
+  "shotCount": 41,
+  "selectHeroShots": 6,
+  "runtimeTargetSeconds": 574,
+  "storyCanonLocked": false,
+  "performanceProofComplete": false,
+  "privacy": {
+    "portraitSourceFilesInRepo": false,
+    "identityAuthorityExternal": true
+  },
+  "lastReviewedDate": "2026-10-25"
+}
