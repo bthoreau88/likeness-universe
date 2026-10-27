@@ -27,7 +27,7 @@ From an empty file (no Room 14 file, Unreal project or third-party mesh is opene
 | Run | Blender | Result |
 |---|---|---|
 | Cloud (scratchpad venv, `bpy` module) | 5.0.1 | **PASS**: reopened; bbox [100.4, 63.8, 12.0] mm (±0.1 mm); scale applied; parented to pivot; 6 F-curves on location/rotation, 5 keys each; frames 1–240 at 24 fps; custom properties present. Stills checked by eye: cassette in frame at all five keys |
-| Workstation | 5.1.2 | **PENDING**: the workstation was offline. Run `blender -b --factory-startup --python <script> -- D:\OVS\LIKENESS\PROPS\PROP_TAPE_001\v001\<run-id>` and pass back its receipt |
+| Workstation | 5.1.2 | **PENDING.** Attempt 1 (2026-10-26): the script fetched at commit `aa88723` matched its SHA-256 (`d920e77f…0a60`), then the run's memory guard stopped it at 0.53 GiB free (threshold 0.8 GiB); Blender never started and nothing was written. Attempt 2 (2026-10-27): the workstation was offline. Run `blender -b --factory-startup --python <script> -- D:\OVS\LIKENESS\PROPS\PROP_TAPE_001\v001\<run-id>` and pass back its receipt |
 
 Cloud-run outputs (not committed; reproducible from the script):
 
