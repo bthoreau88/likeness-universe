@@ -17,3 +17,11 @@
 - GAME_LANE: the Room 14 row now records the lock and the build-from-greybox plan; the inspect-logic row is corrected (the `RunTrace` note was stale); GL-17 (map build) and GL-18 (cassette proxy) added.
 - Codex's next task is unchanged: GL-18, the original cassette proxy and its 10-second editable proof.
 - OVS-OS and Codex's Blender/Unreal files are unchanged. Recording the confirmation inside OVS-OS belongs to that repo's lane.
+
+## Addendum (2026-10-26, later)
+
+- Brandon: "I approve we can continue to next gate." Decision 3 (review cameras are tooling outside
+  the G02 spatial lock, changed only through versioned derivatives with receipts) is now **APPROVED**.
+  V002 can serve as the entry review camera without reopening G02; the locked `.blend` stays untouched.
+- PR #20 merged as `73180ad`.
+- Next gate started: GL-18 (receipt `2026-10-26-GL-18-cassette-proxy.md`).
