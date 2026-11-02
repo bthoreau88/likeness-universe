@@ -27,7 +27,7 @@ From an empty file (no Room 14 file, Unreal project or third-party mesh is opene
 | Run | Blender | Result |
 |---|---|---|
 | Cloud (scratchpad venv, `bpy` module) | 5.0.1 | **PASS**: reopened; bbox [100.4, 63.8, 12.0] mm (±0.1 mm); scale applied; parented to pivot; 6 F-curves on location/rotation, 5 keys each; frames 1–240 at 24 fps; custom properties present. Stills checked by eye: cassette in frame at all five keys |
-| Workstation | 5.1.2 | **PENDING.** Attempt 1 (2026-10-26): the script fetched at commit `aa88723` matched its SHA-256 (`d920e77f…0a60`), then the run's memory guard stopped it at 0.53 GiB free (threshold 0.8 GiB); Blender never started and nothing was written. Attempt 2 (2026-10-27): the workstation was offline. Run `blender -b --factory-startup --python <script> -- D:\OVS\LIKENESS\PROPS\PROP_TAPE_001\v001\<run-id>` and pass back its receipt |
+| Workstation | 5.1.2 | **PASS** (2026-11-01, attempt 3). The script fetched at commit `aa88723` matched its SHA-256 (`d920e77f…0a60`); 4.3 GiB free. Same results as the cloud run: bbox 100.4 × 63.8 × 12.0 mm, 6 F-curves, 20 triangles, all seven checks true. Frame 60 checked by eye: label face toward the camera. Earlier attempts: the memory guard stopped attempt 1 at 0.53 GiB free; attempt 2 found the workstation offline |
 
 Cloud-run outputs (not committed; reproducible from the script):
 
@@ -47,3 +47,16 @@ Cloud-run outputs (not committed; reproducible from the script):
   against a copy of the standard.
 - Neutral greybox lighting and material; not a look or grade proof.
 - The Deko cassette meshes stay `BLOCKED_PROVENANCE` and were not used.
+
+Workstation outputs (kept on the workstation under the PROP_TAPE_001 v001 run folder `run-20261101-192754`; not committed):
+
+| File | SHA-256 |
+|---|---|
+| `LKN_PROP_TAPE_001_PROXY_V001.blend` | `7822d7514811…` |
+| `PROP_TAPE_001_PROXY_V001_f001.png` | `58c43b241af3…` |
+| `PROP_TAPE_001_PROXY_V001_f060.png` | `378c58dfdcdf…` |
+| `PROP_TAPE_001_PROXY_V001_f120.png` | `edb0710abad1…` |
+| `PROP_TAPE_001_PROXY_V001_f180.png` | `b8b687cc712a…` |
+| `PROP_TAPE_001_PROXY_V001_f240.png` | `19cf933fcc22…` |
+
+The `.blend` and PNG hashes differ from the cloud run's (different Blender build and renderer), as expected; the geometry and animation checks match.
