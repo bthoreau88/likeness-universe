@@ -1,0 +1,40 @@
+{
+  "schema": "ovs.film.registration.v1",
+  "title": "LIKENESS",
+  "working_id": "LKN-V01-ROOM14",
+  "id_status": "PROPOSED — founder to confirm or replace",
+  "universe": "LIKENESS : UNIVERSE",
+  "studio": "Omnia Vanitas Studios",
+  "written_directed_by": "Brandon Thoreau",
+  "format": "short film, 10 shots, ~88 s + title card",
+  "order_note": "First LIKENESS : UNIVERSE film; predates the heavy LIKENESS : SECOND HAND work",
+  "status": "REGISTERED / PRE-PRODUCTION / NOT RECONCILED",
+  "paid_generation_authorized": false,
+  "registered": "2026-11-05",
+  "source_document": {
+    "id": "OVS_LIKENESS_BIBLE_V01_2026",
+    "pages": 29,
+    "committed_here": false,
+    "reason": "Contains the Director-Eyes-Only twist; this repository is public"
+  },
+  "cast": ["THOREAU", "DRYA", "DARK THOREAU", "DARK DRYA"],
+  "location": "The Dellwood, Room 14",
+  "related": [
+    {
+      "title": "LIKENESS : SKIN OF ANOTHER",
+      "relationship": "closely connected (founder, 2026-11-05); nature UNDEFINED",
+      "off_repo_asset": "LIKENESS_SKIN_OF_ANOTHER_APPROVED_4K_SEQUENCE_V001.zip (Google Drive, 2026-08-23)"
+    },
+    { "title": "LIKENESS : SECOND HAND", "relationship": "later film; shares the Dellwood / Room 14" },
+    { "title": "LIKENESS : THE GAME — A Night for Four", "relationship": "shares Room 14, cast and a dark Thoreau; conflicting truth layer (see CANON_COLLISIONS C2)" }
+  ],
+  "gates": [
+    { "id": "G00", "name": "Registration", "status": "DONE" },
+    { "id": "G01", "name": "Founder reconciliation of CANON_COLLISIONS + SKIN OF ANOTHER link + twist visibility", "status": "OPEN" },
+    { "id": "G02", "name": "Stills intake + rights record (C8)", "status": "BLOCKED_ON_G01" },
+    { "id": "G03", "name": "Generate ENV_ROOM14WIDE and ENV_MIRROR references", "status": "BLOCKED_ON_G01" },
+    { "id": "G04", "name": "Port 10 prompts to Higgsfield / Seedance 2.5 timed grammar", "status": "BLOCKED_ON_G01" },
+    { "id": "G05", "name": "480p scout of Shot 05 (key shot)", "status": "BLOCKED_ON_G04" }
+  ],
+  "files": ["README.md", "PRODUCTION_PACKAGE.md", "CANON_COLLISIONS.md"]
+}
