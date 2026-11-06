@@ -48,6 +48,7 @@ protect.
 | [`PRODUCTION_PACKAGE.md`](PRODUCTION_PACKAGE.md) | The bible's production content, carried over faithfully: visual DNA lock, identity locks, location lock, 10-shot skeleton, all ten master shot prompts, the doubles grammar, and what's still needed |
 | [`CANON_COLLISIONS.md`](CANON_COLLISIONS.md) | Where this film disagrees with what the repo already holds (Room 14 geometry, the doubles' truth layer, the mirror rule, identity locks, the tool versions). **Read this before generating anything.** |
 | [`RULINGS_2026-11-06.md`](RULINGS_2026-11-06.md) | Founder rulings R1–R3 and what they now require: the branch point with SKIN OF ANOTHER, the Beni lookalike, and conforming to the G02 room |
+| [`SOURCE_INTAKE_2026-11-06.md`](SOURCE_INTAKE_2026-11-06.md) | What Screenplay V02, both SKIN OF ANOTHER packages and the related LIKENESS bibles establish: revised C1, the N1 branch-point candidate (the third door), the C2 recommendation, N4–N6 |
 | [`film.json`](film.json) | A machine-readable pointer: IDs, status, sources, gates |
 
 ### Held out of this public repo on purpose
@@ -67,7 +68,7 @@ The ten shot prompts don't reveal the twist and are carried over in full.
 
 | Film | Relationship (as recorded) |
 |---|---|
-| LIKENESS (this film, V01) | The first LIKENESS : UNIVERSE film |
+| LIKENESS (this film, V01) | The first LIKENESS : UNIVERSE film. Full script: `OVS_LIKENESS_Screenplay_V02` (Draft Two, May 2026, off-repo). Drya survives; the couple goes home |
 | LIKENESS : SKIN OF ANOTHER | **The same night, from another angle, darker** (R2). The woman from Room 14 does not survive and is replaced by another woman, eventually revealed to look eerily like Beni (SECOND HAND). Themes: grief, fear, guilt, trauma bonds. Approved 4K sequence archive off-repo: `LIKENESS_SKIN_OF_ANOTHER_APPROVED_4K_SEQUENCE_V001.zip` (Drive, 2026-08-23) |
 | LIKENESS : SECOND HAND | Later. Its V008 ends at the Dellwood Motel, pigeonhole 14, 2:11 a.m. That shared location needs a ruling (see collisions) |
 | LIKENESS : THE GAME ("A Night for Four") | Shares the Dellwood, Room 14, THOREAU, DRYA and a dark Thoreau, but with a **different truth layer**. See collisions C2 and C3 |
@@ -76,14 +77,14 @@ The ten shot prompts don't reveal the twist and are carried over in full.
 
 Answered on 2026-11-06: continuity (R1), SKIN OF ANOTHER (R2), DRYA consent (R3). Still open:
 
-1. **N1, the branch point:** in this film the couple chooses and leaves; in SKIN OF ANOTHER the
-   woman doesn't survive. Where on the night do the two angles diverge, or which account is
-   the false one?
-2. **N3, photograph twelve:** is SECOND HAND's "interview woman leaving Room 14" this night's
+1. **N1, the branch point:** candidate is the third door (Screenplay V02). It depends on one answer:
+   in SKIN OF ANOTHER, does **DRYA** or **MIO** not survive?
+2. **Story authority:** is the film the 70-page Screenplay V02 or the 10-shot bible cut? (Proposed:
+   V02 is the film; the 10-shot bible is the proof-of-concept/teaser compression.)
+3. **N3, photograph twelve:** is SECOND HAND's "interview woman leaving Room 14" this night's
    woman, the replacement, or unrelated?
-3. **C2, the doubles' explanation:** one truth layer for Room 14 across the film, SKIN OF
-   ANOTHER and the game draft.
-4. **Yes/no** on the PROPOSED rows in the rulings receipt (C1 conform to G02, C3, C4, C5, N2).
+4. **C2, the doubles' explanation:** proposed: the bible's twist governs; the game draft adapts.
+5. **Yes/no** on the PROPOSED rows in the rulings receipt and source intake (C1 revised, C3, C4, C5, N2, N4, N5).
 
 ## Next gate
 

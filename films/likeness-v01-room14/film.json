@@ -47,7 +47,7 @@
     },
     {
       "id": "G01",
-      "name": "Founder reconciliation: N1 branch point, N3 photograph twelve, C2 doubles truth layer + yes/no on proposed rows",
+      "name": "Founder reconciliation: who does not survive in SKIN OF ANOTHER (DRYA or MIO) to fix the N1 branch point, story authority (V02 vs 10-shot), N3, C2 + yes/no on proposed rows",
       "status": "OPEN (R1-R3 ruled)"
     },
     {
@@ -75,10 +75,12 @@
     "README.md",
     "PRODUCTION_PACKAGE.md",
     "CANON_COLLISIONS.md",
-    "RULINGS_2026-11-06.md"
+    "RULINGS_2026-11-06.md",
+    "SOURCE_INTAKE_2026-11-06.md"
   ],
   "continuity": "SHARED with LIKENESS : THE GAME and LIKENESS : SECOND HAND (R1, 2026-11-06)",
   "rights": {
     "DRYA": "real performer; founder attests multiple forms of consent (R3). Records kept off this public repo"
-  }
+  },
+  "story_authority_proposed": "OVS_LIKENESS_Screenplay_V02 (Draft Two, May 2026, 70 pp., off-repo); the 10-shot bible as the proof-of-concept compression"
 }
