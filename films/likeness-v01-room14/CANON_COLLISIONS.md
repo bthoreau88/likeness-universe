@@ -1,8 +1,10 @@
 # LIKENESS (V01): canon collision ledger
 
 Compared against `claude/dreamy-hawking-VcoBe` @ `c53809b` (2026-11-05) and the recorded
-SECOND HAND canon. **None of these is resolved by this branch.** Each row needs a founder
-ruling at G01.
+SECOND HAND canon. **2026-11-06 update:** Brandon ruled **same continuity** (R1). Rows C1–C5 and C7 are therefore live
+contradictions, and C8 is cleared for DRYA. A new top-priority collision, N1 (this film vs SKIN
+OF ANOTHER on the same night), is added. See [`RULINGS_2026-11-06.md`](RULINGS_2026-11-06.md) for
+the rulings and the proposed resolutions.
 
 Most rows reduce to one question: **is this film the same continuity as the game and SECOND
 HAND, or its own?** If it's its own (an elseworld), most rows become "no conflict, firewall

@@ -5,12 +5,12 @@ Source: `OVS_LIKENESS_BIBLE_V01_2026` (Project Bible V01, 29 pp.), written and d
 
 ## Status
 
-**REGISTERED / PRE-PRODUCTION / NOT YET RECONCILED.**
+**REGISTERED / PRE-PRODUCTION / PARTIALLY RULED (2026-11-06).** Shared continuity confirmed. See [`RULINGS_2026-11-06.md`](RULINGS_2026-11-06.md).
 
 - This is the first LIKENESS : UNIVERSE film. Brandon wrote it before the heavy work on
   LIKENESS : SECOND HAND, and he wants it made.
-- Brandon says this film is closely connected to **LIKENESS : SKIN OF ANOTHER**. The repo
-  doesn't yet record *how* they connect (see "Open founder questions").
+- **Same continuity** as LIKENESS : THE GAME and LIKENESS : SECOND HAND (ruling R1).
+- **LIKENESS : SKIN OF ANOTHER is the same night from another angle**, a darker take (ruling R2).
 - This branch registers the film so it isn't lost. It doesn't change any existing canon, any
   locked screenplay (SECOND HAND V008), any game gate (G02, GL-16/17/18) or the site.
 - **Zero paid generation is authorized** by this registration.
@@ -47,6 +47,7 @@ protect.
 |---|---|
 | [`PRODUCTION_PACKAGE.md`](PRODUCTION_PACKAGE.md) | The bible's production content, carried over faithfully: visual DNA lock, identity locks, location lock, 10-shot skeleton, all ten master shot prompts, the doubles grammar, and what's still needed |
 | [`CANON_COLLISIONS.md`](CANON_COLLISIONS.md) | Where this film disagrees with what the repo already holds (Room 14 geometry, the doubles' truth layer, the mirror rule, identity locks, the tool versions). **Read this before generating anything.** |
+| [`RULINGS_2026-11-06.md`](RULINGS_2026-11-06.md) | Founder rulings R1–R3 and what they now require: the branch point with SKIN OF ANOTHER, the Beni lookalike, and conforming to the G02 room |
 | [`film.json`](film.json) | A machine-readable pointer: IDs, status, sources, gates |
 
 ### Held out of this public repo on purpose
@@ -67,28 +68,27 @@ The ten shot prompts don't reveal the twist and are carried over in full.
 | Film | Relationship (as recorded) |
 |---|---|
 | LIKENESS (this film, V01) | The first LIKENESS : UNIVERSE film |
-| LIKENESS : SKIN OF ANOTHER | "Closely connected," per Brandon (2026-11-05). An approved 4K sequence archive exists off-repo (`LIKENESS_SKIN_OF_ANOTHER_APPROVED_4K_SEQUENCE_V001.zip`, Drive, 2026-08-23). The nature of the connection is **not defined yet** |
+| LIKENESS : SKIN OF ANOTHER | **The same night, from another angle, darker** (R2). The woman from Room 14 does not survive and is replaced by another woman, eventually revealed to look eerily like Beni (SECOND HAND). Themes: grief, fear, guilt, trauma bonds. Approved 4K sequence archive off-repo: `LIKENESS_SKIN_OF_ANOTHER_APPROVED_4K_SEQUENCE_V001.zip` (Drive, 2026-08-23) |
 | LIKENESS : SECOND HAND | Later. Its V008 ends at the Dellwood Motel, pigeonhole 14, 2:11 a.m. That shared location needs a ruling (see collisions) |
 | LIKENESS : THE GAME ("A Night for Four") | Shares the Dellwood, Room 14, THOREAU, DRYA and a dark Thoreau, but with a **different truth layer**. See collisions C2 and C3 |
 
 ## Open founder questions
 
-1. **SKIN OF ANOTHER:** is it a sequel, a prequel, the same night from another angle, the
-   doubles' side of the story, or a sibling film that shares the doubles grammar? Which
-   elements does it inherit (cast, Room 14, the twist)?
-2. **Canon ruling:** does this film's Room 14 sit in the *same* continuity as the game and
-   SECOND HAND, or is it its own continuity (an elseworld, as THE OBSERVERS is)? Every
-   collision in `CANON_COLLISIONS.md` follows from this one answer.
-3. **Stills provenance:** the bible locks both leads and the location "from the production
-   stills" (Images 1–10). Those stills aren't in any repo. Who and what do they depict, and
-   is a likeness/rights record on file for DRYA's reference under the Character Reference
-   Pack rights gate?
-4. **The twist:** should it stay off the public repo (the default) or be committed?
+Answered on 2026-11-06: continuity (R1), SKIN OF ANOTHER (R2), DRYA consent (R3). Still open:
+
+1. **N1, the branch point:** in this film the couple chooses and leaves; in SKIN OF ANOTHER the
+   woman doesn't survive. Where on the night do the two angles diverge, or which account is
+   the false one?
+2. **N3, photograph twelve:** is SECOND HAND's "interview woman leaving Room 14" this night's
+   woman, the replacement, or unrelated?
+3. **C2, the doubles' explanation:** one truth layer for Room 14 across the film, SKIN OF
+   ANOTHER and the game draft.
+4. **Yes/no** on the PROPOSED rows in the rulings receipt (C1 conform to G02, C3, C4, C5, N2).
 
 ## Next gate
 
-**G01 — Founder reconciliation.** Brandon rules on the four questions above and on each row
-of `CANON_COLLISIONS.md`. Nothing moves to generation until then.
+**G01 — Founder reconciliation (narrowed).** N1, N3 and C2 need decisions; the PROPOSED rows
+need a yes/no. Nothing moves to generation until then.
 
 After G01: generate the two missing references (`OVS_LIKENESS_ENV_ROOM14WIDE_V01_2026`,
 `OVS_LIKENESS_ENV_MIRROR_V01_2026`); port the shot prompts to the current Higgsfield /
