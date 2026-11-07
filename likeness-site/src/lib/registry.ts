@@ -30,6 +30,49 @@ export const INTAKE = {
 };
 
 
+// ---- Site presentation — approved existing LIKENESS media only. -------------
+// These sequences replace third-party superhero demo frames. Images already
+// appear elsewhere on this site; their identity authority remains subject to
+// the ordinary OVS visual review gate. No generated frames or new canon.
+export const SCROLL_SEQUENCES = {
+  home: [
+    "/stills/thoreau-waking.png",
+    "/stills/thoreau-mirror.png",
+    "/stills/drya-over-shoulder.png",
+    "/stills/thoreau-watching.png",
+    "/stills/the-other.png",
+    "/stills/hallway-door14.png",
+  ],
+  street: [
+    "/stills/hallway-door14.png",
+    "/stills/thoreau-watching.png",
+    "/stills/drya-over-shoulder.png",
+    "/stills/thoreau-stealth.png",
+    "/subjects/thoreau-portrait.png",
+    "/subjects/drya-select.png",
+    "/stills/the-other.png",
+    "/stills/poster-room14.png",
+  ],
+} as const;
+
+// Editorial character entry points. Use existing identity/status fields
+// from CHARACTERS below; these labels describe production evidence, not
+// fictional combat statistics.
+export const CHARACTER_PROFILES = [
+  { slug: "thoreau", characterId: "CHR_THOREAU_001", edition: "THE HOST" },
+  { slug: "drya", characterId: "CHR_DRYA_001", edition: "THE WITNESS" },
+  { slug: "the-other", characterId: "CHR_DARK_THOREAU_001", edition: "THE DOUBLE" },
+] as const;
+
+// Distinct editorial covers for the existing anthology registry. No unapproved
+// claims about completion, release dates or individual production credits.
+export const WORK_COVERS: Record<string, string> = {
+  WORK_LIKENESS_GAME: "/stills/poster-room14.png",
+  WORK_TAPE_03: "/stills/likeness-tape003-poster.png",
+  WORK_OVS_FASHION: "/stills/fabric.png",
+  WORK_OVS_MUSIC: "/stills/three-tapes.png",
+};
+
 // ---- Characters (character_registry.csv) ----
 export type Character = {
   id: string;
