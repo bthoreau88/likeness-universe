@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const routes = [
@@ -18,6 +18,9 @@ const routes = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const close = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -31,6 +34,23 @@ export function Navbar() {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  // Escape to close + focus management for the mobile menu
+  useEffect(() => {
+    if (!open) return;
+    const toggle = toggleRef.current;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    // move focus into the panel so keyboard users land on the menu
+    panelRef.current?.querySelector<HTMLElement>("a, button")?.focus();
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      // restore focus to the toggle that opened the menu
+      toggle?.focus();
     };
   }, [open]);
 
@@ -49,7 +69,7 @@ export function Navbar() {
         >
           <a
             href="#top"
-            onClick={() => setOpen(false)}
+            onClick={close}
             className="flex items-center gap-2.5"
           >
             <span className="grid h-6 w-6 place-items-center rounded-sm bg-accent text-[11px] font-bold text-black">
@@ -84,10 +104,12 @@ export function Navbar() {
 
             {/* mobile menu toggle */}
             <button
+              ref={toggleRef}
               type="button"
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
+              aria-controls="mobile-menu"
               className="relative grid h-9 w-9 place-items-center rounded-sm border border-white/15 lg:hidden"
             >
               <span className="sr-only">Menu</span>
@@ -115,6 +137,10 @@ export function Navbar() {
 
       {/* mobile overlay menu */}
       <div
+        id="mobile-menu"
+        ref={panelRef}
+        inert={!open}
+        aria-hidden={!open}
         className={`grain fixed inset-0 z-[90] flex flex-col bg-background/97 backdrop-blur-md transition-opacity duration-300 lg:hidden ${
           open ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
@@ -128,7 +154,7 @@ export function Navbar() {
               <Link
                 key={l.href}
                 href={l.href}
-                onClick={() => setOpen(false)}
+                onClick={close}
                 className={`group flex items-baseline justify-between border-b border-white/10 py-4 transition-colors ${
                   open ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
                 }`}
@@ -149,7 +175,7 @@ export function Navbar() {
           </nav>
           <Link
             href="/prompts"
-            onClick={() => setOpen(false)}
+            onClick={close}
             className="mono mt-8 rounded-sm bg-accent px-5 py-3 text-center text-[11px] font-semibold tracking-[0.2em] text-black uppercase"
           >
             Open the Prompt Library
