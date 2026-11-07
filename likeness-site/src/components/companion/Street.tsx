@@ -7,7 +7,6 @@
 // "street" experience and rebuilt to LIKENESS lore (identity, doubles, the
 // record). Fully self-contained; reads only the shared frame + asset helpers.
 
-import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -15,6 +14,7 @@ import { asset } from "@/lib/base";
 import { HERO } from "@/lib/frames";
 import { STREET_SUBJECTS } from "@/lib/registry";
 import { Scanlines, RuptureField } from "@/components/atmos/Atmos";
+import { useScrollCanvas } from "@/components/atmos/useScrollCanvas";
 
 // ---- Scroll beats over the surveillance sweep ----
 type StreetBeat = {
@@ -62,147 +62,13 @@ const STREET_BEATS: StreetBeat[] = [
 // language: the high-confidence subjects resolve to locked identities. ----
 const STREET_CAST = STREET_SUBJECTS;
 
-// Contact-sheet stills pulled from the exterior sweep.
-const CONTACT = [3, 21, 44, 67, 92, 118, 141, 160].map(
-  (n) => HERO.path(n),
-);
+// Existing LIKENESS archive stills, not source-unknown superhero frames.
+const CONTACT = Array.from({ length: HERO.count }, (_, i) => HERO.path(i + 1));
 
 export function Street() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const framesRef = useRef<HTMLImageElement[]>([]);
-  const tickingRef = useRef(false);
-  const currentFrameRef = useRef(0);
-  const prevVisibleRef = useRef("");
-
-  const introRef = useRef<HTMLDivElement>(null);
-  const outroRef = useRef<HTMLDivElement>(null);
-  const barRef = useRef<HTMLDivElement>(null);
-  const seqRef = useRef<HTMLSpanElement>(null);
-
-  const [loaded, setLoaded] = useState(false);
-  const [visible, setVisible] = useState<string[]>([]);
-
-  // Preload the exterior sweep.
-  useEffect(() => {
-    let loadedCount = 0;
-    const imgs: HTMLImageElement[] = [];
-    const done = () => {
-      loadedCount++;
-      if (loadedCount === HERO.count) setLoaded(true);
-    };
-    for (let i = 1; i <= HERO.count; i++) {
-      const img = new window.Image();
-      img.src = HERO.path(i);
-      img.onload = done;
-      img.onerror = done;
-      imgs.push(img);
-    }
-    framesRef.current = imgs;
-  }, []);
-
-  useEffect(() => {
-    if (!loaded) return;
-    const canvas = canvasRef.current;
-    const section = sectionRef.current;
-    if (!canvas || !section) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    const drawFrame = (index: number) => {
-      const img = framesRef.current[index];
-      if (!img) return;
-      const cw = window.innerWidth;
-      const ch = window.innerHeight;
-      ctx.fillStyle = "#050507";
-      ctx.fillRect(0, 0, cw, ch);
-      const imgRatio = img.naturalWidth / img.naturalHeight;
-      const canvasRatio = cw / ch;
-      let drawW: number;
-      let drawH: number;
-      if (canvasRatio > imgRatio) {
-        drawW = cw;
-        drawH = cw / imgRatio;
-      } else {
-        drawH = ch;
-        drawW = ch * imgRatio;
-      }
-      if (cw <= 768) {
-        drawW *= 1.3;
-        drawH *= 1.3;
-      }
-      ctx.drawImage(img, (cw - drawW) / 2, (ch - drawH) / 2, drawW, drawH);
-    };
-
-    const resize = () => {
-      const dpr = window.devicePixelRatio || 1;
-      canvas.width = window.innerWidth * dpr;
-      canvas.height = window.innerHeight * dpr;
-      canvas.style.width = window.innerWidth + "px";
-      canvas.style.height = window.innerHeight + "px";
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      drawFrame(currentFrameRef.current);
-    };
-
-    const update = () => {
-      const rect = section.getBoundingClientRect();
-      const scrollable = section.offsetHeight - window.innerHeight;
-      const progress = Math.min(1, Math.max(0, -rect.top / scrollable));
-      const frameIndex = Math.min(
-        HERO.count - 1,
-        Math.floor(progress * HERO.count),
-      );
-      currentFrameRef.current = frameIndex;
-      drawFrame(frameIndex);
-
-      if (introRef.current) {
-        introRef.current.style.opacity = String(
-          Math.max(0, 1 - progress / 0.06),
-        );
-      }
-      if (outroRef.current) {
-        outroRef.current.style.opacity = progress >= 0.86 ? "1" : "0";
-        outroRef.current.style.pointerEvents =
-          progress >= 0.86 ? "auto" : "none";
-      }
-      if (barRef.current) {
-        barRef.current.style.transform = `scaleX(${progress})`;
-      }
-      if (seqRef.current) {
-        seqRef.current.textContent = `CAM ${String(frameIndex + 1).padStart(
-          3,
-          "0",
-        )} / ${HERO.count}`;
-      }
-
-      const nowVisible = STREET_BEATS.filter(
-        (b) => progress >= b.show && progress < b.hide,
-      ).map((b) => b.id);
-      const key = nowVisible.join(",");
-      if (key !== prevVisibleRef.current) {
-        prevVisibleRef.current = key;
-        setVisible(nowVisible);
-      }
-    };
-
-    const onScroll = () => {
-      if (tickingRef.current) return;
-      tickingRef.current = true;
-      requestAnimationFrame(() => {
-        update();
-        tickingRef.current = false;
-      });
-    };
-
-    resize();
-    update();
-    window.addEventListener("resize", resize);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      window.removeEventListener("resize", resize);
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, [loaded]);
+  const {
+    sectionRef, canvasRef, introRef, outroRef, barRef, seqRef, visible,
+  } = useScrollCanvas({ frames: HERO, beats: STREET_BEATS, prefix: "CAM" });
 
   return (
     <div className="relative">
@@ -217,9 +83,18 @@ export function Street() {
       </div>
 
       {/* ============ ACT I — the surveillance sweep ============ */}
-      <section ref={sectionRef} className="scroll-animation relative">
-        <div className="grain sticky top-0 h-screen overflow-hidden bg-background">
+      <section ref={sectionRef} className="scroll-animation ovs-scroll relative">
+        <div className="grain ovs-sticky sticky top-0 h-screen overflow-hidden bg-background">
+          <Image
+            src={HERO.path(1)}
+            alt="LIKENESS exterior archive still"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover grayscale-[0.65] opacity-60"
+          />
           <canvas
+            aria-hidden="true"
             ref={canvasRef}
             className="block h-full w-full"
             style={{ filter: "grayscale(0.72) contrast(1.08) brightness(0.8)" }}
@@ -236,7 +111,7 @@ export function Street() {
           {/* intro kinetic title */}
           <div
             ref={introRef}
-            className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
+            className="ovs-motion-only absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
           >
             <span className="mono mb-5 text-xs tracking-[0.5em] text-accent">
               OVS&nbsp;//&nbsp;EXT.&nbsp;FILE
@@ -259,7 +134,7 @@ export function Street() {
             return (
               <div
                 key={b.id}
-                className={`absolute left-6 top-1/2 max-w-sm -translate-y-1/2 transition-all duration-500 md:left-16 ${
+                className={`ovs-motion-only absolute left-6 top-1/2 max-w-sm -translate-y-1/2 transition-all duration-500 md:left-16 ${
                   isVisible
                     ? "translate-x-0 opacity-100"
                     : "-translate-x-4 opacity-0"
@@ -283,7 +158,7 @@ export function Street() {
           {/* outro CTA */}
           <div
             ref={outroRef}
-            className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center opacity-0 transition-opacity duration-500"
+            className="ovs-motion-only absolute inset-0 flex flex-col items-center justify-center px-6 text-center opacity-0 transition-opacity duration-500"
           >
             <span className="mono mb-3 text-xs tracking-[0.4em] text-teal">
               NOBODY OUT HERE IS A STRANGER
@@ -300,7 +175,7 @@ export function Street() {
           </div>
 
           {/* HUD readout */}
-          <div className="pointer-events-none absolute right-0 bottom-6 left-0 px-6 md:px-16">
+          <div className="ovs-motion-only pointer-events-none absolute right-0 bottom-6 left-0 px-6 md:px-16">
             <div className="mono mb-2 flex items-center justify-between text-[10px] tracking-[0.25em] text-muted">
               <span ref={seqRef}>CAM 001 / {HERO.count}</span>
               <span className="text-teal">● REC · EXT · DELLWOOD BLOCK</span>
@@ -315,6 +190,26 @@ export function Street() {
           </div>
         </div>
       </section>
+      <div className="ovs-reduced-only relative mx-auto max-w-4xl px-6 py-12">
+        <p className="mono text-xs tracking-[0.2em] text-teal">
+          EXT. DELLWOOD // ACCESSIBLE TAPE
+        </p>
+        <h2 className="mt-4 text-3xl font-extrabold">The Street</h2>
+        <ol className="mt-8 space-y-7">
+          {STREET_BEATS.map((beat) => (
+            <li key={beat.id} className="border-l border-teal/40 pl-5">
+              <span className="mono text-xs tracking-[0.2em] text-accent">
+                {beat.index} · {beat.title}
+              </span>
+              <p className="mt-2 text-lg">{beat.quote}</p>
+              <span className="mono text-xs text-muted">{beat.source}</span>
+            </li>
+          ))}
+        </ol>
+        <a href="#cast" className="mono mt-10 inline-flex border border-teal/40 px-5 py-3 text-xs text-teal">
+          Run the street cast
+        </a>
+      </div>
 
       {/* ============ kinetic marquee band ============ */}
       <div className="grain relative overflow-hidden border-y border-white/10 bg-steel/40 py-5">
@@ -457,7 +352,7 @@ export function Street() {
             </h2>
           </div>
           <span className="mono text-[11px] tracking-[0.2em] text-muted">
-            08 FRAMES · EXT SWEEP · UNSORTED
+            08 STILLS · OVS ARCHIVE
           </span>
         </div>
 
@@ -474,7 +369,7 @@ export function Street() {
               <div className="relative aspect-[4/3] w-full">
                 <Image
                   src={src}
-                  alt={`Exterior sweep frame ${i + 1}`}
+                  alt={`LIKENESS archive still ${i + 1}`}
                   fill
                   sizes="(max-width: 640px) 50vw, 25vw"
                   className="object-cover grayscale-[0.75] contrast-110 brightness-90 transition duration-700 hover:grayscale-0"
