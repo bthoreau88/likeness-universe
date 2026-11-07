@@ -407,6 +407,7 @@ export const LEVELS: Level[] = [
 export type Route = { route: string; label: string; fn: string; live: boolean };
 
 export const ROUTES: Route[] = [
+  { route: "/works", label: "Works", fn: "Editorial archive of the registered universe works.", live: true },
   { route: "/universe", label: "Landing", fn: "OVS hierarchy and current campaign title.", live: true },
   { route: "/studio", label: "Studio", fn: "The Omnia Vanitas doctrine, anthology, and north star.", live: true },
   { route: "/characters", label: "Characters", fn: "Identity cards and doubles.", live: true },
