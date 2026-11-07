@@ -136,20 +136,20 @@ Do not infer that a passing build proves visual or interactive quality; and do n
 
 ## 7. Evidence index
 
-- [Canonical handoff](../../CODEX_HANDOFF.md) and [AGENTS](../../AGENTS.md)
+- [Canonical handoff](../../../CODEX_HANDOFF.md) and [AGENTS](../../../AGENTS.md)
 - [Source release workflow](../../../../.github/workflows/likeness-site-validate.yml)
-- [Publisher and workflow](WORKFLOW.md)
-- [Frame sequence config](../../src/lib/frames.ts)
-- [Home canvas](../../src/components/sections/CinematicReveal.tsx)
-- [Street canvas](../../src/components/companion/Street.tsx)
-- [Room 14 WebGL](../../src/components/companion/Room14.tsx)
-- [Mobile navigation](../../src/components/ui/Navbar.tsx)
-- [Smooth scroll](../../src/components/providers/SmoothScrollProvider.tsx)
-- [Global motion CSS](../../src/app/globals.css)
-- [Registry and intake](../../src/lib/registry.ts)
-- [Static sitemap](../../src/app/sitemap.ts)
-- [Home layout](../../src/app/page.tsx)
-- [Story map; draft pending founder approval](../../handoff/story/SCREENPLAY_TO_GAME.md)
+- [Publisher and workflow](../WORKFLOW.md)
+- [Frame sequence config](../../../src/lib/frames.ts)
+- [Home canvas](../../../src/components/sections/CinematicReveal.tsx)
+- [Street canvas](../../../src/components/companion/Street.tsx)
+- [Room 14 WebGL](../../../src/components/companion/Room14.tsx)
+- [Mobile navigation](../../../src/components/ui/Navbar.tsx)
+- [Smooth scroll](../../../src/components/providers/SmoothScrollProvider.tsx)
+- [Global motion CSS](../../../src/app/globals.css)
+- [Registry and intake](../../../src/lib/registry.ts)
+- [Static sitemap](../../../src/app/sitemap.ts)
+- [Home layout](../../../src/app/page.tsx)
+- [Story map; draft pending founder approval](../../../handoff/story/SCREENPLAY_TO_GAME.md)
 - [Published provenance marker](https://github.com/bthoreau88/likeness-universe/blob/gh-pages/production-release.json)
 
 **Human review required:** decide whether G02 may implement the accessibility/performance fixes without expanding scope; separately authorize any flagship-vs-TAPE-03 homepage copy edits and any acquisition URLs.
