@@ -162,7 +162,7 @@ body {
 }
 
 /* OVS cinematic sequences retain their visual storytelling while providing a
-// non-animated, fully readable version for reduced-motion visitors. */
+   non-animated, fully readable version for reduced-motion visitors. */
 .ovs-reduced-only {
   display: none;
 }
