@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const routes = [
+  { label: "Works", href: "/works" },
   { label: "Studio", href: "/studio" },
   { label: "Universe", href: "/universe" },
   { label: "Characters", href: "/characters" },
@@ -12,7 +13,6 @@ const routes = [
   { label: "Score", href: "/score" },
   { label: "Journey", href: "/journey" },
   { label: "Room Testifies", href: "/room-testifies" },
-  { label: "Prompts", href: "/prompts" },
 ];
 
 export function Navbar() {
@@ -62,7 +62,7 @@ export function Navbar() {
           </a>
 
           {/* desktop links */}
-          <div className="hidden items-center gap-x-5 gap-y-1 lg:flex">
+          <div className="hidden items-center gap-x-4 gap-y-1 lg:flex">
             {routes.map((l) => (
               <Link
                 key={l.href}

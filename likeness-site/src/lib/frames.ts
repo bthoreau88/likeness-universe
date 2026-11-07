@@ -1,18 +1,20 @@
-// Frame-sequence config. Swap these paths/counts when you drop in your own
-// rendered LIKENESS character footage (sliced to /public/frames/frame_0001.jpg ...).
-
+// Original LIKENESS source-still scroll sequences. The old 169-frame superhero
+// demo sources are retired from all runtime references. These existing site
+// stills are a temporary source-authority-safe solution until a dedicated
+// approved Thoreau/Drya/Other motion plate is authored.
 import { asset } from "./base";
-
-const pad = (i: number) => String(i).padStart(4, "0");
+import { SCROLL_SEQUENCES } from "./registry";
 
 export const HERO = {
-  count: 169,
-  path: (i: number) => asset(`/frames/frame_${pad(i)}.jpg`),
+  count: SCROLL_SEQUENCES.street.length,
+  path: (i: number) =>
+    asset(SCROLL_SEQUENCES.street[Math.max(0, Math.min(i - 1, SCROLL_SEQUENCES.street.length - 1))]),
 };
 
 export const CINE = {
-  count: 169,
-  path: (i: number) => asset(`/frames2/frame_${pad(i)}.jpg`),
+  count: SCROLL_SEQUENCES.home.length,
+  path: (i: number) =>
+    asset(SCROLL_SEQUENCES.home[Math.max(0, Math.min(i - 1, SCROLL_SEQUENCES.home.length - 1))]),
 };
 
 // Scroll "beat" cards shown over the cinematic reveal. show/hide are 0–1 scroll
