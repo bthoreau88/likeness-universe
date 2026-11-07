@@ -160,3 +160,30 @@ body {
     transform: scaleY(0.5);
   }
 }
+
+/* OVS cinematic sequences retain their visual storytelling while providing a
+// non-animated, fully readable version for reduced-motion visitors. */
+.ovs-reduced-only {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ovs-scroll {
+    height: auto !important;
+  }
+  .ovs-scroll .ovs-sticky {
+    position: relative !important;
+    height: 65svh !important;
+  }
+  .ovs-scroll .ovs-motion-only,
+  .ovs-scroll canvas {
+    display: none !important;
+  }
+  .ovs-reduced-only {
+    display: block;
+  }
+  .animate-marquee,
+  .animate-marquee-rev {
+    animation: none !important;
+    transform: none !important;
+  }
+}
