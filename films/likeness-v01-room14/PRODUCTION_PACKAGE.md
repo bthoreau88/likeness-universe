@@ -1,4 +1,7 @@
-# LIKENESS (V01) — Production Package
+# LIKENESS (V01) — Teaser Production Package
+
+> **Ruling R6 (2026-11-07):** the film is `OVS_LIKENESS_Screenplay_V02`. This package's ten shots are
+> the **teaser**. Its locks, visual DNA and doubles grammar also apply to the film.
 
 Carried over from `OVS_LIKENESS_BIBLE_V01_2026` (Project Bible V01). The text is Brandon's,
 kept as written except for line-wrap cleanup. The *Director Eyes Only* twist (bible §01) is

@@ -5,7 +5,7 @@ Source: `OVS_LIKENESS_BIBLE_V01_2026` (Project Bible V01, 29 pp.), written and d
 
 ## Status
 
-**REGISTERED / PRE-PRODUCTION / PARTIALLY RULED (2026-11-06).** Shared continuity confirmed. See [`RULINGS_2026-11-06.md`](RULINGS_2026-11-06.md).
+**REGISTERED / PRE-PRODUCTION / RULED R1–R6 (2026-11-07).** Shared continuity; SKIN OF ANOTHER is the same night; Drya's fate there is never confirmed; Screenplay V02 is the film and the 10-shot bible is the teaser. See [`RULINGS_2026-11-07.md`](RULINGS_2026-11-07.md).
 
 - This is the first LIKENESS : UNIVERSE film. Brandon wrote it before the heavy work on
   LIKENESS : SECOND HAND, and he wants it made.
@@ -35,8 +35,8 @@ protect.
   each one's dark double.
 - **Location:** one location, Room 14 at the Dellwood, with sub-spaces: main room, kitchen,
   bathroom, hallway.
-- **Shape:** ten shots, about 88 seconds plus a title card. The film's only score arrives in
-  the last shot.
+- **Shape:** the film is the 70-page Screenplay V02 (off-repo). The **teaser** is ten shots, about
+  88 seconds plus a title card, with its only score in the last shot.
 - **DNA:** Serling × Aronofsky × Hitchcock × Lynch. It shifts tone from VIGIL (restrained grief)
   and ESTATE (dark comedy) to psychological fracture, with intimacy as the threat.
 - **End:** the empty room. The rain starts again.
@@ -45,10 +45,11 @@ protect.
 
 | File | What it holds |
 |---|---|
-| [`PRODUCTION_PACKAGE.md`](PRODUCTION_PACKAGE.md) | The bible's production content, carried over faithfully: visual DNA lock, identity locks, location lock, 10-shot skeleton, all ten master shot prompts, the doubles grammar, and what's still needed |
+| [`PRODUCTION_PACKAGE.md`](PRODUCTION_PACKAGE.md) | **Teaser** package. The bible's production content, carried over faithfully: visual DNA lock, identity locks, location lock, 10-shot skeleton, all ten master shot prompts, the doubles grammar, and what's still needed |
 | [`CANON_COLLISIONS.md`](CANON_COLLISIONS.md) | Where this film disagrees with what the repo already holds (Room 14 geometry, the doubles' truth layer, the mirror rule, identity locks, the tool versions). **Read this before generating anything.** |
 | [`RULINGS_2026-11-06.md`](RULINGS_2026-11-06.md) | Founder rulings R1–R3 and what they now require: the branch point with SKIN OF ANOTHER, the Beni lookalike, and conforming to the G02 room |
 | [`SOURCE_INTAKE_2026-11-06.md`](SOURCE_INTAKE_2026-11-06.md) | What Screenplay V02, both SKIN OF ANOTHER packages and the related LIKENESS bibles establish: revised C1, the N1 branch-point candidate (the third door), the C2 recommendation, N4–N6 |
+| [`RULINGS_2026-11-07.md`](RULINGS_2026-11-07.md) | R4 Drya's fate never confirmed, R5 skull form a deliberate void, R6 V02 is the film; the proposed **Ambiguity Lock**; the replacement wears Drya's skin before the Beni reveal |
 | [`film.json`](film.json) | A machine-readable pointer: IDs, status, sources, gates |
 
 ### Held out of this public repo on purpose
@@ -75,21 +76,23 @@ The ten shot prompts don't reveal the twist and are carried over in full.
 
 ## Open founder questions
 
-Answered on 2026-11-06: continuity (R1), SKIN OF ANOTHER (R2), DRYA consent (R3). Still open:
+Answered: R1–R3 (2026-11-06), R4–R6 (2026-11-07). Still open:
 
-1. **N1, the branch point:** candidate is the third door (Screenplay V02). It depends on one answer:
-   in SKIN OF ANOTHER, does **DRYA** or **MIO** not survive?
-2. **Story authority:** is the film the 70-page Screenplay V02 or the 10-shot bible cut? (Proposed:
-   V02 is the film; the 10-shot bible is the proof-of-concept/teaser compression.)
-3. **N3, photograph twelve:** is SECOND HAND's "interview woman leaving Room 14" this night's
-   woman, the replacement, or unrelated?
-4. **C2, the doubles' explanation:** proposed: the bible's twist governs; the game draft adapts.
-5. **Yes/no** on the PROPOSED rows in the rulings receipt and source intake (C1 revised, C3, C4, C5, N2, N4, N5).
+1. **Yes/no on the Ambiguity Lock** (`RULINGS_2026-11-07.md`): neither film proves which Drya
+   walked out of Room 14 at dawn.
+2. **N3, photograph twelve:** is SECOND HAND's "interview woman leaving Room 14" this night's
+   woman? If so, SECOND HAND must not settle which Drya she is.
+3. **Yes/no** on the remaining PROPOSED rows (C1 revised, C2 bible twist governs, C3, C4, C5, N2,
+   N4, N5).
+4. **MIO's place on this night** (not blocking for LIKENESS).
 
 ## Next gate
 
-**G01 — Founder reconciliation (narrowed).** N1, N3 and C2 need decisions; the PROPOSED rows
-need a yes/no. Nothing moves to generation until then.
+**G01 — Founder reconciliation (final narrowing).** A yes/no on the Ambiguity Lock and the proposed
+rows, plus N3. Nothing moves to generation until then.
+
+Then two tracks: **teaser** (the 10 shots in `PRODUCTION_PACKAGE.md`) and **film** (a scene/shot
+breakdown of Screenplay V02, not yet started).
 
 After G01: generate the two missing references (`OVS_LIKENESS_ENV_ROOM14WIDE_V01_2026`,
 `OVS_LIKENESS_ENV_MIRROR_V01_2026`); port the shot prompts to the current Higgsfield /

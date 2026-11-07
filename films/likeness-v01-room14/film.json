@@ -6,9 +6,9 @@
   "universe": "LIKENESS : UNIVERSE",
   "studio": "Omnia Vanitas Studios",
   "written_directed_by": "Brandon Thoreau",
-  "format": "short film, 10 shots, ~88 s + title card",
+  "format": "film: Screenplay V02 (70 pp.); teaser: 10 shots, ~88 s + title card",
   "order_note": "First LIKENESS : UNIVERSE film; predates the heavy LIKENESS : SECOND HAND work",
-  "status": "REGISTERED / PRE-PRODUCTION / PARTIALLY RULED",
+  "status": "REGISTERED / PRE-PRODUCTION / RULED R1-R6",
   "paid_generation_authorized": false,
   "registered": "2026-11-05",
   "source_document": {
@@ -28,7 +28,9 @@
     {
       "title": "LIKENESS : SKIN OF ANOTHER",
       "relationship": "same night, another angle, darker take (R2, 2026-11-06): the Room 14 woman does not survive and is replaced by a woman who eventually proves to look eerily like Beni (SECOND HAND); grief, fear, guilt, trauma bonds",
-      "off_repo_asset": "LIKENESS_SKIN_OF_ANOTHER_APPROVED_4K_SEQUENCE_V001.zip (Google Drive, 2026-08-23)"
+      "off_repo_asset": "LIKENESS_SKIN_OF_ANOTHER_APPROVED_4K_SEQUENCE_V001.zip (Google Drive, 2026-08-23)",
+      "drya_fate": "may not survive in SKIN OF ANOTHER; never shown or confirmed (R4). Ambiguity Lock proposed",
+      "skeletal_form": "deliberate void (R5)"
     },
     {
       "title": "LIKENESS : SECOND HAND",
@@ -47,8 +49,8 @@
     },
     {
       "id": "G01",
-      "name": "Founder reconciliation: who does not survive in SKIN OF ANOTHER (DRYA or MIO) to fix the N1 branch point, story authority (V02 vs 10-shot), N3, C2 + yes/no on proposed rows",
-      "status": "OPEN (R1-R3 ruled)"
+      "name": "Yes/no on Ambiguity Lock + proposed rows; N3 photograph twelve",
+      "status": "OPEN (R1-R6 ruled)"
     },
     {
       "id": "G02",
@@ -69,6 +71,11 @@
       "id": "G05",
       "name": "480p scout of Shot 05 (key shot)",
       "status": "BLOCKED_ON_G04"
+    },
+    {
+      "id": "G06",
+      "name": "Film track: scene/shot breakdown of Screenplay V02",
+      "status": "NOT STARTED"
     }
   ],
   "files": [
@@ -76,11 +83,13 @@
     "PRODUCTION_PACKAGE.md",
     "CANON_COLLISIONS.md",
     "RULINGS_2026-11-06.md",
-    "SOURCE_INTAKE_2026-11-06.md"
+    "SOURCE_INTAKE_2026-11-06.md",
+    "RULINGS_2026-11-07.md"
   ],
   "continuity": "SHARED with LIKENESS : THE GAME and LIKENESS : SECOND HAND (R1, 2026-11-06)",
   "rights": {
     "DRYA": "real performer; founder attests multiple forms of consent (R3). Records kept off this public repo"
   },
-  "story_authority_proposed": "OVS_LIKENESS_Screenplay_V02 (Draft Two, May 2026, 70 pp., off-repo); the 10-shot bible as the proof-of-concept compression"
+  "story_authority": "OVS_LIKENESS_Screenplay_V02 (Draft Two, May 2026, off-repo) — R6",
+  "teaser_authority": "OVS_LIKENESS_BIBLE_V01_2026 10-shot skeleton — R6"
 }
