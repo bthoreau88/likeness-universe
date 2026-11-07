@@ -42,7 +42,6 @@ export function useScrollCanvas({
       if (!img.complete || img.naturalWidth === 0 || img.naturalHeight === 0) return;
       const w = window.innerWidth;
       const h = window.innerHeight;
-      const ratio = img.naturalWidth / img.naturalHeight;
       const scale = Math.max(w / img.naturalWidth, h / img.naturalHeight);
       const zoom = w <= 768 ? 1.12 : 1;
       const dw = img.naturalWidth * scale * zoom;
