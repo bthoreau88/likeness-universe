@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { CHARACTERS, streetSightingsFor } from "@/lib/registry";
+import { CHARACTERS, CHARACTER_PROFILES, streetSightingsFor } from "@/lib/registry";
 import { asset } from "@/lib/base";
 import { CompanionShell } from "./CompanionShell";
 
@@ -17,6 +17,7 @@ export function Characters() {
       <div className="mt-12 grid grid-cols-1 gap-5 lg:grid-cols-3">
         {CHARACTERS.map((c, i) => {
           const sightings = streetSightingsFor(c.id);
+          const profile = CHARACTER_PROFILES.find((p) => p.characterId === c.id);
           const topMatch = sightings.reduce(
             (m, s) => Math.max(m, s.matchNum),
             0,
@@ -94,6 +95,14 @@ export function Characters() {
                   <span className="transition-transform group-hover/st:translate-x-1">
                     →
                   </span>
+                </Link>
+              )}
+              {profile && (
+                <Link
+                  href={`/characters/${profile.slug}`}
+                  className="mono mt-4 flex items-center justify-between border-t border-white/15 pt-4 text-[11px] tracking-[0.16em] text-accent transition-colors hover:text-foreground"
+                >
+                  <span>OPEN FULL DOSSIER</span><span aria-hidden="true">→</span>
                 </Link>
               )}
             </div>
