@@ -1,0 +1,1516 @@
+{
+  "routes": {
+    "/": {
+      "mobile": {
+        "title": "LIKENESS // OVS — TAPE-03",
+        "h1": [
+          "LIKENESS"
+        ],
+        "failed": [
+          "FAILED /prompts/",
+          "FAILED /room-testifies/",
+          "FAILED /journey/",
+          "FAILED /score/",
+          "FAILED /wardrobe/",
+          "FAILED /street/",
+          "FAILED /characters/",
+          "FAILED /universe/",
+          "FAILED /studio/",
+          "FAILED /works/",
+          "404 /frames/frame_0044.jpg"
+        ],
+        "consoleErr": [
+          "Failed to load resource: the server responded with a status of 404 (File not found)"
+        ],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [
+          "/likeness-universe/frames/frame_0044.jpg"
+        ],
+        "smallTargets": [],
+        "axe": []
+      },
+      "tablet": {
+        "title": "LIKENESS // OVS — TAPE-03",
+        "h1": [
+          "LIKENESS"
+        ],
+        "failed": [
+          "FAILED /prompts/",
+          "FAILED /room-testifies/",
+          "FAILED /journey/",
+          "FAILED /score/",
+          "FAILED /wardrobe/",
+          "FAILED /street/",
+          "FAILED /characters/",
+          "FAILED /universe/",
+          "FAILED /studio/",
+          "FAILED /works/",
+          "404 /frames/frame_0044.jpg"
+        ],
+        "consoleErr": [
+          "Failed to load resource: the server responded with a status of 404 (File not found)"
+        ],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [
+          "/likeness-universe/frames/frame_0044.jpg"
+        ],
+        "smallTargets": [],
+        "axe": null
+      },
+      "desktop": {
+        "title": "LIKENESS // OVS — TAPE-03",
+        "h1": [
+          "LIKENESS"
+        ],
+        "failed": [
+          "FAILED /prompts/",
+          "FAILED /room-testifies/",
+          "FAILED /journey/",
+          "FAILED /score/",
+          "FAILED /wardrobe/",
+          "FAILED /street/",
+          "FAILED /universe/",
+          "FAILED /characters/",
+          "FAILED /studio/",
+          "FAILED /works/",
+          "404 /frames/frame_0044.jpg"
+        ],
+        "consoleErr": [
+          "Failed to load resource: the server responded with a status of 404 (File not found)"
+        ],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [
+          "/likeness-universe/frames/frame_0044.jpg"
+        ],
+        "smallTargets": [
+          "Works 41x17",
+          "Studio 50x17",
+          "Universe 66x17",
+          "Characters 83x17",
+          "The Street 83x17",
+          "Wardrobe 66x17",
+          "Score 41x17",
+          "Journey 58x17",
+          "Room Testifies 116x17"
+        ],
+        "axe": []
+      }
+    },
+    "/street/": {
+      "mobile": {
+        "title": "The Street // LIKENESS Universe — OVS",
+        "h1": [
+          "THE STREET"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /room-testifies/",
+          "FAILED /motel/",
+          "FAILED /universe/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← OVS // LIKENESS 159x14"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "The Street // LIKENESS Universe — OVS",
+        "h1": [
+          "THE STREET"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /room-testifies/",
+          "FAILED /motel/",
+          "FAILED /universe/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← OVS // LIKENESS 159x14"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "The Street // LIKENESS Universe — OVS",
+        "h1": [
+          "THE STREET"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /room-testifies/",
+          "FAILED /motel/",
+          "FAILED /universe/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← OVS // LIKENESS 159x14"
+        ],
+        "axe": []
+      }
+    },
+    "/journey/": {
+      "mobile": {
+        "title": "The Journey of Tape 03 // LIKENESS Universe — OVS",
+        "h1": [
+          "THE JOURNEYOF TAPE 03"
+        ],
+        "failed": [
+          "404 /frames/frame_0012.jpg",
+          "FAILED /",
+          "FAILED /room-testifies/",
+          "FAILED /score/",
+          "FAILED /tapes/"
+        ],
+        "consoleErr": [
+          "Failed to load resource: the server responded with a status of 404 (File not found)"
+        ],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [
+          "/likeness-universe/frames/frame_0012.jpg"
+        ],
+        "smallTargets": [
+          "← OVS // LIKENESS 159x14"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "The Journey of Tape 03 // LIKENESS Universe — OVS",
+        "h1": [
+          "THE JOURNEYOF TAPE 03"
+        ],
+        "failed": [
+          "404 /frames/frame_0012.jpg",
+          "FAILED /",
+          "FAILED /room-testifies/",
+          "FAILED /score/",
+          "FAILED /tapes/"
+        ],
+        "consoleErr": [
+          "Failed to load resource: the server responded with a status of 404 (File not found)"
+        ],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [
+          "/likeness-universe/frames/frame_0012.jpg"
+        ],
+        "smallTargets": [
+          "← OVS // LIKENESS 159x14"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "The Journey of Tape 03 // LIKENESS Universe — OVS",
+        "h1": [
+          "THE JOURNEYOF TAPE 03"
+        ],
+        "failed": [
+          "404 /frames/frame_0012.jpg",
+          "FAILED /",
+          "FAILED /room-testifies/",
+          "FAILED /score/",
+          "FAILED /tapes/"
+        ],
+        "consoleErr": [
+          "Failed to load resource: the server responded with a status of 404 (File not found)"
+        ],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [
+          "/likeness-universe/frames/frame_0012.jpg"
+        ],
+        "smallTargets": [
+          "← OVS // LIKENESS 159x14"
+        ],
+        "axe": []
+      }
+    },
+    "/characters/": {
+      "mobile": {
+        "title": "Characters // LIKENESS : THE GAME — OVS",
+        "h1": [
+          "Identity, locked."
+        ],
+        "failed": [
+          "FAILED /room-14/",
+          "FAILED /devlog/",
+          "FAILED /journey/",
+          "FAILED /score/",
+          "FAILED /wardrobe/",
+          "FAILED /street/",
+          "FAILED /motel/",
+          "FAILED /tapes/",
+          "FAILED /evidence/",
+          "FAILED /studio/",
+          "FAILED /universe/",
+          "FAILED /works/",
+          "FAILED /",
+          "FAILED /characters/thoreau/",
+          "FAILED /characters/drya/",
+          "FAILED /characters/the-other/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← OVS // LIKENESS 159x14"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "Characters // LIKENESS : THE GAME — OVS",
+        "h1": [
+          "Identity, locked."
+        ],
+        "failed": [
+          "FAILED /room-14/",
+          "FAILED /devlog/",
+          "FAILED /journey/",
+          "FAILED /score/",
+          "FAILED /wardrobe/",
+          "FAILED /street/",
+          "FAILED /motel/",
+          "FAILED /tapes/",
+          "FAILED /evidence/",
+          "FAILED /studio/",
+          "FAILED /universe/",
+          "FAILED /works/",
+          "FAILED /",
+          "FAILED /characters/thoreau/",
+          "FAILED /characters/drya/",
+          "FAILED /characters/the-other/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← OVS // LIKENESS 159x14"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "Characters // LIKENESS : THE GAME — OVS",
+        "h1": [
+          "Identity, locked."
+        ],
+        "failed": [
+          "FAILED /room-14/",
+          "FAILED /devlog/",
+          "FAILED /journey/",
+          "FAILED /score/",
+          "FAILED /wardrobe/",
+          "FAILED /street/",
+          "FAILED /motel/",
+          "FAILED /tapes/",
+          "FAILED /evidence/",
+          "FAILED /studio/",
+          "FAILED /universe/",
+          "FAILED /works/",
+          "FAILED /",
+          "FAILED /characters/the-other/",
+          "FAILED /characters/drya/",
+          "FAILED /characters/thoreau/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← OVS // LIKENESS 159x14"
+        ],
+        "axe": []
+      }
+    },
+    "/works/": {
+      "mobile": {
+        "title": "Selected Works // LIKENESS Universe — OVS",
+        "h1": [
+          "WORKS."
+        ],
+        "failed": [
+          "FAILED /studio/",
+          "FAILED /",
+          "FAILED /works/the-game/",
+          "FAILED /works/tape-03/",
+          "FAILED /works/wardrobe/",
+          "FAILED /works/score/",
+          "FAILED /characters/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← OVS // LIKENESS 167x16",
+          "The studio 98x16",
+          "All (4) 60x16",
+          "Game (1) 69x16",
+          "Film & Tape (1) 130x16",
+          "Creative Threads (2) 173x16",
+          "VIEW PROJECT → 134x21",
+          "NEXT FILE / CHARACTER DOSSIERS 315x16"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "Selected Works // LIKENESS Universe — OVS",
+        "h1": [
+          "WORKS."
+        ],
+        "failed": [
+          "FAILED /works/the-game/",
+          "FAILED /studio/",
+          "FAILED /",
+          "FAILED /works/tape-03/",
+          "FAILED /works/wardrobe/",
+          "FAILED /works/score/",
+          "FAILED /characters/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← OVS // LIKENESS 167x16",
+          "The studio 98x16",
+          "All (4) 60x16",
+          "Game (1) 69x16",
+          "Film & Tape (1) 130x16",
+          "Creative Threads (2) 173x16",
+          "VIEW PROJECT → 134x21",
+          "NEXT FILE / CHARACTER DOSSIERS 315x16"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "Selected Works // LIKENESS Universe — OVS",
+        "h1": [
+          "WORKS."
+        ],
+        "failed": [
+          "FAILED /works/the-game/",
+          "FAILED /",
+          "FAILED /studio/",
+          "FAILED /works/tape-03/",
+          "FAILED /works/wardrobe/",
+          "FAILED /works/score/",
+          "FAILED /characters/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← OVS // LIKENESS 167x16",
+          "The studio 98x16",
+          "All (4) 60x16",
+          "Game (1) 69x16",
+          "Film & Tape (1) 130x16",
+          "Creative Threads (2) 173x16",
+          "VIEW PROJECT → 134x21",
+          "NEXT FILE / CHARACTER DOSSIERS 315x16"
+        ],
+        "axe": []
+      }
+    },
+    "/works/the-game/": {
+      "mobile": {
+        "title": "LIKENESS : THE GAME // Selected Works — OVS",
+        "h1": [
+          "LIKENESS : THE GAME"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /room-14/",
+          "FAILED /works/tape-03/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "LIKENESS : THE GAME // Selected Works — OVS",
+        "h1": [
+          "LIKENESS : THE GAME"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /room-14/",
+          "FAILED /works/tape-03/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "LIKENESS : THE GAME // Selected Works — OVS",
+        "h1": [
+          "LIKENESS : THE GAME"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /room-14/",
+          "FAILED /works/tape-03/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": []
+      }
+    },
+    "/works/tape-03/": {
+      "mobile": {
+        "title": "TAPE 03 // Selected Works — OVS",
+        "h1": [
+          "TAPE 03"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /room-testifies/",
+          "FAILED /works/wardrobe/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "TAPE 03 // Selected Works — OVS",
+        "h1": [
+          "TAPE 03"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /room-testifies/",
+          "FAILED /works/wardrobe/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "TAPE 03 // Selected Works — OVS",
+        "h1": [
+          "TAPE 03"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /room-testifies/",
+          "FAILED /works/wardrobe/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": []
+      }
+    },
+    "/works/wardrobe/": {
+      "mobile": {
+        "title": "Wardrobe // Selected Works — OVS",
+        "h1": [
+          "OVS · Wardrobe"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /wardrobe/",
+          "FAILED /works/score/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "Wardrobe // Selected Works — OVS",
+        "h1": [
+          "OVS · Wardrobe"
+        ],
+        "failed": [
+          "FAILED /works/",
+          "FAILED /",
+          "FAILED /wardrobe/",
+          "FAILED /works/score/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "Wardrobe // Selected Works — OVS",
+        "h1": [
+          "OVS · Wardrobe"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /wardrobe/",
+          "FAILED /works/score/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": []
+      }
+    },
+    "/works/score/": {
+      "mobile": {
+        "title": "Score // Selected Works — OVS",
+        "h1": [
+          "OVS · Score"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /score/",
+          "FAILED /works/the-game/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "Score // Selected Works — OVS",
+        "h1": [
+          "OVS · Score"
+        ],
+        "failed": [
+          "FAILED /score/",
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /works/the-game/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "Score // Selected Works — OVS",
+        "h1": [
+          "OVS · Score"
+        ],
+        "failed": [
+          "FAILED /",
+          "FAILED /works/",
+          "FAILED /score/",
+          "FAILED /works/the-game/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← All works 106x16",
+          "OVS // LIKENESS 144x16"
+        ],
+        "axe": []
+      }
+    },
+    "/characters/thoreau/": {
+      "mobile": {
+        "title": "THOREAU // Character Dossier — LIKENESS",
+        "h1": [
+          "THOREAU"
+        ],
+        "failed": [
+          "FAILED /characters/the-other/",
+          "FAILED /characters/drya/",
+          "FAILED /",
+          "FAILED /characters/",
+          "FAILED /street/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← CHARACTER ROSTER 173x16",
+          "OVS // LIKENESS 144x16",
+          "← ALL CHARACTERS 154x16"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "THOREAU // Character Dossier — LIKENESS",
+        "h1": [
+          "THOREAU"
+        ],
+        "failed": [
+          "FAILED /characters/the-other/",
+          "FAILED /characters/drya/",
+          "FAILED /characters/",
+          "FAILED /",
+          "FAILED /street/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← CHARACTER ROSTER 173x16",
+          "OVS // LIKENESS 144x16",
+          "← ALL CHARACTERS 154x16"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "THOREAU // Character Dossier — LIKENESS",
+        "h1": [
+          "THOREAU"
+        ],
+        "failed": [
+          "FAILED /characters/drya/",
+          "FAILED /characters/the-other/",
+          "FAILED /characters/",
+          "FAILED /",
+          "FAILED /street/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← CHARACTER ROSTER 173x16",
+          "OVS // LIKENESS 144x16",
+          "← ALL CHARACTERS 154x16"
+        ],
+        "axe": []
+      }
+    },
+    "/characters/drya/": {
+      "mobile": {
+        "title": "DRYA // Character Dossier — LIKENESS",
+        "h1": [
+          "DRYA"
+        ],
+        "failed": [
+          "FAILED /characters/the-other/",
+          "FAILED /characters/thoreau/",
+          "FAILED /",
+          "FAILED /characters/",
+          "FAILED /street/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← CHARACTER ROSTER 173x16",
+          "OVS // LIKENESS 144x16",
+          "← ALL CHARACTERS 154x16"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "DRYA // Character Dossier — LIKENESS",
+        "h1": [
+          "DRYA"
+        ],
+        "failed": [
+          "FAILED /characters/the-other/",
+          "FAILED /characters/thoreau/",
+          "FAILED /",
+          "FAILED /characters/",
+          "FAILED /street/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← CHARACTER ROSTER 173x16",
+          "OVS // LIKENESS 144x16",
+          "← ALL CHARACTERS 154x16"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "DRYA // Character Dossier — LIKENESS",
+        "h1": [
+          "DRYA"
+        ],
+        "failed": [
+          "FAILED /characters/the-other/",
+          "FAILED /characters/thoreau/",
+          "FAILED /",
+          "FAILED /characters/",
+          "FAILED /street/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← CHARACTER ROSTER 173x16",
+          "OVS // LIKENESS 144x16",
+          "← ALL CHARACTERS 154x16"
+        ],
+        "axe": []
+      }
+    },
+    "/characters/the-other/": {
+      "mobile": {
+        "title": "THE OTHER // Character Dossier — LIKENESS",
+        "h1": [
+          "DARK THOREAU"
+        ],
+        "failed": [
+          "FAILED /characters/drya/",
+          "FAILED /characters/thoreau/",
+          "FAILED /",
+          "FAILED /characters/",
+          "FAILED /street/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 390,
+        "vw": 390,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← CHARACTER ROSTER 173x16",
+          "OVS // LIKENESS 144x16",
+          "← ALL CHARACTERS 154x16"
+        ],
+        "axe": []
+      },
+      "tablet": {
+        "title": "THE OTHER // Character Dossier — LIKENESS",
+        "h1": [
+          "DARK THOREAU"
+        ],
+        "failed": [
+          "FAILED /characters/drya/",
+          "FAILED /characters/thoreau/",
+          "FAILED /",
+          "FAILED /characters/",
+          "FAILED /street/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 768,
+        "vw": 768,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← CHARACTER ROSTER 173x16",
+          "OVS // LIKENESS 144x16",
+          "← ALL CHARACTERS 154x16"
+        ],
+        "axe": null
+      },
+      "desktop": {
+        "title": "THE OTHER // Character Dossier — LIKENESS",
+        "h1": [
+          "DARK THOREAU"
+        ],
+        "failed": [
+          "FAILED /characters/drya/",
+          "FAILED /characters/thoreau/",
+          "FAILED /",
+          "FAILED /characters/",
+          "FAILED /street/"
+        ],
+        "consoleErr": [],
+        "overflow": false,
+        "scrollWidth": 1440,
+        "vw": 1440,
+        "offenders": [],
+        "brokenImgs": [],
+        "smallTargets": [
+          "← CHARACTER ROSTER 173x16",
+          "OVS // LIKENESS 144x16",
+          "← ALL CHARACTERS 154x16"
+        ],
+        "axe": []
+      }
+    }
+  },
+  "internalLinks": {
+    "/likeness-universe/works/": 200,
+    "/likeness-universe/studio/": 200,
+    "/likeness-universe/universe/": 200,
+    "/likeness-universe/characters/": 200,
+    "/likeness-universe/street/": 200,
+    "/likeness-universe/wardrobe/": 200,
+    "/likeness-universe/score/": 200,
+    "/likeness-universe/journey/": 200,
+    "/likeness-universe/room-testifies/": 200,
+    "/likeness-universe/prompts/": 200,
+    "/likeness-universe/": 200,
+    "/likeness-universe/motel/": 200,
+    "/likeness-universe/tapes/": 200,
+    "/likeness-universe/evidence/": 200,
+    "/likeness-universe/devlog/": 200,
+    "/likeness-universe/room-14/": 200,
+    "/likeness-universe/characters/thoreau/": 200,
+    "/likeness-universe/characters/drya/": 200,
+    "/likeness-universe/characters/the-other/": 200,
+    "/likeness-universe/works/the-game/": 200,
+    "/likeness-universe/works/tape-03/": 200,
+    "/likeness-universe/works/wardrobe/": 200,
+    "/likeness-universe/works/score/": 200
+  },
+  "perf": {
+    "/": {
+      "initial": {
+        "requests": 78,
+        "MB": 18.51,
+        "images": [
+          "/video/study-motion.jpg",
+          "/video/investigate-motion.jpg",
+          "/stills/thoreau-waking.png",
+          "/subjects/thoreau-title.png",
+          "/subjects/thoreau-portrait.png",
+          "/subjects/drya-select.png",
+          "/stills/thoreau-mirror.png"
+        ]
+      },
+      "afterSequence": {
+        "requests": 84,
+        "MB": 32.63,
+        "stillsMB": 28.56,
+        "frameRequests": 0
+      },
+      "jsHeapMB": {
+        "atLoad": 5.5,
+        "afterSequence": 6.6
+      }
+    },
+    "/street/": {
+      "initial": {
+        "requests": 24,
+        "MB": 5.17,
+        "images": [
+          "/stills/hallway-door14.png",
+          "/stills/thoreau-watching.png"
+        ]
+      },
+      "afterSequence": {
+        "requests": 30,
+        "MB": 20.48,
+        "stillsMB": 19.4,
+        "frameRequests": 0
+      },
+      "jsHeapMB": {
+        "atLoad": 4,
+        "afterSequence": 4.8
+      }
+    }
+  },
+  "keyboard": {
+    "homeMobileTabOrder": [
+      {
+        "text": "◊OVS// TAPE-03",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "Menu",
+        "tag": "BUTTON",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "Works01",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Studio02",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Universe03",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Characters04",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "The Street05",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Wardrobe06",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Score07",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Journey08",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Room Testifies09",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Open the Prompt Library",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Meet the two",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "View Stills",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "DRYATHE WITNESS",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "THOREAUTHE HOST",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "Meet the two",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Open Prompt Library →",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "EXT · SURVEILLANCEThe StreetTh",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "COSTUME DEPTWardrobeThe motel-",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "SOUND DEPTScoreRoom tone as mu",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Follow development",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "◊OVS// TAPE-03",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "Menu",
+        "tag": "BUTTON",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "Works01",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Studio02",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Universe03",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Characters04",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "The Street05",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Wardrobe06",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Score07",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Journey08",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Room Testifies09",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Open the Prompt Library",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Meet the two",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "View Stills",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "DRYATHE WITNESS",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "THOREAUTHE HOST",
+        "tag": "A",
+        "effOpacity": 1,
+        "offscreen": false
+      },
+      {
+        "text": "Meet the two",
+        "tag": "A",
+        "effOpacity": 0.78,
+        "offscreen": false
+      }
+    ],
+    "homeInvisibleFocus": [
+      {
+        "text": "Works01",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Studio02",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Universe03",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Characters04",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "The Street05",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Wardrobe06",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Score07",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Journey08",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Room Testifies09",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Open the Prompt Library",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Meet the two",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "EXT · SURVEILLANCEThe StreetTh",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "COSTUME DEPTWardrobeThe motel-",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "SOUND DEPTScoreRoom tone as mu",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Works01",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Studio02",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Universe03",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Characters04",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "The Street05",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Wardrobe06",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Score07",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Journey08",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Room Testifies09",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      },
+      {
+        "text": "Open the Prompt Library",
+        "tag": "A",
+        "effOpacity": 0,
+        "offscreen": false
+      }
+    ],
+    "worksFilters": [
+      {
+        "label": "All (4)",
+        "pressed": "true",
+        "articles": 4,
+        "headings": [
+          "LIKENESS : THE GAME",
+          "TAPE 03",
+          "OVS · Wardrobe",
+          "OVS · Score"
+        ],
+        "focusRing": "solid 2px",
+        "liveRegion": 1
+      },
+      {
+        "label": "Game (1)",
+        "pressed": "true",
+        "articles": 1,
+        "headings": [
+          "LIKENESS : THE GAME"
+        ],
+        "focusRing": "solid 2px",
+        "liveRegion": 1
+      },
+      {
+        "label": "Film & Tape (1)",
+        "pressed": "true",
+        "articles": 1,
+        "headings": [
+          "TAPE 03"
+        ],
+        "focusRing": "solid 2px",
+        "liveRegion": 1
+      },
+      {
+        "label": "Creative Threads (2)",
+        "pressed": "true",
+        "articles": 2,
+        "headings": [
+          "OVS · Wardrobe",
+          "OVS · Score"
+        ],
+        "focusRing": "solid 2px",
+        "liveRegion": 1
+      }
+    ],
+    "dossierSwitcher": {
+      "count": 3,
+      "current": "View THOREAU dossier",
+      "afterEnter": "/characters/drya/",
+      "nextFromDrya": "/characters/the-other/",
+      "wrapsTo": "/characters/thoreau/"
+    }
+  },
+  "reducedMotion": {
+    "/": {
+      "lenisActive": true,
+      "runningAnimations": 3,
+      "reducedAltVisible": true,
+      "canvasVisible": false,
+      "framerTransforms": 68
+    },
+    "/street/": {
+      "lenisActive": true,
+      "runningAnimations": 0,
+      "reducedAltVisible": true,
+      "canvasVisible": false,
+      "framerTransforms": 15
+    },
+    "/journey/": {
+      "lenisActive": true,
+      "runningAnimations": 2,
+      "reducedAltVisible": false,
+      "canvasVisible": false,
+      "framerTransforms": 10
+    },
+    "/room-14/": {
+      "lenisActive": true,
+      "runningAnimations": 0,
+      "reducedAltVisible": false,
+      "canvasVisible": false,
+      "framerTransforms": 0
+    }
+  }
+}

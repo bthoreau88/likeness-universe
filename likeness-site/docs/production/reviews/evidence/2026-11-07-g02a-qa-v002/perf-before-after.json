@@ -1,0 +1,74 @@
+{
+ "method": "Chrome (Playwright 1.65, system google-chrome), mobile emulation 390x844 @3x, no network throttling, local static export served at /likeness-universe; bytes = response body sizes; 'atIdle' = after networkidle, 'afterFullScroll' = after scrolling the whole sequence section",
+ "canonical c53809b": {
+  "/": {
+   "atIdle": {
+    "requests": 238,
+    "MB": 22.96,
+    "seqMB": 18.91,
+    "frameReqs": 169
+   },
+   "afterFullScroll": {
+    "requests": 240,
+    "MB": 28.9,
+    "seqMB": 24.85
+   }
+  },
+  "/street/": {
+   "atIdle": {
+    "requests": 190,
+    "MB": 12.27,
+    "seqMB": 11.19,
+    "frameReqs": 169
+   },
+   "afterFullScroll": {
+    "requests": 193,
+    "MB": 18.49,
+    "seqMB": 17.4
+   }
+  }
+ },
+ "pr25 d9e152b": {
+  "/": {
+   "atIdle": {
+    "requests": 78,
+    "MB": 18.49,
+    "seqMB": 14.44,
+    "frameReqs": 0
+   },
+   "afterFullScroll": {
+    "requests": 84,
+    "MB": 32.61,
+    "seqMB": 28.56
+   },
+   "jsHeapMB": {
+    "atLoad": 5.5,
+    "afterSequence": 6.6
+   }
+  },
+  "/street/": {
+   "atIdle": {
+    "requests": 24,
+    "MB": 5.17,
+    "seqMB": 4.09,
+    "frameReqs": 0
+   },
+   "afterFullScroll": {
+    "requests": 30,
+    "MB": 20.48,
+    "seqMB": 19.4
+   },
+   "jsHeapMB": {
+    "atLoad": 4.0,
+    "afterSequence": 4.8
+   }
+  }
+ },
+ "derivative_estimate_not_committed": {
+  "inputs": "10 sequence/subject PNGs used by SCROLL_SEQUENCES",
+  "png_MB": 25.32,
+  "webp_q82_MB": 0.84,
+  "jpeg_q84_progressive_MB": 1.66,
+  "note": "Pillow encode at native size; NOT visually QC'd; not committed"
+ }
+}
