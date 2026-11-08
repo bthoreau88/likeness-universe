@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Room 14 Noise Tuning</title>
+<style>
+  /* OVS screen palette — near-black field, off-white ink, one emerald cipher */
+  :root { --field:#0A0A0A; --ink:#ECE8DF; --dim:#7d7a73; --line:#2a2826; --cipher:#00FF87; --oxblood:#8a1c1c; --amber:#c9892b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--field); color:var(--ink); font:14px/1.5 ui-monospace,"JetBrains Mono",Menlo,monospace; }
+  main { max-width:760px; margin:0 auto; padding:28px 16px 60px; }
+  h1 { font:600 13px/1 ui-monospace,monospace; letter-spacing:.24em; color:var(--dim); margin:0 0 22px; }
+  h1 b { color:var(--ink); font-weight:600; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+  button { background:transparent; color:var(--ink); border:1px solid var(--line); padding:10px 14px; font:inherit; letter-spacing:.08em; cursor:pointer; }
+  button:hover:not(:disabled) { border-color:var(--ink); }
+  button[aria-pressed="true"] { border-color:var(--cipher); color:var(--cipher); }
+  button:disabled { opacity:.35; cursor:default; }
+  .meter { position:relative; height:46px; border:1px solid var(--line); margin:8px 0 4px; overflow:hidden; }
+  .bar { position:absolute; inset:0 auto 0 0; width:0; background:var(--ink); opacity:.85; transition:width 40ms linear; }
+  .mark { position:absolute; top:0; bottom:0; width:1px; }
+  .mark span { position:absolute; top:2px; left:4px; font-size:10px; letter-spacing:.1em; }
+  .m-minor { background:var(--amber); } .m-minor span { color:var(--amber); }
+  .m-major { background:var(--oxblood); } .m-major span { color:#d65a5a; }
+  .scale { display:flex; justify-content:space-between; color:var(--dim); font-size:11px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin:22px 0; }
+  .cell { background:var(--field); padding:12px; }
+  .cell small { display:block; color:var(--dim); font-size:10px; letter-spacing:.16em; }
+  .cell strong { font-size:22px; font-weight:500; }
+  .node { color:var(--cipher); }
+  .pips { display:flex; gap:6px; margin-top:6px; }
+  .pip { width:16px; height:16px; border:1px solid var(--line); }
+  .pip.on { background:var(--ink); }
+  .pip.on.hot { background:var(--oxblood); border-color:var(--oxblood); }
+  #log { border-top:1px solid var(--line); padding-top:12px; color:var(--dim); font-size:12px; max-height:220px; overflow:auto; white-space:pre-wrap; }
+  #log .minor { color:var(--amber); } #log .major { color:#d65a5a; } #log .ok { color:var(--cipher); }
+  @media (max-width:560px) { .grid { grid-template-columns:repeat(2,1fr); } }
+  .note { color:var(--dim); font-size:12px; margin-top:-6px; }
+  .flash { animation:flash 300ms; }
+  @keyframes flash { from { background:var(--oxblood); } to { background:var(--field); } }
+</style>
+</head>
+<body>
+<main>
+  <h1><b>ROOM 14</b> // HUSH PROTOCOL // TUNING RIG V001</h1>
+
+  <div class="row" role="group" aria-label="Output mode">
+    <button id="m-head" aria-pressed="true">HEADPHONES</button>
+    <button id="m-spk" aria-pressed="false">SPEAKERS</button>
+  </div>
+  <div class="row">
+    <button id="b-start">1 · OPEN MIC + CALIBRATE (3s — stay silent)</button>
+    <button id="b-hide" disabled>2 · ENTER N2 HIDE LOOP</button>
+    <button id="b-n5" disabled>3 · TEST N5 INVERSION</button>
+    <button id="b-reset" disabled>RESET</button>
+  </div>
+  <p class="note" id="status">Mic is processed locally. Nothing is recorded or sent.</p>
+
+  <div class="meter" aria-hidden="true">
+    <div class="bar" id="bar"></div>
+    <div class="mark m-minor" id="mk-minor"><span>MINOR</span></div>
+    <div class="mark m-major" id="mk-major"><span>MAJOR</span></div>
+  </div>
+  <div class="scale"><span>floor</span><span id="scale-max">+30 dB</span></div>
+
+  <div class="grid">
+    <div class="cell"><small>NODE</small><strong class="node" id="v-node">—</strong></div>
+    <div class="cell"><small>EXPOSURE</small>
+      <div class="pips" id="pips"></div></div>
+    <div class="cell"><small>STRAIN</small><strong id="v-grief">0</strong></div>
+    <div class="cell"><small>FLOOR / MARGIN</small><strong id="v-db">— / —</strong></div>
+    <div class="cell"><small>SURVIVAL</small><strong id="v-time">0s</strong></div>
+    <div class="cell"><small>FAILS</small><strong id="v-fails">0</strong></div>
+  </div>
+
+  <div id="log"></div>
+</main>
+
+<script type="module">
+import { HorrorAudioMonitor } from './HorrorAudioMonitor.js';
+import { HideNoiseDirector, NODES } from './HideNoiseDirector.js';
+
+const $ = (id) => document.getElementById(id);
+const RANGE_DB = 30;          // meter spans floor → floor + 30 dB
+const LOOP_MS = 8000;         // N2 loop length — matches the 8.0 s clip spec
+let mode = 'headphones';
+let seamTimer = 0, survivalShown = 0, lastFrame = performance.now(), lastNoise = 0;
+
+// pips
+for (let i = 0; i < 5; i++) { const p = document.createElement('div'); p.className = 'pip'; $('pips').appendChild(p); }
+
+function log(msg, cls = '') {
+  const line = document.createElement('div');
+  if (cls) line.className = cls;
+  line.textContent = `${(performance.now() / 1000).toFixed(1).padStart(6)}  ${msg}`;
+  $('log').prepend(line);
+}
+function placeMarks() {
+  $('mk-minor').style.left = `${(monitor.opts.minorDb / RANGE_DB) * 100}%`;
+  $('mk-major').style.left = `${(monitor.opts.majorDb / RANGE_DB) * 100}%`;
+}
+
+const director = new HideNoiseDirector({
+  onNode(node, meta) {
+    log(`→ ${node}${meta.reason ? `  (${meta.reason})` : ''}${meta.via ? `  via ${meta.via}` : ''}`, node === NODES.FAIL ? 'major' : 'ok');
+    if (node === NODES.HIDE) { monitor.deafen(1500); monitor.arm('spike'); }
+    if (node === NODES.FAIL) {
+      monitor.disarm(); document.body.classList.remove('flash'); void document.body.offsetWidth; document.body.classList.add('flash');
+      setTimeout(() => director.failClipEnded(), 2500);          // stands in for the fail clip
+    }
+    if (node === NODES.SURVIVE) { monitor.disarm(); setTimeout(() => director.surviveClipEnded(), 2000); }
+    if (node === NODES.RESOLVE) {
+      monitor.disarm();
+      log(`N5 variant: ${meta.variant}. DRYA: "...are you in there?" — answer out loud.`, 'ok');
+      setTimeout(() => { monitor.deafen(300); monitor.arm('sustain'); }, 1000); // line + 1 s tail
+    }
+    render();
+  },
+  onVariant(v) { log(`loop seam → variant A${v}`); },
+  onThresholds(t) { monitor.setThresholds(t); placeMarks(); log(`room hears better: minor threshold now ${t.minorDb} dB`, 'minor'); },
+  onState(s) {
+    if (s.node === NODES.RESOLVE && s.answered !== null) {
+      monitor.disarm();
+      log(s.answered ? 'You answered. The door opens.' : 'You said nothing. She leaves.', s.answered ? 'ok' : 'major');
+      log(director.publicCutLine(), 'ok');
+    }
+    render();
+  },
+});
+
+const monitor = new HorrorAudioMonitor({
+  onThresholdBreached(e) {
+    log(`${e.tier.toUpperCase()}  +${e.marginDb.toFixed(1)} dB`, e.tier);
+    director.handleBreach(e);
+  },
+  onSustainedVoice() { director.handleSustain(); },
+  onCalibrated({ floorDb, samples }) {
+    log(`floor locked at ${floorDb.toFixed(1)} dBFS (${samples} ticks)`, 'ok');
+    $('b-hide').disabled = $('b-n5').disabled = $('b-reset').disabled = false;
+    $('status').textContent = 'Calibrated. Enter the hide loop and stay quiet for 90 s.';
+  },
+  onTick({ marginDb, playerNoise }) {
+    lastNoise = playerNoise;
+    $('bar').style.width = `${Math.min(Math.max(marginDb / RANGE_DB, 0), 1) * 100}%`;
+    $('v-db').textContent = `${monitor.floorDb.toFixed(0)} / ${marginDb >= 0 ? '+' : ''}${marginDb.toFixed(1)}`;
+  },
+});
+placeMarks();
+
+function render() {
+  const s = director.snapshot();
+  $('v-node').textContent = s.node.replace(/_/g, ' ');
+  $('v-grief').textContent = s.STRAIN;
+  $('v-fails').textContent = s.failCount;
+  [...$('pips').children].forEach((p, i) => { p.classList.toggle('on', i < s.EXPOSURE); p.classList.toggle('hot', s.EXPOSURE >= 4); });
+}
+
+function frame(now) {
+  const dt = now - lastFrame; lastFrame = now;
+  director.tick(dt, lastNoise);
+  if (director.node === NODES.HIDE) {
+    seamTimer += dt;
+    if (seamTimer >= LOOP_MS) { seamTimer -= LOOP_MS; director.loopSeam(); }
+    const t = Math.floor(director._hideElapsed / 1000);
+    if (t !== survivalShown) { survivalShown = t; $('v-time').textContent = `${t}s / 90s`; }
+  }
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+// mode toggle — speakers mode = stricter bleed protection (longer deafen windows)
+function setMode(m) {
+  mode = m;
+  $('m-head').setAttribute('aria-pressed', m === 'headphones');
+  $('m-spk').setAttribute('aria-pressed', m === 'speakers');
+  log(`output mode: ${m.toUpperCase()}${m === 'speakers' ? ' — N2 runs visual-only, no room sounds' : ''}`);
+}
+$('m-head').onclick = () => setMode('headphones');
+$('m-spk').onclick = () => setMode('speakers');
+
+$('b-start').onclick = async () => {
+  $('b-start').disabled = true;
+  try {
+    $('status').textContent = 'Calibrating — stay silent for 3 seconds…';
+    await monitor.start();
+    await monitor.calibrate();
+  } catch (err) {
+    $('status').textContent = `Mic unavailable: ${err.message}`;
+    $('b-start').disabled = false;
+  }
+};
+function fresh() {
+  monitor.disarm();
+  director.reset();
+  monitor.setThresholds({ minorDb: director.cfg.minorDbBase }); // undo any grief tightening
+  placeMarks();
+  seamTimer = 0; survivalShown = -1;
+}
+$('b-hide').onclick = () => { fresh(); director.beginHide(); };
+$('b-n5').onclick = () => { fresh(); director._enterResolve('test'); };
+$('b-reset').onclick = () => { fresh(); render(); log('reset'); };
+render();
+</script>
+</body>
+</html>
