@@ -45,3 +45,5 @@
 - Conflicts or blockers: **HIGH defect in PR #25** — `Threads.tsx:29` (`/frames/frame_0044.jpg`) and `Journey.tsx:35` (`/frames/frame_0012.jpg`) reference frames PR #25 deletes; must be fixed on Codex's branch to approved stills. This branch is file-disjoint from PR #25 (merges in any order, no conflict).
 - Rollback: revert the single remediation commit `015b719` (new revert PR; no intervening work to preserve).
 - Next bounded task / inputs required / acceptance: (1) Codex fixes the two deleted-frame references and re-greps `rg "/frames2?/" src` → empty; (2) founder approves original-character imagery for scroll/works/dossiers; (3) merge this a11y branch on its own review. Acceptance: home + `/journey` render real imagery; source gates green; a11y behaviors confirmed.
+
+> **Errata (2026-11-07, V002):** "PR pending" → opened as **#26**. "File-disjoint from PR #25" is incorrect (both touch `Navbar.tsx`); the merge is still conflict-free (verified). See `receipts/2026-11-07-LKN-SITE-G02A-qa-pass-v002.md`.

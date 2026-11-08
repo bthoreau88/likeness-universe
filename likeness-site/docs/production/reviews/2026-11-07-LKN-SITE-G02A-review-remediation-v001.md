@@ -108,3 +108,7 @@ PR #25 is explicit that its stills are a **copyright-safe visual bridge**, *not*
 5. **Release mechanics (out of scope here):** guarded Pages publish from clean merged canonical with fresh source + gh-pages SHAs, live smoke test — never from a feature branch, never auto.
 
 **Recommendation:** keep PR #25 **draft**. It is mergeable-quality *as a reviewed bridge* once defect #1 is fixed and founder approves the imagery; it is **not** evidence of an approved cinematic. Merge this a11y branch (`apwuh1`) independently on its own review — it has no dependency on the G02B imagery decisions.
+
+---
+
+> **Errata (added 2026-11-07, V002 QA pass — original text above left unchanged):** this branch and PR #25 are **not** file-disjoint; both modify `src/components/ui/Navbar.tsx`. Git auto-merges them cleanly and the trial-merged tree passes lint / validate / test / build, so "merge in either order" still holds. The PR is **#26**. See `2026-11-07-LKN-SITE-G02A-qa-pass-v002.md`.
