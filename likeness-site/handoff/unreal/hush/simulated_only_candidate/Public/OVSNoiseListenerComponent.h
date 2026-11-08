@@ -32,7 +32,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(
     EOVSNoiseSource, Source,
     FName, Reason);
 
-UCLASS(ClassGroup=(OVS), meta=(BlueprintSpawnableComponent), DisplayName="OVS Noise Listener (Simulated)")
+UCLASS(ClassGroup=(OVS), meta=(BlueprintSpawnableComponent, DisplayName="OVS Noise Listener (Simulated)"))
 class LIKENESSTHEGAME_API UOVSNoiseListenerComponent : public UActorComponent
 {
     GENERATED_BODY()
