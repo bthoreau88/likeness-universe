@@ -24,6 +24,6 @@ node --test likeness-site/handoff/unreal/hush/director_contract_candidate/HideDi
 
 **Unverified:** real listener-to-director bridge, 1.2-second refractory integrated with director, UHT/UE build, GL-15 hide actor, G06 resource-safe MapCheck and clean exit, real actor performance and rewind. The prior listener source is unchanged by this gate; no new C++ director is installed.
 
-**Governance:** no Audio Capture, microphone permission, global room-state alias, `STORY_BIBLE.md`, `mechanics_registry.csv`, `cpp_rowstructs`, paid generation or game-source mutation. Any later Unreal work uses a *third disposable test copy*, not the original game. Review [cold-read findings](../../../docs/production/reviews/2026-11-08-GL-19R2-HUSH-INDEPENDENT-CODE-COLD-REVIEW-V001.md) before further adoption.
+**Governance:** no Audio Capture, microphone permission, global room-state alias, `STORY_BIBLE.md`, `mechanics_registry.csv`, `cpp_rowstructs`, paid generation or game-source mutation. Any later Unreal work uses a *third disposable test copy*, not the original game. Review [cold-read findings](../../../../docs/production/reviews/2026-11-08-GL-19R2-HUSH-INDEPENDENT-CODE-COLD-REVIEW-V001.md) before further adoption.
 
 **Next review:** human/independent performance cold read of the PAUSE start/extend → CAMCORDER → APPROACH behavior, followed by a separately gated implementation candidate; GL-15 and G06 must pass before real UE work.
