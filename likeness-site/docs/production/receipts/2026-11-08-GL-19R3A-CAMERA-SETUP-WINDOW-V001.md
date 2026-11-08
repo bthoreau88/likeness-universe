@@ -29,7 +29,7 @@
 
 ## Disposition and next step
 
-**GL-19R.3A DESK PREPARATION COMPLETED; SOURCE-BASED NUMERIC FEASIBILITY ONLY; PHYSICAL BLOCKING PROOF **NOT PASSED**; HOLD FOR REAL HUMAN TIMED REHEARSAL AND APPROACH-RETURN DIRECTING DECISION.**
+**GL-19R.3A DESK PREPARATION COMPLETED; SOURCE-BASED NUMERIC FEASIBILITY ONLY; PHYSICAL BLOCKING PROOF NOT PASSED; HOLD FOR REAL HUMAN TIMED REHEARSAL AND APPROACH-RETURN DIRECTING DECISION.**
 
 Recommend **human-directed Option A camera-setup rehearsal** with the measurement CSV, but do not declare GL-19R.3A passed unless actual timed video/table blocking proves the camera-window length, sightlines, input fairness and actor return without script drift. If the approach cannot return credibly, send exposure 4 for separate GL-16/directing reblock review rather than silently shorten/exempt it.
 
