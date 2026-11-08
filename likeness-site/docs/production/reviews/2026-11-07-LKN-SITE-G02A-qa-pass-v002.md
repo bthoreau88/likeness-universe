@@ -136,3 +136,29 @@ Not for Codex alone: D5 (site-wide reduced motion: Lenis off and parallax gated)
 
 - V001 §header/§2 and receipt line 45 state the PR #26 branch "touch[es] only files PR #25 does not modify" / is "file-disjoint". **Incorrect:** both PRs modify `src/components/ui/Navbar.tsx` (PR #25: route list and gap class; PR #26: focus/inert logic). The practical conclusion ("merges in either order without conflict") **still holds**: verified by trial merge plus full gates.
 - Receipt line 6 says "PR pending". The PR exists: **#26**.
+
+---
+
+## 8. Update — D5 fixed on this branch (commit `e91f69c`, same day)
+
+Scope approved by the founder after V002. Three files, all outside PR #25 except `Journey.tsx`, which PR #25 does not modify:
+
+| File | Change |
+|---|---|
+| `src/lib/useReducedMotionPref.ts` (new) | `useSyncExternalStore` flag: server snapshot `false` (hydration-safe), live on OS setting change. framer's `useReducedMotion` is avoided because it reads matchMedia during the first render and never updates. |
+| `src/components/providers/SmoothScrollProvider.tsx` | Lenis `smoothWheel: !reduced` (wheel goes native, no inertia); site-wide `MotionConfig reducedMotion="user"` (all framer animations skip transform/layout movement, keep fades). Neither wrapper renders DOM. |
+| `src/components/companion/Journey.tsx` | Pinned background `y`/`scale` and copy `y` held static under reduced motion; scroll-linked opacity fade kept. |
+
+**Browser evidence (Chrome, `scripts/motion.mjs`, `scripts/smoke.mjs`):**
+
+| Check | Normal motion | Reduced motion |
+|---|---|---|
+| Home wheel 800 px: scrollY at 30 ms | 208 (smooth glide, `lenis-smooth`) | **800 (native, instant)** |
+| Home reveal transform 60 ms after entering view | `translateY(19.6px)` (animating) | **`none`** |
+| `/journey` Stage I background across scroll | moves (`-5.2% → 1.9%`, scale 1.09 → 1.06) | **static** |
+| Console / page / hydration errors | none | none |
+| All 17 canonical routes × both modes (mobile) | 0 errors, 0 failed responses | 0 errors, 0 failed responses |
+
+Same results on the **PR #25 + this branch** trial merge: lint, validate, test and build (30 pages) all pass. A simulated Codex D1 fix to `Journey.tsx:35` / `Threads.tsx:29` also auto-merges with this commit, so there's no conflict.
+
+**Not covered:** Tailwind `animate-pulse` on scroll cues and status dots (opacity only, not movement) is left as is. PR #25's `.animate-marquee` rule already handles marquees. Real iOS/macOS "Reduce Motion" was **not** tested on a device; Chrome emulation only.
