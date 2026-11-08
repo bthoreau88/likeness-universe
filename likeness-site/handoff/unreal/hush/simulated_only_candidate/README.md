@@ -40,3 +40,9 @@ Source text was fetched back through GitHub and checked for:
 - Founder can approve/revise/reject this **code candidate** separately. GL-19R's earlier **design** approval does not certify code.
 
 **NEXT: GL-19R.1 source cold review → (GL-15 + G06 holds) → disposable compile proof, only if separately authorized.**
+
+## GL-19R.1 host-source qualification — 2026-11-08 (review branch)
+
+A separate stacked review branch fixes Unreal `DisplayName` placement in the candidate `UCLASS` metadata and provides a [reproducible host-only qualification fixture](qualification/README.md). **20/20 C++ assertions passed with a host UE shim**, using source-identical candidate files verified by Git blob IDs. This **does not verify UHT, actual UE 5.8 compilation or PIE**. The listener still lacks a director integration for exposure, silence decay, performance and rewind; those are deliberately separate authority and implementation gates.
+
+Read the [GL-19R.1 qualification report](../../../../docs/production/reviews/2026-11-08-GL-19R1-HUSH-SOURCE-QUALIFICATION-V001.md) before making any future installation decision. Leave the original game and current sandbox untouched, with microphone capture off and excluded from the first slice.
