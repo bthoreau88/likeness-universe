@@ -12,6 +12,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { asset } from "@/lib/base";
 import { Scanlines } from "@/components/atmos/Atmos";
+import { useReducedMotionPref } from "@/lib/useReducedMotionPref";
 
 type Stage = {
   n: string;
@@ -107,12 +108,18 @@ function Chapter({
     [0, 1, 1, 0],
   );
   const textY = useTransform(scrollYProgress, [0.18, 0.4], [40, 0]);
+  // Reduced motion: hold the background still and drop the copy's slide-in.
+  // The scroll-linked opacity fade stays (a fade is not movement).
+  const reduce = useReducedMotionPref();
 
   return (
     <section ref={setRef} className="relative h-[190vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         {/* pinned parallax background */}
-        <motion.div style={{ y, scale }} className="absolute inset-0">
+        <motion.div
+          style={reduce ? { y: 0, scale: 1 } : { y, scale }}
+          className="absolute inset-0"
+        >
           <Image
             src={asset(stage.image)}
             alt={stage.title}
@@ -127,7 +134,7 @@ function Chapter({
 
         {/* chapter copy */}
         <motion.div
-          style={{ opacity: textOpacity, y: textY }}
+          style={{ opacity: textOpacity, y: reduce ? 0 : textY }}
           className="relative mx-auto w-full max-w-[1400px] px-6 md:pr-10 md:pl-44"
         >
           <div className="max-w-[42ch]">
