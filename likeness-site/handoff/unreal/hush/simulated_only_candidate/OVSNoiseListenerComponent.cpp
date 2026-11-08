@@ -5,6 +5,7 @@
 
 #include "OVSNoiseListenerComponent.h"
 #include "Engine/World.h"
+#include "GameFramework/Actor.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogOVSNoise, Log, All);
 
@@ -35,6 +36,10 @@ float UOVSNoiseListenerComponent::NowSeconds() const
 
 void UOVSNoiseListenerComponent::Arm()
 {
+    if (bArmed)
+    {
+        return; // cannot bypass refractory by rearming the same hide session
+    }
     bArmed = true;
     RefractoryUntil = 0.0f;
     // Intentionally preserve DeafUntil, so no replay/stinger tail leaks through
