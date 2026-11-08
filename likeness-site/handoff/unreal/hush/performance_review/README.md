@@ -9,7 +9,7 @@ Read in order:
 1. [Scene-grounded cold read](GL-19R3_SCENE_GROUNDED_COLD_READ_V001.md) — source stage positions and causality; eight actor rehearsal scenarios still **pending**.
 2. [Integration collision review](GL-19R3_DIRECTOR_INTEGRATION_REVIEW_V001.md) — eligible pose windows, cue holds, scripted action priority, single rewind owner and full QA risks.
 3. [Pure cue-read reference](cue_read_gate.mjs) + [15 Node tests](cue_read_gate.test.mjs) — independent desk-model test, not an actor/animation/Blueprint test.
-4. [Gate receipt](../../../docs/production/receipts/2026-11-08-GL-19R3-HUSH-PERFORMANCE-INTEGRATION-V001.md).
+4. [Gate receipt](../../../../docs/production/receipts/2026-11-08-GL-19R3-HUSH-PERFORMANCE-INTEGRATION-V001.md).
 
 Test in Node 18+:
 ```sh
