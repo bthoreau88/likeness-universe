@@ -1,9 +1,9 @@
 # GL-19R — MECH_HIDE_001 / HUSH founder review candidate V001
 
 **Project:** LIKENESS : THE GAME — Room 14, `A_NIGHT_FOR_FOUR.fountain` scene 3.3  
-**Disposition:** ADVISOR RECOMMENDATION ONLY · HUMAN GL-19 SIGN-OFF PENDING  
+**Disposition:** HISTORICAL REVIEW CANDIDATE — superseded by [FOUNDER-APPROVED PROVISIONAL DESIGN receipt](../receipts/2026-11-07-GL-19R-HUSH-FOUNDER-PROVISIONAL-APPROVAL-V001.md) · NOT INSTALLED OR CANON-PROMOTED  
 **Date:** 2026-11-07  
-**Parent source:** [HUSH proposal](../../handoff/mechanics/MECH_HIDE_NOISE_PROPOSAL.md) · [GAME_LANE GL-19](../GAME_LANE.md) · draft [PR #27](https://github.com/bthoreau88/likeness-universe/pull/27)  
+**Parent source:** [HUSH proposal](../../../handoff/mechanics/MECH_HIDE_NOISE_PROPOSAL.md) · [GAME_LANE GL-19](../GAME_LANE.md) · draft [PR #27](https://github.com/bthoreau88/likeness-universe/pull/27)  
 **Strict impact:** No implementation, game-source write, state/registry/CSV change, canon promotion, microphone use, paid generation, engine launch, or merge.
 
 ## Gate selection
