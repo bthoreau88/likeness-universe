@@ -3,7 +3,7 @@
 **Project:** LIKENESS : THE GAME  
 **Date:** 2026-11-07  
 **Gate:** GL-19R (five-part HUMAN design disposition)  
-**Source:** [GL-19R review candidate](../reviews/2026-11-07-GL-19-HUSH-FOUNDER-REVIEW-CANDIDATE-V001.md) · [HUSH proposal](../../handoff/mechanics/MECH_HIDE_NOISE_PROPOSAL.md) · [GAME_LANE GL-19](../GAME_LANE.md)  
+**Source:** [GL-19R review candidate](../reviews/2026-11-07-GL-19-HUSH-FOUNDER-REVIEW-CANDIDATE-V001.md) · [HUSH proposal](../../../handoff/mechanics/MECH_HIDE_NOISE_PROPOSAL.md) · [GAME_LANE GL-19](../GAME_LANE.md)  
 **Evidence of human decision:** Founder responded "**Yes approve**" directly to the complete GL-19R V001 five-part provisional design proposal in the conversation.  
 **Recorded disposition:** **FOUNDER APPROVED — PROVISIONAL DESIGN DIRECTION ONLY**. Not canon/production implementation approval.
 
@@ -27,7 +27,7 @@
 
 ## Next gate — GL-19R.1 (CLOUD simulated-only preparation)
 
-**Authorized:** prepare, audit, and test a review-only source package with `ReportNoise`, local exposure logic in a separate director/adapter, clear log lines and no microphone dependencies. Do not move this package into the compile-checked `cpp_rowstructs` module before GL-15 passes and an additional explicit implementation review. See [GL-19R.1 preparation contract](../../handoff/unreal/hush/GL-19R1_SIMULATED_ONLY_PREPARATION_V001.md).
+**Authorized:** prepare, audit, and test a review-only source package with `ReportNoise`, local exposure logic in a separate director/adapter, clear log lines and no microphone dependencies. Do not move this package into the compile-checked `cpp_rowstructs` module before GL-15 passes and an additional explicit implementation review. See [GL-19R.1 preparation contract](../../../handoff/unreal/hush/GL-19R1_SIMULATED_ONLY_PREPARATION_V001.md).
 
 **Gate hold:** No Unreal installation, no update of approved canon/state rows, no CLI/Live Coding/PIE build, no mic, no spend. After source-only preparation, stop for bounded human review and source-integrity revalidation.
 
