@@ -1,0 +1,11 @@
+scenario_id,description,take_id,performer,observer,source_reference,frame_rate,side_view_ref,slat_view_ref,setup_start_timecode,setup_end_timecode,window_duration_ms,event_type,event_time_ms,accepted_listener_event,actor_reaction_start_ms,actor_reaction_end_ms,tripod_reach_verified,prop_orientation_from_slats,chair_transition_preserved,return_path_to_script_verified,DRYA_agency_preserved,rewind_owner_once_verified,performance_one_primary_one_secondary,result,evidence_timecode_or_note
+P01,"Baseline: silent setup and chair continuity",,,,,,,,,,,,,,,,,,,,,,,,
+P02,"One early exhale pause",,,,,,,,,,,,,,,,,,,,,,,,
+P03,"Two accepted exhales pause extension",,,,,,,,,,,,,,,,,,,,,,,,
+P04,"Third accepted minor at tripod: camcorder turn",,,,,,,,,,,,,,,,,,,,,,,,
+P05,"Fourth minor: approach AND return to script task",,,,,,,,,,,,,,,,,,,,,,,,
+P06,"Third event while seated negative control",,,,,,,,,,,,,,,,,,,,,,,,
+P07,"Concurrent HUSH and SCRIPT rewind owner",,,,,,,,,,,,,,,,,,,,,,,,
+P08,"Reentry after rewind at exposure two",,,,,,,,,,,,,,,,,,,,,,,,
+P09,"Breath hold, release and cooldown player fairness",,,,,,,,,,,,,,,,,,,,,,,,
+P10,"Slat POV and prop screen visibility",,,,,,,,,,,,,,,,,,,,,,,,
