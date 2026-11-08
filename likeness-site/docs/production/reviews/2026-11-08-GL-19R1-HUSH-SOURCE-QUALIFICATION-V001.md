@@ -3,7 +3,7 @@
 **Project:** LIKENESS : THE GAME / `MECH_HIDE_001` · Room 14 / Milestone 2  
 **Date:** 2026-11-08  
 **Classification:** CONDITIONAL SOURCE-CANDIDATE PASS (host-only) · UE5.8 BUILD AND GAMEPLAY UNVERIFIED  
-**Review basis:** founder provisionally approved [GL-19R V001](../receipts/2026-11-07-GL-19R-HUSH-FOUNDER-PROVISIONAL-APPROVAL-V001.md); existing [GL-19R.1 contract](../../handoff/unreal/hush/GL-19R1_SIMULATED_ONLY_PREPARATION_V001.md); staged candidate C++; UE5.8 class-metadata specification.  
+**Review basis:** founder provisionally approved [GL-19R V001](../receipts/2026-11-07-GL-19R-HUSH-FOUNDER-PROVISIONAL-APPROVAL-V001.md); existing [GL-19R.1 contract](../../../handoff/unreal/hush/GL-19R1_SIMULATED_ONLY_PREPARATION_V001.md); staged candidate C++; UE5.8 class-metadata specification.  
 **Review boundary:** exact HUSH candidate source, no installed game or current sandbox access, no claims about the main app or other branches.
 
 ## Gate outcome
