@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 const root = process.cwd();
@@ -41,4 +41,29 @@ test("new editorial route entrypoints are present for a static export", () => {
     "/works/score", "/characters/thoreau", "/characters/drya", "/characters/the-other"]) {
     assert.ok(sitemap.includes(`"${route}"`), `missing sitemap route: ${route}`);
   }
+});
+
+// G02A D1 regression: the frame directories were deleted, but two components
+// still pointed at them. Scan every runtime source file, not just frames.ts.
+function sourceFiles(dir) {
+  return readdirSync(join(root, dir), { withFileTypes: true }).flatMap((entry) => {
+    const rel = `${dir}/${entry.name}`;
+    if (entry.isDirectory()) return sourceFiles(rel);
+    return /\.(?:tsx?|mjs|css)$/.test(entry.name) ? [rel] : [];
+  });
+}
+
+test("no runtime source references the retired /frames/ or /frames2/ sequences", () => {
+  const offenders = sourceFiles("src").filter((path) => /["'`(]\/(?:frames|frames2)\//.test(file(path)));
+  assert.deepEqual(offenders, [], `retired frame paths still referenced in: ${offenders.join(", ")}`);
+});
+
+test("every local /stills/, /subjects/ or /video/ path in runtime source exists in public/", () => {
+  const missing = [];
+  for (const path of sourceFiles("src")) {
+    for (const [, ref] of file(path).matchAll(/["'`]((?:\/stills|\/subjects|\/video)\/[^"'`\s]+\.(?:png|jpe?g|webp|avif|mp4|webm))["'`]/g)) {
+      if (!existsSync(join(root, "public", ref.slice(1)))) missing.push(`${path} → ${ref}`);
+    }
+  }
+  assert.deepEqual(missing, [], `missing media: ${missing.join("; ")}`);
 });

@@ -85,6 +85,8 @@ export function useScrollCanvas({
         const show = progress >= 0.86;
         outroRef.current.style.opacity = show ? "1" : "0";
         outroRef.current.style.pointerEvents = show ? "auto" : "none";
+        // Hidden outro must also leave the Tab order and the a11y tree (G02A D2).
+        outroRef.current.inert = !show;
       }
       if (barRef.current) barRef.current.style.transform = `scaleX(${progress})`;
       if (seqRef.current) {

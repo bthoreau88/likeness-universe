@@ -158,6 +158,7 @@ export function Street() {
           {/* outro CTA */}
           <div
             ref={outroRef}
+            inert
             className="ovs-motion-only absolute inset-0 flex flex-col items-center justify-center px-6 text-center opacity-0 transition-opacity duration-500"
           >
             <span className="mono mb-3 text-xs tracking-[0.4em] text-teal">
