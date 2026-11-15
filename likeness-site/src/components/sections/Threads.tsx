@@ -26,7 +26,7 @@ const THREADS: Thread[] = [
     blurb:
       "The exterior the game never lets you reach — a street cast where every stranger keeps testing positive for your face.",
     href: "/street",
-    image: "/frames/frame_0044.jpg",
+    image: "/stills/thoreau-watching.png",
     accent: true,
   },
   {
