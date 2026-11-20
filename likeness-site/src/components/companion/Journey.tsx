@@ -33,7 +33,7 @@ const STAGES: Stage[] = [
     place: "EXT · THE STREET",
     line: "A cassette on the pavement outside Room 14.",
     body: "No case, no label the light will hold still long enough to read. The exterior cameras logged it at 03:14 — and again a minute before, which the timestamp refuses to explain.",
-    image: "/stills/open-world-city.png",
+    image: "/stills/thoreau-stealth.png",
     tone: "teal",
   },
   {
