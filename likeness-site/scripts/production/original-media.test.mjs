@@ -67,3 +67,20 @@ test("every local /stills/, /subjects/ or /video/ path in runtime source exists 
   }
   assert.deepEqual(missing, [], `missing media: ${missing.join("; ")}`);
 });
+
+test("FD-003: the internal prompt library is not linked from public navigation or the sitemap", () => {
+  for (const path of ["src/components/ui/Navbar.tsx", "src/components/universe/UniverseHero.tsx", "src/app/page.tsx", "src/app/sitemap.ts"]) {
+    assert.doesNotMatch(file(path), /["']\/prompts["']|<ConceptFrames\s*\/>/, `${path} still links the prompt library`);
+  }
+  assert.ok(existsSync(join(root, "src/app/prompts/page.tsx")), "the library itself must be preserved");
+  assert.match(file("src/app/prompts/page.tsx"), /robots:\s*\{\s*index:\s*false/);
+  assert.match(file("src/app/robots.ts"), /disallow:.*\/prompts\//);
+});
+
+test("FD-001: Journey stage I uses no combat-styled plate", () => {
+  const journey = file("src/components/companion/Journey.tsx");
+  const stageOne = journey.slice(journey.indexOf('n: "I"'), journey.indexOf('n: "II"'));
+  assert.doesNotMatch(stageOne, /thoreau-stealth|open-world-city|drya-customization|drya-corridor|drya-atrium/);
+  const img = stageOne.match(/image:\s*"([^"]+)"/)[1];
+  assert.ok(existsSync(join(root, "public", img.slice(1))), `missing ${img}`);
+});
