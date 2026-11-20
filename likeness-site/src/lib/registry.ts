@@ -30,6 +30,90 @@ export const INTAKE = {
 };
 
 
+// ---- Site presentation — approved existing LIKENESS media only. -------------
+// These sequences replace third-party superhero demo frames. Images already
+// appear elsewhere on this site; their identity authority remains subject to
+// the ordinary OVS visual review gate. No generated frames or new canon.
+export const SCROLL_SEQUENCES = {
+  home: [
+    "/stills/thoreau-waking.png",
+    "/stills/thoreau-mirror.png",
+    "/stills/drya-over-shoulder.png",
+    "/stills/thoreau-watching.png",
+    "/stills/the-other.png",
+    "/stills/hallway-door14.png",
+  ],
+  street: [
+    "/stills/hallway-door14.png",
+    "/stills/thoreau-watching.png",
+    "/stills/drya-over-shoulder.png",
+    "/stills/thoreau-stealth.png",
+    "/subjects/thoreau-portrait.png",
+    "/subjects/drya-select.png",
+    "/stills/the-other.png",
+    "/stills/poster-room14.png",
+  ],
+} as const;
+
+// Editorial character entry points. Use existing identity/status fields
+// from CHARACTERS below; these labels describe production evidence, not
+// fictional combat statistics.
+export const CHARACTER_PROFILES = [
+  { slug: "thoreau", characterId: "CHR_THOREAU_001", edition: "THE HOST" },
+  { slug: "drya", characterId: "CHR_DRYA_001", edition: "THE WITNESS" },
+  { slug: "the-other", characterId: "CHR_DARK_THOREAU_001", edition: "THE DOUBLE" },
+] as const;
+
+// Distinct editorial covers for the existing anthology registry. No unapproved
+// claims about completion, release dates or individual production credits.
+export const WORK_COVERS: Record<string, string> = {
+  WORK_LIKENESS_GAME: "/stills/poster-room14.png",
+  WORK_TAPE_03: "/stills/likeness-tape003-poster.png",
+  WORK_OVS_FASHION: "/stills/fabric.png",
+  WORK_OVS_MUSIC: "/stills/three-tapes.png",
+};
+
+// Editorial case-study routes and gallery captions; each frame is an
+// existing local asset. All production claims remain in WORKS below.
+export const WORK_FEATURES = [
+  {
+    id: "WORK_LIKENESS_GAME",
+    slug: "the-game",
+    media: [
+      { image: "/stills/poster-room14.png", label: "LIKENESS : THE GAME · Key Art" },
+      { image: "/stills/hallway-door14.png", label: "Dellwood Motel · Room 14" },
+      { image: "/stills/thoreau-mirror.png", label: "Mirror Study · Identity" },
+    ],
+  },
+  {
+    id: "WORK_TAPE_03",
+    slug: "tape-03",
+    media: [
+      { image: "/stills/likeness-tape003-poster.png", label: "TAPE 03 · Key Art" },
+      { image: "/stills/apt-study-wide.png", label: "Apartment · The Study" },
+      { image: "/stills/three-tapes.png", label: "Evidence · Tape Archive" },
+    ],
+  },
+  {
+    id: "WORK_OVS_FASHION",
+    slug: "wardrobe",
+    media: [
+      { image: "/stills/fabric.png", label: "Costume Material Study" },
+      { image: "/stills/thoreau-lock-sheet.png", label: "THOREAU · Identity Reference" },
+      { image: "/stills/drya-lock-sheet.png", label: "DRYA · Identity Reference" },
+    ],
+  },
+  {
+    id: "WORK_OVS_MUSIC",
+    slug: "score",
+    media: [
+      { image: "/stills/three-tapes.png", label: "Tape Object Study" },
+      { image: "/stills/apt-study-desk.png", label: "Room Tone · Environment" },
+      { image: "/stills/apt-study-wide.png", label: "The Study · Sound Perspective" },
+    ],
+  },
+] as const;
+
 // ---- Characters (character_registry.csv) ----
 export type Character = {
   id: string;
@@ -323,6 +407,7 @@ export const LEVELS: Level[] = [
 export type Route = { route: string; label: string; fn: string; live: boolean };
 
 export const ROUTES: Route[] = [
+  { route: "/works", label: "Works", fn: "Editorial archive of the registered universe works.", live: true },
   { route: "/universe", label: "Landing", fn: "OVS hierarchy and current campaign title.", live: true },
   { route: "/studio", label: "Studio", fn: "The Omnia Vanitas doctrine, anthology, and north star.", live: true },
   { route: "/characters", label: "Characters", fn: "Identity cards and doubles.", live: true },
