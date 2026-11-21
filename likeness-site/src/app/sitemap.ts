@@ -26,7 +26,6 @@ const ROUTES = [
   "/evidence",
   "/devlog",
   "/press",
-  "/prompts",
   "/alt",
 ];
 
