@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>FD-002 branding hierarchy mockups — for founder review</title>
+<!-- Mockups only. Not wired into the site. Uses the site's tokens (globals.css) and Geist from
+     likeness-site/node_modules (run npm ci first). Rendered to PNG by render.cjs. -->
+<style>
+@font-face { font-family: Geist; src: url("../../../../../../node_modules/geist/dist/fonts/geist-sans/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; }
+@font-face { font-family: GeistMono; src: url("../../../../../../node_modules/geist/dist/fonts/geist-mono/GeistMono-Variable.woff2") format("woff2"); font-weight: 100 900; }
+:root { --bg:#0a0b0d; --fg:#e7e9ec; --muted:#888d94; --accent:#e0531f; --teal:#6fc6d6; --panel:rgba(255,255,255,.035); --line:rgba(255,255,255,.09); --steel:#14161a; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:#050506; font-family:Geist, system-ui, sans-serif; color:var(--fg); }
+.board { width:1600px; height:1000px; background:var(--bg); padding:56px 64px; position:relative; overflow:hidden; margin-bottom:40px; }
+.mono { font-family:GeistMono, ui-monospace, monospace; text-transform:uppercase; letter-spacing:.3em; font-size:11px; }
+.eyebrow { color:var(--accent); }
+.tag { color:var(--muted); }
+.h { font-size:40px; font-weight:800; letter-spacing:-.02em; margin-top:10px; }
+.sub { color:var(--muted); font-size:15px; max-width:70ch; margin-top:10px; line-height:1.55; }
+.grid { display:grid; gap:24px; margin-top:36px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:28px; position:relative; }
+.label { position:absolute; top:-10px; left:20px; background:var(--bg); padding:0 8px; }
+.stamp { position:absolute; right:64px; top:56px; text-align:right; }
+.diamond { display:inline-grid; place-items:center; width:26px; height:26px; background:var(--accent); color:#000; font-weight:700; border-radius:3px; font-size:12px; }
+.master { font-weight:900; letter-spacing:-.035em; line-height:.9; }
+.game { font-family:GeistMono; font-weight:500; letter-spacing:.55em; color:var(--fg); }
+.ep { font-family:GeistMono; letter-spacing:.35em; color:var(--teal); }
+.rule { border-top:1px solid var(--line); margin:18px 0; }
+.row { display:flex; align-items:center; gap:14px; }
+.nav { display:flex; justify-content:space-between; align-items:center; border:1px solid var(--line); border-radius:6px; padding:14px 20px; background:rgba(20,22,26,.7); }
+.nav .links { display:flex; gap:22px; color:rgba(111,198,214,.8); }
+.bad { color:#ff7a59; } .good { color:#7fd49a; }
+table { border-collapse:collapse; width:100%; font-size:14px; }
+td, th { border-bottom:1px solid var(--line); padding:10px 8px; text-align:left; vertical-align:top; }
+th { color:var(--muted); font-weight:500; }
+code { font-family:GeistMono; font-size:13px; color:var(--fg); }
+.hero { height:330px; border-radius:6px; border:1px solid var(--line); background:radial-gradient(ellipse at 70% 40%, #1b1d22, #0a0b0d 70%); padding:30px; position:relative; overflow:hidden; }
+.hero .shade { position:absolute; inset:0; background:linear-gradient(90deg, rgba(10,11,13,.95) 30%, rgba(10,11,13,.2)); }
+.hero > * { position:relative; }
+.cta { display:inline-block; padding:10px 18px; border-radius:3px; font-family:GeistMono; font-size:11px; letter-spacing:.2em; text-transform:uppercase; }
+.cta.a { background:var(--accent); color:#000; font-weight:600; } .cta.b { border:1px solid var(--line); }
+.foot { position:absolute; left:64px; bottom:40px; right:64px; display:flex; justify-content:space-between; }
+</style></head><body>
+
+<!-- BOARD 1: hierarchy -->
+<section class="board" id="b1">
+  <div class="mono eyebrow">OVS-LKN-COORD-G01 · FD-002 · Board 1 of 3</div>
+  <div class="h">Brand hierarchy: studio → game → episode</div>
+  <p class="sub">FD-002 separates the master game brand from the TAPE 03 episode brand. The proposal has three tiers. Each tier has exactly one job, and an episode mark never appears without its parent game.</p>
+  <div class="stamp mono tag">Mockup — not approved<br>no canon effect</div>
+  <div class="grid" style="grid-template-columns:1fr 1.4fr 1fr; margin-top:48px">
+    <div class="card"><span class="label mono tag">Tier 0 · Studio</span>
+      <div class="row" style="margin-top:8px"><span class="diamond">◊</span><span class="mono" style="font-size:14px;letter-spacing:.35em;font-weight:700">OVS</span></div>
+      <div class="mono tag" style="margin-top:14px">Omnia Vanitas Studios</div>
+      <div class="rule"></div>
+      <p class="sub" style="font-size:13px">Endorsement only. It appears in the navbar mark, footer and credits, and never as a product name.</p>
+    </div>
+    <div class="card" style="border-color:rgba(224,83,31,.45)"><span class="label mono eyebrow">Tier 1 · Master — the product</span>
+      <div class="master" style="font-size:92px;margin-top:14px">LIKENESS</div>
+      <div class="game" style="font-size:18px;margin-top:12px">: THE GAME</div>
+      <div class="rule"></div>
+      <p class="sub" style="font-size:13px">The master title is "LIKENESS : THE GAME". It owns the home page, the site <code>&lt;title&gt;</code> default, social cards, the press kit and the store page. It names no episode.</p>
+    </div>
+    <div class="card"><span class="label mono" style="color:var(--teal)">Tier 2 · Episode</span>
+      <div class="ep" style="font-size:30px;margin-top:12px;font-weight:600">TAPE 03</div>
+      <div class="mono tag" style="margin-top:12px">LIKENESS : THE GAME</div>
+      <div class="rule"></div>
+      <p class="sub" style="font-size:13px">Episode or chapter content only: the Journey, the Tape 03 work page and the episode trailer. The parent line always sits directly under it. Episode subtitle: [founder to confirm].</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:28px"><span class="label mono tag">Current usage (audited 2026-11-21, canonical 3a87155)</span>
+    <table>
+      <tr><th style="width:34%">Surface</th><th>Current text</th><th style="width:30%">Reads as</th></tr>
+      <tr><td>Site default <code>&lt;title&gt;</code>, OG and Twitter (layout.tsx)</td><td><code>LIKENESS // OVS — TAPE-03</code></td><td class="bad">Episode used as master</td></tr>
+      <tr><td>Navbar mark (Navbar.tsx)</td><td><code>◊ OVS // TAPE-03</code></td><td class="bad">Episode used as master</td></tr>
+      <tr><td>Home hero eyebrow (Hero.tsx)</td><td><code>OVS // LIKENESS · TAPE 03</code></td><td class="bad">Episode used as master</td></tr>
+      <tr><td>Interior page titles (26 routes)</td><td>Five patterns: <code>// LIKENESS : THE GAME — OVS</code>, <code>// LIKENESS Universe — OVS</code>, <code>// Selected Works — OVS</code>, <code>// Character Dossier — LIKENESS</code>, <code>// OVS — LIKENESS</code></td><td class="bad">No single grammar</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- BOARD 2: lockups and title grammar -->
+<section class="board" id="b2">
+  <div class="mono eyebrow">OVS-LKN-COORD-G01 · FD-002 · Board 2 of 3</div>
+  <div class="h">Lockups, navbar and title grammar</div>
+  <div class="stamp mono tag">Mockup — not approved</div>
+  <div class="grid" style="grid-template-columns:1fr 1fr">
+    <div class="card"><span class="label mono tag">Navbar · current</span>
+      <div class="nav" style="margin-top:8px"><div class="row"><span class="diamond">◊</span><span class="mono" style="font-size:13px;font-weight:700;letter-spacing:.35em">OVS</span><span class="mono tag">// TAPE-03</span></div><div class="links mono"><span>Works</span><span>Universe</span><span>Journey</span></div></div>
+      <p class="sub bad" style="font-size:13px">Every page reads as the Tape 03 site.</p>
+    </div>
+    <div class="card" style="border-color:rgba(224,83,31,.45)"><span class="label mono eyebrow">Navbar · proposed</span>
+      <div class="nav" style="margin-top:8px"><div class="row"><span class="diamond">◊</span><span class="mono" style="font-size:13px;font-weight:700;letter-spacing:.35em">OVS</span><span class="mono tag">// LIKENESS : THE GAME</span></div><div class="links mono"><span>Works</span><span>Universe</span><span>Journey</span></div></div>
+      <p class="sub good" style="font-size:13px">The master title is persistent. Episode pages add their own eyebrow inside the page.</p>
+    </div>
+    <div class="card"><span class="label mono tag">Master lockup · horizontal</span>
+      <div class="row" style="gap:22px;margin-top:20px;align-items:flex-end"><span class="master" style="font-size:72px">LIKENESS</span><span class="game" style="font-size:16px;padding-bottom:10px">: THE GAME</span></div>
+      <div class="mono tag" style="margin-top:18px">◊ An Omnia Vanitas Studios game</div>
+    </div>
+    <div class="card"><span class="label mono" style="color:var(--teal)">Episode lockup · always parented</span>
+      <div class="ep" style="font-size:44px;font-weight:700;margin-top:16px">TAPE 03</div>
+      <div class="mono" style="margin-top:10px;font-size:12px;letter-spacing:.4em">from LIKENESS : THE GAME</div>
+      <div class="mono tag" style="margin-top:14px">Not allowed: "TAPE 03" alone · "LIKENESS · TAPE 03" as the site name</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:28px"><span class="label mono tag">Proposed <code>&lt;title&gt;</code> grammar · one pattern</span>
+    <table>
+      <tr><th style="width:26%">Page kind</th><th>Pattern</th><th>Example</th></tr>
+      <tr><td>Home and default</td><td><code>LIKENESS : THE GAME — Omnia Vanitas Studios</code></td><td><code>LIKENESS : THE GAME — Omnia Vanitas Studios</code></td></tr>
+      <tr><td>Game section</td><td><code>{Page} // LIKENESS : THE GAME — OVS</code></td><td><code>Room 14 // LIKENESS : THE GAME — OVS</code></td></tr>
+      <tr><td>Episode page</td><td><code>{Page} // TAPE 03 · LIKENESS : THE GAME — OVS</code></td><td><code>The Journey // TAPE 03 · LIKENESS : THE GAME — OVS</code></td></tr>
+      <tr><td>Universe / studio</td><td><code>{Page} // LIKENESS Universe — OVS</code> (unchanged)</td><td><code>Wardrobe // LIKENESS Universe — OVS</code></td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- BOARD 3: hero options -->
+<section class="board" id="b3">
+  <div class="mono eyebrow">OVS-LKN-COORD-G01 · FD-002 · Board 3 of 3</div>
+  <div class="h">Home hero: two options</div>
+  <p class="sub">Both keep the existing hero image system and copy. Only the identity stack changes. A recommends the master title on home; B shows how an episode landing page carries the master endorsement.</p>
+  <div class="stamp mono tag">Mockup — not approved</div>
+  <div class="grid" style="grid-template-columns:1fr 1fr">
+    <div><div class="mono eyebrow" style="margin-bottom:10px">A · Master-first (recommended for /)</div>
+      <div class="hero"><div class="shade"></div>
+        <div class="mono" style="color:var(--teal)">OVS // LIKENESS : THE GAME</div>
+        <div class="mono eyebrow" style="margin-top:40px">A psychological chamber horror</div>
+        <div class="master" style="font-size:96px;margin-top:10px">LIKENESS</div>
+        <div class="game" style="font-size:15px;margin-top:10px">: THE GAME</div>
+        <div class="row" style="margin-top:24px"><span class="cta a">Meet the two</span><span class="cta b">View stills</span></div>
+      </div>
+      <p class="sub" style="font-size:13px">TAPE 03 moves to the Works index and the Journey as the first episode card.</p>
+    </div>
+    <div><div class="mono" style="color:var(--teal);margin-bottom:10px">B · Episode landing (for /works/tape-03 and /journey)</div>
+      <div class="hero"><div class="shade"></div>
+        <div class="mono tag">◊ OVS // LIKENESS : THE GAME</div>
+        <div class="mono" style="color:var(--teal);margin-top:40px">Episode · TAPE 03</div>
+        <div class="ep" style="font-size:72px;font-weight:700;margin-top:10px;color:var(--fg)">TAPE 03</div>
+        <div class="mono" style="margin-top:10px;font-size:12px;letter-spacing:.4em">from LIKENESS : THE GAME</div>
+        <div class="row" style="margin-top:24px"><span class="cta a">Begin the journey</span><span class="cta b">All works</span></div>
+      </div>
+      <p class="sub" style="font-size:13px">The parent game line is mandatory on every episode surface.</p>
+    </div>
+  </div>
+  <div class="foot mono tag"><span>Typeface: Geist / Geist Mono (site fonts) · tokens from globals.css</span><span>No paid generation · no imagery changed</span></div>
+</section>
+</body></html>

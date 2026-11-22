@@ -1,0 +1,132 @@
+{
+ "routesTested": 25,
+ "non200": [],
+ "failedRequests": [],
+ "pageErrors": [],
+ "brokenImgs": [],
+ "retiredMedia": [
+  "/alt/ desktop: /likeness-universe/stills/open-world-city.png",
+  "/alt/ mobile: /likeness-universe/stills/open-world-city.png"
+ ],
+ "overflowX": [],
+ "axeSeriousCritical": [
+  "/devlog/ desktop: link-in-text-block(1)",
+  "/alt/ desktop: link-in-text-block(1)"
+ ],
+ "internalLinks": 25,
+ "brokenLinks": [],
+ "checks": {
+  "journeyStageI": {
+   "heading": "Found",
+   "bg": "stills/thoreau-stealth.png"
+  },
+  "hiddenFocus_desktop": {
+   "tabStops": 48,
+   "hidden": []
+  },
+  "hiddenFocus_mobile": {
+   "tabStops": 46,
+   "hidden": []
+  },
+  "mobileNav": {
+   "opened": {
+    "expanded": "true",
+    "active": "Works01"
+   },
+   "focusStayedInMenu": false,
+   "escaped": [
+    {
+     "ok": false,
+     "t": "Meet the two"
+    },
+    {
+     "ok": false,
+     "t": "View Stills"
+    },
+    {
+     "ok": false,
+     "t": "DRYATHE WITNESS"
+    },
+    {
+     "ok": false,
+     "t": "THOREAUTHE HOST"
+    },
+    {
+     "ok": false,
+     "t": "Open Prompt Library →"
+    },
+    {
+     "ok": false,
+     "shift": true,
+     "t": "THOREAUTHE HOST"
+    },
+    {
+     "ok": false,
+     "shift": true,
+     "t": "DRYATHE WITNESS"
+    },
+    {
+     "ok": false,
+     "shift": true,
+     "t": "View Stills"
+    },
+    {
+     "ok": false,
+     "shift": true,
+     "t": "Meet the two"
+    }
+   ],
+   "sequence": [
+    "Studio02",
+    "Universe03",
+    "Characters04",
+    "The Street05",
+    "Wardrobe06",
+    "Score07",
+    "Journey08",
+    "Room Testifies09",
+    "Open the Prompt Library",
+    "Meet the two",
+    "View Stills",
+    "DRYATHE WITNESS",
+    "THOREAUTHE HOST",
+    "Open Prompt Library →",
+    "THOREAUTHE HOST",
+    "DRYATHE WITNESS",
+    "View Stills",
+    "Meet the two"
+   ],
+   "afterEscape": {
+    "toggleLabel": "Open menu",
+    "promptCta": true
+   }
+  },
+  "motion_no-preference": {
+   "homeScrollY40msAfterWheel800": 264,
+   "journeyParallaxMoves": true,
+   "journeyBg": [
+    "translateY(-5.24138%) scale(1.09241)",
+    "translateY(1.93103%) scale(1.05931)"
+   ]
+  },
+  "motion_reduce": {
+   "homeScrollY40msAfterWheel800": 800,
+   "journeyParallaxMoves": false,
+   "journeyBg": [
+    "none",
+    "none"
+   ]
+  },
+  "prompts": {
+   "sitemapListsPrompts": true,
+   "routeStatus": 200,
+   "robotsMeta": null,
+   "renderedPromptLinksAcrossSite": [
+    "/ desktop: Prompt Library|Open the Prompt Library|Open Prompt Library →",
+    "/ mobile: Prompt Library|Open the Prompt Library|Open Prompt Library →",
+    "/universe/ desktop: Prompts|Prompts|Read the bible",
+    "/universe/ mobile: Prompts|Prompts|Read the bible"
+   ]
+  }
+ }
+}
