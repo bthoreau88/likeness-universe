@@ -69,8 +69,8 @@ test("every local /stills/, /subjects/ or /video/ path in runtime source exists 
 });
 
 test("FD-003: the internal prompt library is not linked from public navigation or the sitemap", () => {
-  for (const path of ["src/components/ui/Navbar.tsx", "src/components/universe/UniverseHero.tsx", "src/app/page.tsx", "src/app/sitemap.ts"]) {
-    assert.doesNotMatch(file(path), /["']\/prompts["']|<ConceptFrames\s*\/>/, `${path} still links the prompt library`);
+  for (const path of ["src/components/ui/Navbar.tsx", "src/components/universe/UniverseHero.tsx", "src/components/sections/ConceptFrames.tsx", "src/app/sitemap.ts"]) {
+    assert.doesNotMatch(file(path), /["']\/prompts["']|paste-ready prompt in the library/, `${path} still points to the prompt library`);
   }
   assert.ok(existsSync(join(root, "src/app/prompts/page.tsx")), "the library itself must be preserved");
   assert.match(file("src/app/prompts/page.tsx"), /robots:\s*\{\s*index:\s*false/);
@@ -83,4 +83,11 @@ test("FD-001: Journey stage I uses no combat-styled plate", () => {
   assert.doesNotMatch(stageOne, /thoreau-stealth|open-world-city|drya-customization|drya-corridor|drya-atrium/);
   const img = stageOne.match(/image:\s*"([^"]+)"/)[1];
   assert.ok(existsSync(join(root, "public", img.slice(1))), `missing ${img}`);
+});
+
+test("FD-002 Option A: the game is the master brand; Tape 03 is named as the episode", () => {
+  const layout = file("src/app/layout.tsx"); const nav = file("src/components/ui/Navbar.tsx");
+  assert.doesNotMatch(layout, /title: "LIKENESS \/\/ OVS — TAPE-03"/);
+  assert.equal((layout.match(/"LIKENESS : THE GAME — Tape 03"/g) || []).length, 3);
+  assert.match(nav, />LIKENESS</); assert.match(nav, /THE GAME/); assert.doesNotMatch(nav, /\/\/ TAPE-03/);
 });

@@ -75,9 +75,9 @@ export function Navbar() {
             <span className="grid h-6 w-6 place-items-center rounded-sm bg-accent text-[11px] font-bold text-black">
               ◊
             </span>
-            <span className="mono text-sm font-bold tracking-[0.35em]">OVS</span>
+            <span className="mono text-sm font-bold tracking-[0.35em]">LIKENESS</span>
             <span className="mono hidden text-[10px] tracking-[0.3em] text-muted sm:inline">
-              {"// TAPE-03"}
+              THE GAME
             </span>
           </a>
 

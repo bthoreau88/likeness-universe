@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { ConceptTile } from "@/components/atmos/Atmos";
 
@@ -25,18 +24,11 @@ export function ConceptFrames() {
             Fifty-two shot orders. Not mood requests.
           </h2>
         </div>
-        <Link
-          href="/prompts"
-          className="mono shrink-0 rounded-sm bg-accent px-6 py-3 text-[11px] font-semibold tracking-[0.15em] text-black uppercase transition-transform hover:scale-105"
-        >
-          Open Prompt Library →
-        </Link>
       </div>
       <p className="mt-5 max-w-[60ch] text-sm leading-relaxed text-muted md:text-base">
         These graded fields are authored placeholders — the bible&apos;s
         identity lock means photoreal likeness frames are generated in the OVS
-        pipeline (Midjourney / Flux / Seedance), never fabricated here. Each tile
-        maps to a paste-ready prompt in the library.
+        pipeline (Midjourney / Flux / Seedance), never fabricated here.
       </p>
 
       <motion.div

@@ -19,10 +19,10 @@ const description =
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${SITE_ORIGIN}${BASE_PATH}`),
-  title: "LIKENESS // OVS — TAPE-03",
+  title: "LIKENESS : THE GAME — Tape 03",
   description,
   openGraph: {
-    title: "LIKENESS // OVS — TAPE-03",
+    title: "LIKENESS : THE GAME — Tape 03",
     description,
     siteName: "LIKENESS Universe — OVS",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LIKENESS // OVS — TAPE-03",
+    title: "LIKENESS : THE GAME — Tape 03",
     description,
     images: [ogImage("/og/home.jpg")],
   },

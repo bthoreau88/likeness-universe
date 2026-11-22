@@ -12,6 +12,7 @@ import { Apartment } from "@/components/sections/Apartment";
 import { Evidence } from "@/components/sections/Evidence";
 import { Motion } from "@/components/sections/Motion";
 import { RecoveredFootage } from "@/components/sections/RecoveredFootage";
+import { ConceptFrames } from "@/components/sections/ConceptFrames";
 import { Systems } from "@/components/sections/Systems";
 import { Threads } from "@/components/sections/Threads";
 import { Choice } from "@/components/sections/Choice";
@@ -38,6 +39,7 @@ export default function Home() {
         <Evidence />
         <Motion />
         <RecoveredFootage />
+        <ConceptFrames />
         <Systems />
         <Threads />
         <Choice />
