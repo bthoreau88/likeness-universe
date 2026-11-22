@@ -1,0 +1,19 @@
+{
+  "$comment": "Derived from Tape 03 Branching Narrative Bible V.002 §11 (Website Mirror). W01/W10/W30/W40/W50 and their effects come from the bible table. The bible's single W20 'Choice' row lists three options; they are FIXTURE-LOCAL IDs W20-delete/W20-preserve/W20-screenshot (deliberately not W21-W29, so they cannot be confused with G01A.x IDs such as W22). ASSUMPTION A3: the bible does not draw edges from W30 to W40/W50; this fixture routes to W40 (catches the app lying) when the player kept the false node (preserved or screenshotted) AND did not fail the timed read, otherwise W50. ASSUMPTION A4: W30 is a timed node with an accessibility fallback (no-timer path) per QC 'Accessibility'. W01 acknowledges nothing: the archive view a player opens at W01 is the spoiler-safe companion projection, so no character can reference a node the player has not discovered (W01 conditioning).",
+  "chapter_id": "T03_05",
+  "title": "Website Mirror",
+  "source": { "document": "OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002.pdf", "section": "11", "drive_file_id": "1OFRqwpvyDXxYMLvVa7pr3bvUTpYbrxhY" },
+  "nodes": [
+    { "id": "W01", "type": "start", "label": "Open in-universe LIKENESS archive", "acknowledges": [], "next": ["W10"] },
+    { "id": "W10", "type": "action", "label": "Compare current chapter chart to archived chart", "effects": [ { "evidence": "archived_node", "op": "add" }, { "fact": "app_shows_unplayed_node" } ], "next": ["W20-delete", "W20-preserve", "W20-screenshot"] },
+    { "id": "W20-delete", "type": "action", "label": "Delete the false node", "effects": [ { "var": "APP_SYNC", "op": "add", "value": 10 }, { "flag": "false_node_deleted", "value": true } ], "next": ["W30-read", "W30-assist"] },
+    { "id": "W20-preserve", "type": "action", "label": "Preserve the false node", "effects": [ { "var": "APP_SYNC", "op": "add", "value": -10 }, { "flag": "false_node_kept", "value": true } ], "next": ["W30-read", "W30-assist"] },
+    { "id": "W20-screenshot", "type": "action", "label": "Screenshot the false node", "effects": [ { "var": "PUBLIC_SIGNAL", "op": "add", "value": 6 }, { "evidence": "archive_screenshot", "op": "add" }, { "flag": "false_node_kept", "value": true } ], "next": ["W30-read", "W30-assist"] },
+    { "id": "W30-read", "type": "timed", "label": "The page updates while you read", "duration_s": 8, "success_node": "W35", "fail_node": "W30-missed", "accessibility_fallback": "W30-assist", "next": ["W35", "W30-missed"] },
+    { "id": "W30-assist", "type": "action", "label": "Read the page with the timer off (assist)", "next": ["W35"] },
+    { "id": "W30-missed", "type": "action", "label": "The page changed before you finished", "effects": [ { "var": "ROOM_MEMORY", "op": "add", "value": 10 }, { "flag": "missed_page_update", "value": true } ], "next": ["W35"] },
+    { "id": "W35", "type": "gate", "label": "Did the player keep proof of the lie?", "condition": { "all": [ { "flag": "false_node_kept" }, { "flag": "missed_page_update", "is": false } ] }, "pass": "W40", "fail": "W50" },
+    { "id": "W40", "type": "outcome", "label": "Player catches the app lying", "acknowledges": ["app_shows_unplayed_node"], "effects": [ { "flag": "route_public_cut_unlocked", "value": true } ] },
+    { "id": "W50", "type": "outcome", "label": "Player trusts the app", "hidden": true, "hint": "Something on the page did not match.", "effects": [ { "flag": "route_corrupted_unlocked", "value": true }, { "flag": "true_clue_hidden", "value": true } ] }
+  ]
+}

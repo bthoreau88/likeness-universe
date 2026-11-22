@@ -12,14 +12,12 @@ const NAV = [
   { label: "The Game", href: "/#stills" },
   { label: "Characters", href: "/#subjects" },
   { label: "Room Testifies", href: "/room-testifies" },
-  { label: "Prompts", href: "/prompts" },
 ];
 
 const PILLS = [
   { label: "Wake at 3:14", href: "/#reveal" },
   { label: "Meet the two", href: "/#subjects" },
   { label: "Open the tapes", href: "/#footage" },
-  { label: "Read the bible", href: "/prompts" },
 ];
 
 // Reveal one character at a time after a start delay.

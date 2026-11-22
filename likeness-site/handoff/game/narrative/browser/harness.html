@@ -1,0 +1,22 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Narrative persistence harness</title>
+<!-- Test harness only: loads the reference engine + browser store and exposes window.H.
+     Serve the narrative/ directory over http and open /browser/harness.html. -->
+<pre id="projection"></pre>
+<script type="module">
+import * as E from "../engine/narrative-engine.mjs";
+import { createStore, mergeDiscovery } from "../engine/browser-store.mjs";
+const graphs = {};
+for (const [id, f] of [["T03_01", "T03_01_dellwood_checkin.bible-v002.json"], ["T03_05", "T03_05_website_mirror.bible-v002.json"]])
+  graphs[id] = E.loadGraph(await (await fetch(`../fixtures/${f}`)).json());
+const profile = new URLSearchParams(location.search).get("profile") || "qa";
+const store = createStore({ profile });
+const external = [];
+store.onExternalChange((e) => external.push(e));
+window.H = { E, graphs, store, external, mergeDiscovery,
+  play(ch, runId, steps) { let s = E.startRun(graphs[ch], runId); steps.forEach((to, i) => { s = E.decide(graphs[ch], s, { decisionId: `${runId}#${i}`, to }); }); return s; },
+  render(ch, discovery, run) { document.getElementById("projection").textContent = JSON.stringify(E.projectForCompanion(graphs[ch], discovery, run), null, 1); },
+};
+document.title = "ready";
+</script>

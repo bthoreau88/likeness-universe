@@ -1,0 +1,86 @@
+{
+ "routesTested": 25,
+ "non200": [],
+ "failedRequests": [],
+ "pageErrors": [],
+ "brokenImgs": [],
+ "retiredMedia": [
+  "/alt/ desktop: /likeness-universe/stills/open-world-city.png",
+  "/alt/ mobile: /likeness-universe/stills/open-world-city.png"
+ ],
+ "overflowX": [],
+ "axeSeriousCritical": [
+  "/devlog/ desktop: link-in-text-block(1)",
+  "/alt/ desktop: link-in-text-block(1)"
+ ],
+ "internalLinks": 24,
+ "brokenLinks": [],
+ "checks": {
+  "journeyStageI": {
+   "heading": "Found",
+   "bg": "stills/thoreau-stealth.png"
+  },
+  "hiddenFocus_desktop": {
+   "tabStops": 48,
+   "hidden": []
+  },
+  "hiddenFocus_mobile": {
+   "tabStops": 46,
+   "hidden": []
+  },
+  "mobileNav": {
+   "opened": {
+    "expanded": "true",
+    "active": "Works01"
+   },
+   "focusStayedInMenu": true,
+   "escaped": [],
+   "sequence": [
+    "Studio02",
+    "Universe03",
+    "Characters04",
+    "The Street05",
+    "Wardrobe06",
+    "Score07",
+    "Journey08",
+    "Room Testifies09",
+    "Menu",
+    "Works01",
+    "Studio02",
+    "Universe03",
+    "Characters04",
+    "The Street05",
+    "Characters04",
+    "Universe03",
+    "Studio02",
+    "Works01"
+   ],
+   "afterEscape": {
+    "toggleLabel": "Open menu",
+    "promptCta": false
+   }
+  },
+  "motion_no-preference": {
+   "homeScrollY40msAfterWheel800": 264,
+   "journeyParallaxMoves": true,
+   "journeyBg": [
+    "translateY(-5.24138%) scale(1.09241)",
+    "translateY(1.93103%) scale(1.05931)"
+   ]
+  },
+  "motion_reduce": {
+   "homeScrollY40msAfterWheel800": 800,
+   "journeyParallaxMoves": false,
+   "journeyBg": [
+    "none",
+    "none"
+   ]
+  },
+  "prompts": {
+   "sitemapListsPrompts": false,
+   "routeStatus": 200,
+   "robotsMeta": "noindex, nofollow",
+   "renderedPromptLinksAcrossSite": []
+  }
+ }
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ovs.local/likeness/narrative-graph.v1.schema.json",
+  "title": "LIKENESS chapter graph (narrative node/edge schema) v1",
+  "description": "One chapter flowchart. Mirrors Tape 03 Bible V.002 §05 node anatomy and §13 tables. Conditions and effects are typed data; string expressions are not allowed.",
+  "type": "object",
+  "required": ["chapter_id", "nodes"],
+  "properties": {
+    "chapter_id": { "type": "string", "pattern": "^[A-Z0-9_]+$" },
+    "title": { "type": "string" },
+    "source": { "type": "object" },
+    "initial_vars": { "type": "object" },
+    "nodes": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/node" } }
+  },
+  "$defs": {
+    "variable": { "enum": ["THOREAU_INTEGRITY", "DRYA_TRUST", "ROOM_MEMORY", "PUBLIC_SIGNAL", "POLICE_HEAT", "DARK_DRIFT", "APP_SYNC"] },
+    "op": { "enum": ["<", "<=", "==", "!=", ">=", ">"] },
+    "condition": {
+      "oneOf": [
+        { "type": "object", "required": ["all"], "additionalProperties": false, "properties": { "all": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/condition" } } } },
+        { "type": "object", "required": ["any"], "additionalProperties": false, "properties": { "any": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/condition" } } } },
+        { "type": "object", "required": ["not"], "additionalProperties": false, "properties": { "not": { "$ref": "#/$defs/condition" } } },
+        { "type": "object", "required": ["var", "op", "value"], "additionalProperties": false, "properties": { "var": { "$ref": "#/$defs/variable" }, "op": { "$ref": "#/$defs/op" }, "value": { "type": "integer" } } },
+        { "type": "object", "required": ["evidence"], "additionalProperties": false, "properties": { "evidence": { "type": "string" } } },
+        { "type": "object", "required": ["evidenceCount"], "additionalProperties": false, "properties": { "evidenceCount": { "type": "object", "required": ["op", "value"], "properties": { "op": { "$ref": "#/$defs/op" }, "value": { "type": "integer" } } } } },
+        { "type": "object", "required": ["flag"], "additionalProperties": false, "properties": { "flag": { "type": "string" }, "is": { "type": "boolean" } } },
+        { "type": "object", "required": ["visited"], "additionalProperties": false, "properties": { "visited": { "type": "string" } } },
+        { "type": "object", "required": ["fact"], "additionalProperties": false, "properties": { "fact": { "type": "string" } } }
+      ]
+    },
+    "effect": {
+      "oneOf": [
+        { "type": "object", "required": ["var", "op", "value"], "additionalProperties": false, "properties": { "var": { "$ref": "#/$defs/variable" }, "op": { "enum": ["add", "set"] }, "value": { "type": "integer" } } },
+        { "type": "object", "required": ["evidence", "op"], "additionalProperties": false, "properties": { "evidence": { "type": "string" }, "op": { "enum": ["add", "remove"] } } },
+        { "type": "object", "required": ["flag", "value"], "additionalProperties": false, "properties": { "flag": { "type": "string" }, "value": { "type": "boolean" } } },
+        { "type": "object", "required": ["fact"], "additionalProperties": false, "properties": { "fact": { "type": "string" } } }
+      ]
+    },
+    "edge": {
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object", "required": ["to"], "properties": { "to": { "type": "string" }, "when": { "$ref": "#/$defs/condition" }, "edge_label": { "type": "string" } } }
+      ]
+    },
+    "node": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "enum": ["start", "action", "dialogue", "timed", "evidence", "gate", "convergence", "outcome", "callback"] },
+        "label": { "type": "string" },
+        "speaker": { "type": "string" },
+        "effects": { "type": "array", "items": { "$ref": "#/$defs/effect" } },
+        "requires": { "$ref": "#/$defs/condition" },
+        "acknowledges": { "type": "array", "items": { "type": "string" }, "description": "Facts this node's line refers to. Each must be known on every incoming route (W01 conditioning)." },
+        "next": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+        "condition": { "$ref": "#/$defs/condition" },
+        "pass": { "type": "string" },
+        "fail": { "type": "string" },
+        "hidden_reason": { "type": "string" },
+        "continuity_patch": { "type": "object", "additionalProperties": { "type": "string" }, "description": "Keyed by incoming node id." },
+        "hidden": { "type": "boolean" },
+        "hint": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "evidence_id": { "type": "string" },
+        "duration_s": { "type": "number" },
+        "success_node": { "type": "string" },
+        "fail_node": { "type": "string" },
+        "accessibility_fallback": { "type": "string" }
+      },
+      "allOf": [
+        { "if": { "properties": { "type": { "const": "gate" } } }, "then": { "required": ["condition", "pass", "fail"] } },
+        { "if": { "properties": { "type": { "const": "convergence" } } }, "then": { "required": ["continuity_patch"] } },
+        { "if": { "properties": { "type": { "const": "outcome" } } }, "then": { "not": { "required": ["next"] } } }
+      ]
+    }
+  }
+}

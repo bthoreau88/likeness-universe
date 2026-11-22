@@ -43,6 +43,25 @@ export function Navbar() {
     const toggle = toggleRef.current;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
+      if (e.key !== "Tab") return;
+      // keep Tab inside the open menu (toggle + panel links) so focus never
+      // lands on page content hidden behind the overlay
+      const items = [
+        toggle,
+        ...(panelRef.current?.querySelectorAll<HTMLElement>("a, button") ?? []),
+      ].filter((el): el is HTMLElement => !!el);
+      if (items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      const active = document.activeElement as HTMLElement | null;
+      const inside = !!active && items.includes(active);
+      if (e.shiftKey && (active === first || !inside)) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && (active === last || !inside)) {
+        e.preventDefault();
+        first.focus();
+      }
     };
     document.addEventListener("keydown", onKey);
     // move focus into the panel so keyboard users land on the menu
@@ -95,12 +114,6 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
-            <Link
-              href="/prompts"
-              className="mono hidden rounded-sm bg-accent px-5 py-2 text-[11px] font-semibold tracking-[0.15em] text-black uppercase transition-transform hover:scale-105 lg:inline-block"
-            >
-              Prompt Library
-            </Link>
 
             {/* mobile menu toggle */}
             <button
@@ -173,13 +186,6 @@ export function Navbar() {
               </Link>
             ))}
           </nav>
-          <Link
-            href="/prompts"
-            onClick={close}
-            className="mono mt-8 rounded-sm bg-accent px-5 py-3 text-center text-[11px] font-semibold tracking-[0.2em] text-black uppercase"
-          >
-            Open the Prompt Library
-          </Link>
         </div>
       </div>
     </>

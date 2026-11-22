@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "browser": "chromium 153.0.8010.12",
+  "startedAt": "2026-11-22T00:05:18.479Z",
+  "finishedAt": "2026-11-22T00:05:19.726Z"
+ },
+ "passed": 11,
+ "failed": 0,
+ "results": [
+  {
+   "name": "reload restores the exact run state and play continues",
+   "pass": true,
+   "detail": {
+    "saved": {
+     "sum": "1d682fe8",
+     "rev": 3
+    },
+    "after": {
+     "sum": "1d682fe8",
+     "rev": 3,
+     "ended": "D60"
+    }
+   }
+  },
+  {
+   "name": "separate playthroughs keep independent run state; discovery spans both",
+   "pass": true,
+   "detail": {
+    "aEnd": "D60",
+    "bEnd": "D70",
+    "aTrust": 54,
+    "bTrust": 56,
+    "bTruthFlag": null,
+    "outcomes": [
+     "D60",
+     "D70"
+    ]
+   }
+  },
+  {
+   "name": "stale tab gets E_CONFLICT; newer progress is preserved; other tab is notified",
+   "pass": true,
+   "detail": {
+    "err": "E_CONFLICT",
+    "storedDecisions": [
+     "mt#0",
+     "mt#1"
+    ],
+    "sawExternal": [
+     "run",
+     "run"
+    ],
+    "staleRev": 2
+   }
+  },
+  {
+   "name": "concurrent discovery writes from two tabs merge without loss",
+   "pass": true,
+   "detail": {
+    "merged": [
+     "D60",
+     "D70"
+    ]
+   }
+  },
+  {
+   "name": "malformed save is reported, quarantined, and not deleted",
+   "pass": true,
+   "detail": {
+    "error": "E_SAVE_JSON",
+    "quarantinedAs": "likeness.run.v2:bad:junk:quarantine:1795305919270"
+   }
+  },
+  {
+   "name": "future-version save is refused",
+   "pass": true,
+   "detail": "E_SAVE_FUTURE"
+  },
+  {
+   "name": "hand-edited save is refused",
+   "pass": true,
+   "detail": "E_SAVE_CHECKSUM"
+  },
+  {
+   "name": "save for a different chapter graph is refused",
+   "pass": true,
+   "detail": "E_SAVE_GRAPH"
+  },
+  {
+   "name": "three clicks on one choice apply its effects once",
+   "pass": true,
+   "detail": {
+    "trust": 54,
+    "heat": 2,
+    "decisions": 1
+   }
+  },
+  {
+   "name": "export -> import in a fresh browser profile is byte-identical; import never clobbers",
+   "pass": true,
+   "detail": {
+    "ended": "W40",
+    "reExport": true,
+    "clobber": "E_SLOT_TAKEN"
+   }
+  },
+  {
+   "name": "locked and hidden branches are not exposed in the rendered companion view",
+   "pass": true,
+   "detail": {
+    "excerpt": "{\n \"kind\": \"likeness.companion.projection\",\n \"schemaVersion\": 1,\n \"readOnly\": true,\n \"chapterId\": \"T03_05\",\n \"completed\": false,\n \"nodes\": [\n  {\n   \"id\": \"W01\",\n   \"type\": \"start\",\n   \"status\": \"discovered\",\n   \"label\": \"Open in-universe LIKENESS archive\"\n  },\n  {\n   \"id\": \"W10\",\n   \"type\": \"action\",\n   \"status\": \"discovered\",\n   \"label\": \"Compare current chapter chart to archived chart\"\n  },\n  {\n"
+   }
+  }
+ ]
+}

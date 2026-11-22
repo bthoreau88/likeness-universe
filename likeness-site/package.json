@@ -9,7 +9,8 @@
     "lint": "eslint",
     "validate:production": "node scripts/production/validate.mjs && node scripts/production/registry-parity.mjs",
     "test:production": "node --test scripts/production/*.test.mjs && python3 -m unittest discover -s scripts/production -p 'test_*.py'",
-    "validate:registry": "node scripts/production/registry-parity.mjs"
+    "validate:registry": "node scripts/production/registry-parity.mjs",
+    "test:narrative": "node --test handoff/game/narrative/tests/*.test.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

@@ -1,0 +1,832 @@
+{
+ "meta": {
+  "base": "http://localhost:8766/likeness-universe",
+  "generatedAt": "2026-11-21T23:50:46.345Z",
+  "sitemapRoutes": 25
+ },
+ "routes": {
+  "/": {
+   "desktop": {
+    "status": 200,
+    "title": "LIKENESS // OVS — TAPE-03",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [
+     "Prompt Library",
+     "Open the Prompt Library",
+     "Open Prompt Library →"
+    ],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "LIKENESS // OVS — TAPE-03",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [
+     "Prompt Library",
+     "Open the Prompt Library",
+     "Open Prompt Library →"
+    ],
+    "axe": []
+   }
+  },
+  "/works/": {
+   "desktop": {
+    "status": 200,
+    "title": "Selected Works // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Selected Works // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/works/the-game/": {
+   "desktop": {
+    "status": 200,
+    "title": "LIKENESS : THE GAME // Selected Works — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "LIKENESS : THE GAME // Selected Works — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/works/tape-03/": {
+   "desktop": {
+    "status": 200,
+    "title": "TAPE 03 // Selected Works — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "TAPE 03 // Selected Works — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/works/wardrobe/": {
+   "desktop": {
+    "status": 200,
+    "title": "Wardrobe // Selected Works — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Wardrobe // Selected Works — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/works/score/": {
+   "desktop": {
+    "status": 200,
+    "title": "Score // Selected Works — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Score // Selected Works — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/characters/thoreau/": {
+   "desktop": {
+    "status": 200,
+    "title": "THOREAU // Character Dossier — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "THOREAU // Character Dossier — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/characters/drya/": {
+   "desktop": {
+    "status": 200,
+    "title": "DRYA // Character Dossier — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "DRYA // Character Dossier — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/characters/the-other/": {
+   "desktop": {
+    "status": 200,
+    "title": "THE OTHER // Character Dossier — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "THE OTHER // Character Dossier — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/universe/": {
+   "desktop": {
+    "status": 200,
+    "title": "Enter the Archive // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [
+     "Prompts",
+     "Prompts",
+     "Read the bible"
+    ],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Enter the Archive // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [
+     "Prompts",
+     "Prompts",
+     "Read the bible"
+    ],
+    "axe": null
+   }
+  },
+  "/studio/": {
+   "desktop": {
+    "status": 200,
+    "title": "Studio // Omnia Vanitas Studios — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Studio // Omnia Vanitas Studios — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/characters/": {
+   "desktop": {
+    "status": 200,
+    "title": "Characters // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Characters // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/street/": {
+   "desktop": {
+    "status": 200,
+    "title": "The Street // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "The Street // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/wardrobe/": {
+   "desktop": {
+    "status": 200,
+    "title": "Wardrobe // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Wardrobe // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/score/": {
+   "desktop": {
+    "status": 200,
+    "title": "Score // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Score // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/journey/": {
+   "desktop": {
+    "status": 200,
+    "title": "The Journey of Tape 03 // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "The Journey of Tape 03 // LIKENESS Universe — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/room-testifies/": {
+   "desktop": {
+    "status": 200,
+    "title": "The Room Testifies // OVS — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "The Room Testifies // OVS — LIKENESS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/room-14/": {
+   "desktop": {
+    "status": 200,
+    "title": "Room 14 // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Room 14 // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/tapes/": {
+   "desktop": {
+    "status": 200,
+    "title": "Tapes // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Tapes // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/motel/": {
+   "desktop": {
+    "status": 200,
+    "title": "Motel Map // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Motel Map // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/evidence/": {
+   "desktop": {
+    "status": 200,
+    "title": "Evidence // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Evidence // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/devlog/": {
+   "desktop": {
+    "status": 200,
+    "title": "Devlog // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": [
+     {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "n": 1
+     }
+    ]
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Devlog // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/press/": {
+   "desktop": {
+    "status": 200,
+    "title": "Press // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Press // LIKENESS : THE GAME — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/prompts/": {
+   "desktop": {
+    "status": 200,
+    "title": "Master Visual Prompt Library // OVS — TAPE 03",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": []
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Master Visual Prompt Library // OVS — TAPE 03",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [],
+    "promptLinks": [],
+    "axe": null
+   }
+  },
+  "/alt/": {
+   "desktop": {
+    "status": 200,
+    "title": "Alternate Cut (non-canon) // LIKENESS — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [
+     "/likeness-universe/stills/open-world-city.png"
+    ],
+    "promptLinks": [],
+    "axe": [
+     {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "n": 1
+     }
+    ]
+   },
+   "mobile": {
+    "status": 200,
+    "title": "Alternate Cut (non-canon) // LIKENESS — OVS",
+    "robots": null,
+    "failed": [],
+    "errors": [],
+    "overflowX": false,
+    "brokenImgs": [],
+    "retiredMedia": [
+     "/likeness-universe/stills/open-world-city.png"
+    ],
+    "promptLinks": [],
+    "axe": null
+   }
+  }
+ },
+ "links": {
+  "/likeness-universe/works/": 200,
+  "/likeness-universe/studio/": 200,
+  "/likeness-universe/universe/": 200,
+  "/likeness-universe/characters/": 200,
+  "/likeness-universe/street/": 200,
+  "/likeness-universe/wardrobe/": 200,
+  "/likeness-universe/score/": 200,
+  "/likeness-universe/journey/": 200,
+  "/likeness-universe/room-testifies/": 200,
+  "/likeness-universe/prompts/": 200,
+  "/likeness-universe/": 200,
+  "/likeness-universe/works/the-game/": 200,
+  "/likeness-universe/works/tape-03/": 200,
+  "/likeness-universe/works/wardrobe/": 200,
+  "/likeness-universe/works/score/": 200,
+  "/likeness-universe/room-14/": 200,
+  "/likeness-universe/characters/thoreau/": 200,
+  "/likeness-universe/characters/drya/": 200,
+  "/likeness-universe/characters/the-other/": 200,
+  "/likeness-universe/evidence/": 200,
+  "/likeness-universe/tapes/": 200,
+  "/likeness-universe/motel/": 200,
+  "/likeness-universe/devlog/": 200,
+  "/likeness-universe/press/": 200,
+  "/likeness-universe/alt/": 200
+ },
+ "checks": {
+  "journeyStageI": {
+   "heading": "Found",
+   "bg": "stills/thoreau-stealth.png"
+  },
+  "hiddenFocus_desktop": {
+   "tabStops": 48,
+   "hidden": []
+  },
+  "hiddenFocus_mobile": {
+   "tabStops": 46,
+   "hidden": []
+  },
+  "mobileNav": {
+   "opened": {
+    "expanded": "true",
+    "active": "Works01"
+   },
+   "focusStayedInMenu": false,
+   "escaped": [
+    {
+     "ok": false,
+     "t": "Meet the two"
+    },
+    {
+     "ok": false,
+     "t": "View Stills"
+    },
+    {
+     "ok": false,
+     "t": "DRYATHE WITNESS"
+    },
+    {
+     "ok": false,
+     "t": "THOREAUTHE HOST"
+    },
+    {
+     "ok": false,
+     "t": "Open Prompt Library →"
+    },
+    {
+     "ok": false,
+     "shift": true,
+     "t": "THOREAUTHE HOST"
+    },
+    {
+     "ok": false,
+     "shift": true,
+     "t": "DRYATHE WITNESS"
+    },
+    {
+     "ok": false,
+     "shift": true,
+     "t": "View Stills"
+    },
+    {
+     "ok": false,
+     "shift": true,
+     "t": "Meet the two"
+    }
+   ],
+   "sequence": [
+    "Studio02",
+    "Universe03",
+    "Characters04",
+    "The Street05",
+    "Wardrobe06",
+    "Score07",
+    "Journey08",
+    "Room Testifies09",
+    "Open the Prompt Library",
+    "Meet the two",
+    "View Stills",
+    "DRYATHE WITNESS",
+    "THOREAUTHE HOST",
+    "Open Prompt Library →",
+    "THOREAUTHE HOST",
+    "DRYATHE WITNESS",
+    "View Stills",
+    "Meet the two"
+   ],
+   "afterEscape": {
+    "toggleLabel": "Open menu",
+    "promptCta": true
+   }
+  },
+  "motion_no-preference": {
+   "homeScrollY40msAfterWheel800": 264,
+   "journeyParallaxMoves": true,
+   "journeyBg": [
+    "translateY(-5.24138%) scale(1.09241)",
+    "translateY(1.93103%) scale(1.05931)"
+   ]
+  },
+  "motion_reduce": {
+   "homeScrollY40msAfterWheel800": 800,
+   "journeyParallaxMoves": false,
+   "journeyBg": [
+    "none",
+    "none"
+   ]
+  },
+  "prompts": {
+   "sitemapListsPrompts": true,
+   "routeStatus": 200,
+   "robotsMeta": null,
+   "renderedPromptLinksAcrossSite": [
+    "/ desktop: Prompt Library|Open the Prompt Library|Open Prompt Library →",
+    "/ mobile: Prompt Library|Open the Prompt Library|Open Prompt Library →",
+    "/universe/ desktop: Prompts|Prompts|Read the bible",
+    "/universe/ mobile: Prompts|Prompts|Read the bible"
+   ]
+  }
+ }
+}

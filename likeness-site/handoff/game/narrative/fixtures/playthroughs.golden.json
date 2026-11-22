@@ -1,0 +1,440 @@
+[
+ {
+  "chapter": "T03_01",
+  "name": "truth-full-lobby",
+  "steps": [
+   "D10",
+   "D40",
+   "D40-ledger",
+   "D40-bell",
+   "D50"
+  ],
+  "expect": {
+   "ended": "D60",
+   "nodeId": "D60",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 54,
+    "ROOM_MEMORY": 10,
+    "PUBLIC_SIGNAL": 0,
+    "POLICE_HEAT": 2,
+    "EVIDENCE_STACK": [
+     "lobby_bell",
+     "lobby_ledger"
+    ],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 50
+   },
+   "flags": {
+    "told_clerk_truth": true,
+    "clerk_remembers_calm": true
+   },
+   "facts": [
+    "ledger_shows_prior_stay",
+    "room14_prior_stay_clue"
+   ],
+   "visited": [
+    "D01",
+    "D10",
+    "D40",
+    "D40-ledger",
+    "D40-bell",
+    "D50",
+    "D60"
+   ],
+   "checksum": "4c0e972a"
+  }
+ },
+ {
+  "chapter": "T03_01",
+  "name": "lie-ledger-and-bell",
+  "steps": [
+   "D20",
+   "D40",
+   "D40-ledger",
+   "D40-bell",
+   "D50"
+  ],
+  "expect": {
+   "ended": "D60",
+   "nodeId": "D60",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 50,
+    "ROOM_MEMORY": 10,
+    "PUBLIC_SIGNAL": 8,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [
+     "lobby_bell",
+     "lobby_ledger"
+    ],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 53
+   },
+   "flags": {
+    "told_clerk_film_shoot": true,
+    "clerk_remembers_calm": true
+   },
+   "facts": [
+    "ledger_shows_prior_stay",
+    "room14_prior_stay_clue"
+   ],
+   "visited": [
+    "D01",
+    "D20",
+    "D40",
+    "D40-ledger",
+    "D40-bell",
+    "D50",
+    "D60"
+   ],
+   "checksum": "d68665a2"
+  }
+ },
+ {
+  "chapter": "T03_01",
+  "name": "drya-speaks-no-lobby",
+  "steps": [
+   "D30",
+   "D40",
+   "D50"
+  ],
+  "expect": {
+   "ended": "D70",
+   "nodeId": "D70",
+   "vars": {
+    "THOREAU_INTEGRITY": 48,
+    "DRYA_TRUST": 56,
+    "ROOM_MEMORY": 10,
+    "PUBLIC_SIGNAL": 0,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 50
+   },
+   "flags": {
+    "drya_spoke_at_desk": true,
+    "witness_callback_armed": true
+   },
+   "facts": [],
+   "visited": [
+    "D01",
+    "D30",
+    "D40",
+    "D50",
+    "D70"
+   ],
+   "checksum": "e6e21979"
+  }
+ },
+ {
+  "chapter": "T03_01",
+  "name": "lie-ledger-only",
+  "steps": [
+   "D20",
+   "D40",
+   "D40-ledger",
+   "D50"
+  ],
+  "expect": {
+   "ended": "D70",
+   "nodeId": "D70",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 50,
+    "ROOM_MEMORY": 10,
+    "PUBLIC_SIGNAL": 8,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [
+     "lobby_ledger"
+    ],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 53
+   },
+   "flags": {
+    "told_clerk_film_shoot": true,
+    "witness_callback_armed": true
+   },
+   "facts": [
+    "ledger_shows_prior_stay"
+   ],
+   "visited": [
+    "D01",
+    "D20",
+    "D40",
+    "D40-ledger",
+    "D50",
+    "D70"
+   ],
+   "checksum": "44ac1dc0"
+  }
+ },
+ {
+  "chapter": "T03_02",
+  "name": "evidence-first",
+  "steps": [
+   "N010",
+   "N040"
+  ],
+  "expect": {
+   "ended": "N050",
+   "nodeId": "N050",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 50,
+    "ROOM_MEMORY": 15,
+    "PUBLIC_SIGNAL": 0,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [
+     "ledger_14"
+    ],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 50
+   },
+   "flags": {},
+   "facts": [],
+   "visited": [
+    "N001",
+    "N010",
+    "N040",
+    "N050"
+   ],
+   "checksum": "67ec7708"
+  }
+ },
+ {
+  "chapter": "T03_02",
+  "name": "confrontation-first",
+  "steps": [
+   "N020",
+   "N040"
+  ],
+  "expect": {
+   "ended": "N050",
+   "nodeId": "N050",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 45,
+    "ROOM_MEMORY": 10,
+    "PUBLIC_SIGNAL": 0,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [],
+    "DARK_DRIFT": 3,
+    "APP_SYNC": 50
+   },
+   "flags": {},
+   "facts": [],
+   "visited": [
+    "N001",
+    "N020",
+    "N040",
+    "N050"
+   ],
+   "checksum": "41d7138e"
+  }
+ },
+ {
+  "chapter": "T03_02",
+  "name": "tape-first",
+  "steps": [
+   "N030",
+   "N050"
+  ],
+  "expect": {
+   "ended": "N050",
+   "nodeId": "N050",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 50,
+    "ROOM_MEMORY": 25,
+    "PUBLIC_SIGNAL": 0,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 40
+   },
+   "flags": {},
+   "facts": [],
+   "visited": [
+    "N001",
+    "N030",
+    "N050"
+   ],
+   "checksum": "892f2618"
+  }
+ },
+ {
+  "chapter": "T03_05",
+  "name": "screenshot-read-in-time",
+  "steps": [
+   "W10",
+   "W20-screenshot",
+   "W30-read",
+   "W35"
+  ],
+  "expect": {
+   "ended": "W40",
+   "nodeId": "W40",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 50,
+    "ROOM_MEMORY": 10,
+    "PUBLIC_SIGNAL": 6,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [
+     "archive_screenshot",
+     "archived_node"
+    ],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 50
+   },
+   "flags": {
+    "false_node_kept": true,
+    "route_public_cut_unlocked": true
+   },
+   "facts": [
+    "app_shows_unplayed_node"
+   ],
+   "visited": [
+    "W01",
+    "W10",
+    "W20-screenshot",
+    "W30-read",
+    "W35",
+    "W40"
+   ],
+   "checksum": "1edd965e"
+  }
+ },
+ {
+  "chapter": "T03_05",
+  "name": "preserve-assist",
+  "steps": [
+   "W10",
+   "W20-preserve",
+   "W30-assist",
+   "W35"
+  ],
+  "expect": {
+   "ended": "W40",
+   "nodeId": "W40",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 50,
+    "ROOM_MEMORY": 10,
+    "PUBLIC_SIGNAL": 0,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [
+     "archived_node"
+    ],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 40
+   },
+   "flags": {
+    "false_node_kept": true,
+    "route_public_cut_unlocked": true
+   },
+   "facts": [
+    "app_shows_unplayed_node"
+   ],
+   "visited": [
+    "W01",
+    "W10",
+    "W20-preserve",
+    "W30-assist",
+    "W35",
+    "W40"
+   ],
+   "checksum": "a375970d"
+  }
+ },
+ {
+  "chapter": "T03_05",
+  "name": "preserve-missed",
+  "steps": [
+   "W10",
+   "W20-preserve",
+   "W30-read",
+   "W30-missed",
+   "W35"
+  ],
+  "expect": {
+   "ended": "W50",
+   "nodeId": "W50",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 50,
+    "ROOM_MEMORY": 20,
+    "PUBLIC_SIGNAL": 0,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [
+     "archived_node"
+    ],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 40
+   },
+   "flags": {
+    "false_node_kept": true,
+    "missed_page_update": true,
+    "route_corrupted_unlocked": true,
+    "true_clue_hidden": true
+   },
+   "facts": [
+    "app_shows_unplayed_node"
+   ],
+   "visited": [
+    "W01",
+    "W10",
+    "W20-preserve",
+    "W30-read",
+    "W30-missed",
+    "W35",
+    "W50"
+   ],
+   "checksum": "a798bae1"
+  }
+ },
+ {
+  "chapter": "T03_05",
+  "name": "delete",
+  "steps": [
+   "W10",
+   "W20-delete",
+   "W30-assist",
+   "W35"
+  ],
+  "expect": {
+   "ended": "W50",
+   "nodeId": "W50",
+   "vars": {
+    "THOREAU_INTEGRITY": 50,
+    "DRYA_TRUST": 50,
+    "ROOM_MEMORY": 10,
+    "PUBLIC_SIGNAL": 0,
+    "POLICE_HEAT": 0,
+    "EVIDENCE_STACK": [
+     "archived_node"
+    ],
+    "DARK_DRIFT": 0,
+    "APP_SYNC": 60
+   },
+   "flags": {
+    "false_node_deleted": true,
+    "route_corrupted_unlocked": true,
+    "true_clue_hidden": true
+   },
+   "facts": [
+    "app_shows_unplayed_node"
+   ],
+   "visited": [
+    "W01",
+    "W10",
+    "W20-delete",
+    "W30-assist",
+    "W35",
+    "W50"
+   ],
+   "checksum": "127f8c43"
+  }
+ }
+]
