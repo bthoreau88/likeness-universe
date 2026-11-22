@@ -33,7 +33,9 @@ const STAGES: Stage[] = [
     place: "EXT · THE STREET",
     line: "A cassette on the pavement outside Room 14.",
     body: "No case, no label the light will hold still long enough to read. The exterior cameras logged it at 03:14 — and again a minute before, which the timestamp refuses to explain.",
-    image: "/stills/thoreau-stealth.png",
+    // Interim (FD-001): object-only plate with no figure, gear or HUD until the
+    // purpose-made Dellwood exterior still is approved.
+    image: "/stills/key-14.png",
     tone: "teal",
   },
   {

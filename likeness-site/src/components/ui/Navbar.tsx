@@ -75,9 +75,9 @@ export function Navbar() {
             <span className="grid h-6 w-6 place-items-center rounded-sm bg-accent text-[11px] font-bold text-black">
               ◊
             </span>
-            <span className="mono text-sm font-bold tracking-[0.35em]">OVS</span>
+            <span className="mono text-sm font-bold tracking-[0.35em]">LIKENESS</span>
             <span className="mono hidden text-[10px] tracking-[0.3em] text-muted sm:inline">
-              {"// TAPE-03"}
+              THE GAME
             </span>
           </a>
 
@@ -95,13 +95,6 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
-            <Link
-              href="/prompts"
-              className="mono hidden rounded-sm bg-accent px-5 py-2 text-[11px] font-semibold tracking-[0.15em] text-black uppercase transition-transform hover:scale-105 lg:inline-block"
-            >
-              Prompt Library
-            </Link>
-
             {/* mobile menu toggle */}
             <button
               ref={toggleRef}
@@ -173,13 +166,6 @@ export function Navbar() {
               </Link>
             ))}
           </nav>
-          <Link
-            href="/prompts"
-            onClick={close}
-            className="mono mt-8 rounded-sm bg-accent px-5 py-3 text-center text-[11px] font-semibold tracking-[0.2em] text-black uppercase"
-          >
-            Open the Prompt Library
-          </Link>
         </div>
       </div>
     </>
