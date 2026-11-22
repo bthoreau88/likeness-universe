@@ -1,0 +1,15 @@
+{
+  "$comment": "Transcribed node-for-node from the Tape 03 Branching Narrative Bible V.002 §15 JSON chapter template (T03_02). Conversions only: string effects/conditions rewritten as typed effects/conditions; ROOM_MEMORY starts at 10 as in the template. No node, edge or value was added or changed, so the validator's findings are findings about the source template.",
+  "chapter_id": "T03_02",
+  "title": "Room 14 Remembers",
+  "source": { "document": "OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002.pdf", "section": "15", "drive_file_id": "1OFRqwpvyDXxYMLvVa7pr3bvUTpYbrxhY" },
+  "nodes": [
+    { "id": "N001", "type": "start", "label": "Enter Room 14", "next": ["N010", "N020", "N030"] },
+    { "id": "N010", "type": "evidence", "label": "Inspect desk ledger", "evidence_id": "ledger_14", "effects": [ { "evidence": "ledger_14", "op": "add" }, { "var": "ROOM_MEMORY", "op": "add", "value": 5 } ], "next": ["N040"] },
+    { "id": "N020", "type": "dialogue", "speaker": "THOREAU", "label": "Ask Drya why she knows the room", "effects": [ { "var": "DRYA_TRUST", "op": "add", "value": -5 }, { "var": "DARK_DRIFT", "op": "add", "value": 3 } ], "next": ["N040"] },
+    { "id": "N030", "type": "action", "label": "Play the tape first", "effects": [ { "var": "ROOM_MEMORY", "op": "add", "value": 15 }, { "var": "APP_SYNC", "op": "add", "value": -10 } ], "next": ["N050"] },
+    { "id": "N040", "type": "gate", "label": "Enough evidence before playback?", "condition": { "evidenceCount": { "op": ">=", "value": 2 } }, "pass": "N060", "fail": "N050" },
+    { "id": "N050", "type": "outcome", "label": "Room edits the first memory", "tags": ["fail_forward", "false_memory"] },
+    { "id": "N060", "type": "outcome", "label": "Player anchors the memory", "tags": ["evidence_success", "convergence"] }
+  ]
+}

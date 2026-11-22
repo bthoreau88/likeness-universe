@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ovs.local/likeness/save.v2.schema.json",
+  "title": "LIKENESS save envelope v2",
+  "description": "Run state (game truth) and discovery history are separate ledgers. checksum = FNV-1a over canonical JSON of {run, discovery}. Integrity check only, not security.",
+  "type": "object",
+  "required": ["kind", "schemaVersion", "savedAt", "checksum", "run"],
+  "properties": {
+    "kind": { "const": "likeness.save" },
+    "schemaVersion": { "const": 2 },
+    "savedAt": { "type": "string" },
+    "checksum": { "type": "string", "pattern": "^[0-9a-f]{8}$" },
+    "run": {
+      "type": "object",
+      "required": ["schemaVersion", "runId", "chapterId", "nodeId", "vars", "flags", "facts", "visited", "decisions", "log", "revision", "ended"],
+      "properties": {
+        "schemaVersion": { "const": 2 },
+        "engineVersion": { "type": "string" },
+        "runId": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "nodeId": { "type": "string" },
+        "vars": {
+          "type": "object", "additionalProperties": false,
+          "required": ["THOREAU_INTEGRITY", "DRYA_TRUST", "ROOM_MEMORY", "PUBLIC_SIGNAL", "POLICE_HEAT", "EVIDENCE_STACK", "DARK_DRIFT", "APP_SYNC"],
+          "properties": {
+            "THOREAU_INTEGRITY": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "DRYA_TRUST": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "ROOM_MEMORY": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "PUBLIC_SIGNAL": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "POLICE_HEAT": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "EVIDENCE_STACK": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+            "DARK_DRIFT": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "APP_SYNC": { "type": "integer", "minimum": 0, "maximum": 100 }
+          }
+        },
+        "flags": { "type": "object", "additionalProperties": { "type": "boolean" } },
+        "facts": { "type": "array", "items": { "type": "string" } },
+        "visited": { "type": "array", "items": { "type": "string" } },
+        "decisions": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "log": { "type": "array", "items": { "type": "object", "required": ["seq", "to", "nodes"] } },
+        "revision": { "type": "integer", "minimum": 0 },
+        "ended": { "type": ["string", "null"] }
+      }
+    },
+    "discovery": {
+      "type": ["object", "null"],
+      "properties": {
+        "schemaVersion": { "const": 1 },
+        "profileId": { "type": "string" },
+        "chapters": { "type": "object" },
+        "runsCompleted": { "type": "integer" },
+        "revision": { "type": "integer" }
+      }
+    }
+  }
+}

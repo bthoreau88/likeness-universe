@@ -1,0 +1,19 @@
+{
+  "$comment": "Derived from Tape 03 Branching Narrative Bible V.002 §09 (Dellwood Check-In). Node IDs D01-D70 and their effects are transcribed from the bible table. Lobby hub items D40-ledger/D40-bell/D40-monitor are FIXTURE-LOCAL IDs (the bible names the three objects but gives them no IDs); they deliberately avoid the D41-D49 range so they cannot be confused with G01A.x node IDs such as D42. ASSUMPTION A1: the bible's D50 'Enough lobby evidence?' threshold is unstated; this fixture uses evidenceCount >= 2. ASSUMPTION A2: D40 is modelled as a forward chain (inspect next or leave) because the bible does not define revisit rules.",
+  "chapter_id": "T03_01",
+  "title": "The Dellwood Check-In",
+  "source": { "document": "OVS_LIKENESS_TAPE03_BRANCHING_NARRATIVE_BIBLE_V002.pdf", "section": "09", "drive_file_id": "1OFRqwpvyDXxYMLvVa7pr3bvUTpYbrxhY" },
+  "nodes": [
+    { "id": "D01", "type": "start", "label": "Arrive at Dellwood in rain", "effects": [ { "var": "PUBLIC_SIGNAL", "op": "add", "value": 0 } ], "next": ["D10", "D20", "D30"] },
+    { "id": "D10", "type": "dialogue", "speaker": "THOREAU", "label": "Tell clerk the truth about why you came", "effects": [ { "var": "DRYA_TRUST", "op": "add", "value": 4 }, { "var": "POLICE_HEAT", "op": "add", "value": 2 }, { "flag": "told_clerk_truth", "value": true } ], "next": ["D40"] },
+    { "id": "D20", "type": "dialogue", "speaker": "THOREAU", "label": "Lie: say it is a film shoot", "effects": [ { "var": "PUBLIC_SIGNAL", "op": "add", "value": 8 }, { "var": "APP_SYNC", "op": "add", "value": 3 }, { "flag": "told_clerk_film_shoot", "value": true } ], "next": ["D40"] },
+    { "id": "D30", "type": "action", "label": "Let Drya speak for both of you", "effects": [ { "var": "DRYA_TRUST", "op": "add", "value": 6 }, { "var": "THOREAU_INTEGRITY", "op": "add", "value": -2 }, { "flag": "drya_spoke_at_desk", "value": true } ], "next": ["D40"] },
+    { "id": "D40", "type": "action", "label": "Explore lobby: ledger, bell, security monitor", "next": ["D40-ledger", "D50"] },
+    { "id": "D40-ledger", "type": "evidence", "label": "Read the desk ledger", "evidence_id": "lobby_ledger", "effects": [ { "evidence": "lobby_ledger", "op": "add" }, { "fact": "ledger_shows_prior_stay" } ], "next": ["D40-bell", "D50"] },
+    { "id": "D40-bell", "type": "evidence", "label": "Ring the bell; it rings twice", "evidence_id": "lobby_bell", "effects": [ { "evidence": "lobby_bell", "op": "add" } ], "next": ["D40-monitor", "D50"] },
+    { "id": "D40-monitor", "type": "evidence", "label": "Watch the security monitor", "evidence_id": "lobby_monitor_frame", "effects": [ { "evidence": "lobby_monitor_frame", "op": "add" }, { "fact": "monitor_shows_03_14" } ], "next": ["D50"] },
+    { "id": "D50", "type": "gate", "label": "Enough lobby evidence?", "condition": { "evidenceCount": { "op": ">=", "value": 2 } }, "pass": "D60", "fail": "D70", "hidden_reason": "Lobby evidence density" },
+    { "id": "D60", "type": "outcome", "label": "Key 14 obtained clean", "tags": ["calm"], "effects": [ { "fact": "room14_prior_stay_clue" }, { "flag": "clerk_remembers_calm", "value": true } ] },
+    { "id": "D70", "type": "outcome", "label": "Key 14 obtained under suspicion", "tags": ["suspicion"], "effects": [ { "flag": "witness_callback_armed", "value": true } ], "hint": "The clerk keeps looking at the monitor." }
+  ]
+}
