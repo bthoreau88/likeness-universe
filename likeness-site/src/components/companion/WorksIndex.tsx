@@ -22,8 +22,8 @@ export function WorksIndex() {
     <div className="grain min-h-screen">
       <div className="mx-auto max-w-[1400px] px-6 pb-28 pt-8 md:px-10">
         <header className="mono flex items-center justify-between gap-5 text-xs tracking-[0.22em] uppercase">
-          <Link href="/" className="text-teal hover:text-foreground">← OVS // LIKENESS</Link>
-          <Link href="/studio" className="text-muted hover:text-foreground">The studio</Link>
+          <Link href="/" className="inline-flex min-h-11 items-center px-2 py-2 text-teal hover:text-foreground">← OVS // LIKENESS</Link>
+          <Link href="/studio" className="inline-flex min-h-11 items-center px-2 py-2 text-muted hover:text-foreground">The studio</Link>
         </header>
 
         <section className="pb-16 pt-20 md:pb-24 md:pt-28">
@@ -55,7 +55,7 @@ export function WorksIndex() {
                 type="button"
                 onClick={() => setFilter(item.value)}
                 aria-pressed={selected}
-                className={`mono text-xs tracking-[0.12em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal ${selected ? "text-accent" : "text-muted hover:text-foreground"}`}
+                className={`mono min-h-11 min-w-11 px-2 py-2 text-xs tracking-[0.12em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal ${selected ? "text-accent" : "text-muted hover:text-foreground"}`}
               >
                 {item.label} ({n})
               </button>
@@ -63,8 +63,13 @@ export function WorksIndex() {
           })}
         </nav>
 
+        <p role="status" aria-live="polite" aria-atomic="true" className="sr-only">
+          Showing {shown.length} {shown.length === 1 ? "work" : "works"}
+          {" · "}{FILTERS.find((item) => item.value === filter)?.label}
+        </p>
+
         <div className="space-y-24 md:space-y-36">
-          {shown.map((work, i) => {
+          {shown.map((work) => {
             const feature = WORK_FEATURES.find((f) => f.id === work.id);
             const cover = WORK_COVERS[work.id];
             if (!feature || !cover) return null;
@@ -73,27 +78,26 @@ export function WorksIndex() {
                 <div className="mb-5 flex flex-wrap items-end justify-between gap-4">
                   <div>
                     <span className="mono text-xs tracking-[0.24em] text-teal">
-                      {String(i + 1).padStart(2, "0")} / {work.kind} / {work.status}
+                      {String(WORKS.indexOf(work) + 1).padStart(2, "0")} / {work.kind} / {work.status}
                     </span>
                     <h2 className="mt-3 max-w-5xl text-4xl font-extrabold leading-none tracking-tight md:text-7xl">
                       {work.title}
                     </h2>
                   </div>
                   <Link href={`/works/${feature.slug}`}
-                    className="mono border-b border-accent pb-1 text-xs tracking-[0.2em] text-accent hover:text-foreground">
+                    className="inline-flex min-h-11 items-center px-2 py-2 mono border-b border-accent text-xs tracking-[0.2em] text-accent hover:text-foreground">
                     VIEW PROJECT →
                   </Link>
                 </div>
                 <Link href={`/works/${feature.slug}`}
-                  className="group relative block aspect-[4/5] overflow-hidden rounded-md bg-steel sm:aspect-[16/10]">
+                  className="relative block aspect-[4/5] overflow-hidden rounded-md bg-steel sm:aspect-[16/10]">
                   <Image src={asset(cover)} alt={`${work.title} editorial artwork`} fill
                     sizes="(max-width: 640px) 100vw, 1200px"
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.025]" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-                  <div className="mono absolute bottom-6 left-6 text-xs tracking-[0.2em] text-foreground md:bottom-10 md:left-10">
-                    {work.setting}
-                  </div>
+                    className="object-contain" />
                 </Link>
+                <div className="mono mt-4 text-xs tracking-[0.2em] text-foreground">
+                  {work.setting}
+                </div>
                 <p className="mt-5 max-w-[66ch] text-sm leading-relaxed text-muted md:text-base">
                   {work.blurb}
                 </p>
@@ -103,7 +107,7 @@ export function WorksIndex() {
         </div>
 
         <footer className="mt-32 border-t border-white/15 pt-10">
-          <Link href="/characters" className="mono text-xs tracking-[0.22em] text-teal hover:text-foreground">
+          <Link href="/characters" className="inline-flex min-h-11 items-center px-2 py-2 mono text-xs tracking-[0.22em] text-teal hover:text-foreground">
             NEXT FILE / CHARACTER DOSSIERS →
           </Link>
         </footer>
