@@ -18,6 +18,10 @@ Timebox: 30 minutes of search per item. Nothing passes → place a proxy, log th
 
 ## Make list (the only things worth authoring)
 
+> **2026-11-26:** the face rows below (THOREAU, DRYA, DARK THOREAU) are now governed by
+> [CHARACTER_FIDELITY_LAW_V001.md](CHARACTER_FIDELITY_LAW_V001.md). MetaHuman stays the rig and runtime;
+> hero likeness, sculpt and textures must reach that law's acceptance gate. The rows are unchanged.
+
 | What | ID | Why it can't be bought | Cheapest honest path |
 |---|---|---|---|
 | THOREAU face + performance | `CHR_THOREAU_001` | Identity lock; the game is about his likeness | MetaHuman base Brandon already owns + identity work; performance via MetaHuman Animator |
