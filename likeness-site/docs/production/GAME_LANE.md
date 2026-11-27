@@ -134,9 +134,15 @@ One task per session. Do not start the next until the previous passback is accep
 | GL-16 | HUMAN | Story sign-off: answer [STORY_BIBLE.md](../../handoff/story/STORY_BIBLE.md) §11 (real THOREAU as antagonist, names, episode role, public repo) | Decisions recorded in a receipt; bible status changed from draft | G01 |
 | GL-17 | PC (Codex) | Unreal handoff gate: build `L_Dellwood_Room14` in the **sandbox** from the locked G02 greybox; keep `Lvl_Room14` as reference only; set it as the sandbox startup map. Blocked until free memory allows an Unreal launch | Map at the registry path; interior measured = 5.4864 × 3.81 × 2.5908 m; original project untouched | G03 |
 | GL-18 | Codex (Blender) | Original `PROP_TAPE_001` proxy (**built and verified: cloud 5.0.1 + workstation 5.1.2, all checks PASS** — `receipts/2026-10-26-GL-18-cassette-proxy.md`) + 10-second editable inspect → rotate → return, isolated from Room 14 (spec in `reviews/2026-10-26-room14-authority-cassette-review.md`) | Reopened file, bbox within ±0.1 mm, editable F-curves, 480p stills + hashes; labeled Blender proof, not Unreal interaction | G04 (partial) |
+| GL-20 | HUMAN + PC | Character fidelity CF-0 ([CHARACTER_FIDELITY_LAW_V001.md](CHARACTER_FIDELITY_LAW_V001.md) §8): pick the canon THOREAU MetaHuman from the 9 legacy copies; freeze the THOREAU and DRYA identity sheets. Read-only on the legacy projects | Receipt naming the chosen asset and its hash; the other copies archived, not deleted | — (parallel to G05) |
+| GL-21 | HUMAN | CF-0b: decide licence vs outsource per stage (scan, sculpt, texture, groom, capture) and the hardware route (RAM upgrade or texturing workstation) | Decision receipt; no spend before it | — (parallel) |
+| GL-22 | PC / vendor | THOREAU hero head through CF-1 to CF-7 to the §6 acceptance gate (Q1–Q12, three lighting rigs). CF-5 onward needs G06 to pass first | Q1–Q12 evidence + founder sign-off | — (parallel) |
 
 Keep out of the first slice: hallway/office access, multiplayer, microphone input, final
 character art, save-system migration, branching beyond one event.
+
+Final character art stays out of the first slice. Its quality bar and pipeline are now set by
+[CHARACTER_FIDELITY_LAW_V001.md](CHARACTER_FIDELITY_LAW_V001.md) (2026-11-26, proposed) and run in parallel as GL-20 to GL-22.
 
 ---
 

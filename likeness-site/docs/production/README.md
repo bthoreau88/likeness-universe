@@ -17,6 +17,7 @@ Session: 2026-10-22 (Los Angeles). Scope: companion-site development and game-pr
 5. Follow [Blender delivery](BLENDER.md), [Unreal integration](UNREAL.md), and [source / buy / make decisions](ASSET_SOURCING.md) as needed.
 6. For the game itself: [game lane](GAME_LANE.md) (CLOUD / PC / HUMAN lanes, current state, known traps, finish-line task queue, handoff prompts) and [asset fast lanes](ASSET_FAST_LANES.md) (the Room 14 kit sorted into source vs make).
 7. Old Unreal builds and assets on the workstation: [legacy salvage](LEGACY_SALVAGE.md) — archive untouched, inventory, triage by folder, migrate only what earns it.
+8. Any human character seen on screen: [character fidelity law](CHARACTER_FIDELITY_LAW_V001.md). It sets the AAA skin and realism bar, the sculpt → texture → MetaHuman pipeline, the three-rig acceptance gate, and the outsourcing and hardware gates (proposed 2026-11-26).
 
 ## Current boundary
 

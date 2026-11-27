@@ -7,6 +7,10 @@ the 4-step reference gate comes first.
 > **OVS law for this build:** Face is the budget. Drya is a counterpart and witness with
 > emotional force — never decorative suffering, never a glamour model. Build from approved
 > sheets, never from loose AI art.
+>
+> **2026-11-26:** route B (sculpt → Mesh-to-MetaHuman) is now the minimum for the final DRYA,
+> and it must add the sculpt, texture and look-dev stages and the acceptance gate in
+> `docs/production/CHARACTER_FIDELITY_LAW_V001.md`. Route A stays valid for blockout only.
 
 ---
 

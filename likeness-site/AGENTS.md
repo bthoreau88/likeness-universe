@@ -51,6 +51,15 @@ evidence status, the known build traps, and the finish-line task queue. Canon ID
 `handoff/data/*.csv`; `npm run validate:production` now also fails when the site, the asset
 plan, the C++ row structs or the room-state enum drift from that canon.
 
+## Character fidelity (2026-11-26)
+
+Every on-screen human character follows `docs/production/CHARACTER_FIDELITY_LAW_V001.md`.
+
+- **Pipeline:** consented scan or original sculpt → MetaHuman topology → ZBrush-grade sculpt → Mari/Substance-grade multi-channel UDIM textures → MetaHuman assembly in UE 5.8 → three-rig look-dev gate (Q1–Q12) → MetaHuman Animator performance.
+- **Not sufficient on their own:** MetaHuman Creator presets and AI stills are not enough for hero characters.
+- **No real likenesses:** no real actor's or public figure's likeness; scans need a signed release.
+- **Private sources:** source sculpts and textures stay out of this public repo.
+
 ## Story (2026-10-26)
 
 Story canon draft lives in `handoff/story/`: `STORY_BIBLE.md` (the twisted love story, the
