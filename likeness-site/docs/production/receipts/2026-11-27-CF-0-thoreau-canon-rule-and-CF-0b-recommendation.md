@@ -41,3 +41,17 @@
 | 5 | **One texturing licence, later**, only once the THOREAU sculpt passes Q1: the lowest-cost tier of Substance 3D Painter or Mari. Current pricing to be verified at that time | Texturing is where Blender is weakest for AAA skin | Founder, later |
 | 6 | **Outsource only if needed, once, capped:** if THOREAU fails Q3–Q6 (spec, subsurface, micro-detail, eyes) after the in-house pass, contract a single texture/look-dev pass on that one head under law §7 | The cheapest way to buy the hardest skill. No retainer | Founder, later |
 | Not recommended now | A separate texturing workstation; a hero scan-studio session | Highest cost; not needed to learn where our in-house ceiling is | — |
+
+## Founder disposition (2026-11-27)
+
+> "Approved and I have an external."
+
+- **RAM upgrade: APPROVED.**
+  - The exact kit is not chosen yet.
+  - Read the MSI's slot count, installed modules (speed, type) and supported maximum first, then name the kit.
+  - Nothing is purchased by this receipt.
+- **External storage: already owned. No purchase.**
+  - Next MSI session: identify the drive, confirm its free space, then run the GL-13 step 0 archive.
+  - The archive copies material out with SHA-256s and leaves the originals in place.
+- **Items 3–6** (owned assets first, Blender sculpt first, one texturing licence later, a capped single outsource only if needed) are accepted as the plan.
+  - Each later purchase still needs its own approval.
