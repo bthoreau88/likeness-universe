@@ -16,8 +16,8 @@ export function WorkDetail({ workId }: { workId: string }) {
     <article className="grain min-h-screen">
       <div className="mx-auto max-w-[1400px] px-6 pb-28 pt-8 md:px-10">
         <header className="mono flex items-center justify-between gap-4 text-xs tracking-[0.2em] uppercase">
-          <Link href="/works" className="text-teal hover:text-foreground">← All works</Link>
-          <Link href="/" className="text-muted hover:text-foreground">OVS // LIKENESS</Link>
+          <Link href="/works" className="inline-flex min-h-11 items-center px-2 py-2 text-teal hover:text-foreground">← All works</Link>
+          <Link href="/" className="inline-flex min-h-11 items-center px-2 py-2 text-muted hover:text-foreground">OVS // LIKENESS</Link>
         </header>
 
         <div className="pb-14 pt-24 text-center md:pb-20">
@@ -50,7 +50,7 @@ export function WorkDetail({ workId }: { workId: string }) {
             </p>
             {work.route && (
               <Link href={work.route}
-                className="mono mt-10 inline-flex border-b border-accent pb-2 text-xs tracking-[0.2em] text-accent hover:text-foreground">
+                className="inline-flex min-h-11 items-center px-2 py-2 mono mt-10 border-b border-accent text-xs tracking-[0.2em] text-accent hover:text-foreground">
                 EXPLORE THE LIVE COMPANION PAGE →
               </Link>
             )}
@@ -87,7 +87,7 @@ export function WorkDetail({ workId }: { workId: string }) {
                 {next.title}
               </h2>
               {nextFeature && (
-                <Link href={`/works/${nextFeature.slug}`} className="mono mt-5 inline-block border-b border-teal pb-2 text-xs tracking-[0.2em] text-teal">
+                <Link href={`/works/${nextFeature.slug}`} className="inline-flex min-h-11 items-center px-2 py-2 mono mt-5 border-b border-teal text-xs tracking-[0.2em] text-teal">
                   VIEW NEXT WORK →
                 </Link>
               )}

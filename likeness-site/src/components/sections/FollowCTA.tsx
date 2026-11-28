@@ -33,7 +33,7 @@ function Buttons() {
           href={INTAKE.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="mono rounded-sm border border-white/20 px-6 py-3 text-[11px] font-semibold tracking-[0.2em] text-muted uppercase transition-colors hover:text-foreground"
+          className="mono inline-flex min-h-11 items-center rounded-sm border border-white/20 px-6 py-3 text-[11px] font-semibold tracking-[0.2em] text-muted uppercase transition-colors hover:text-foreground"
         >
           Follow development
         </a>

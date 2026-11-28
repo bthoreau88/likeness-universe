@@ -16,8 +16,8 @@ export function CharacterDetail({ slug }: { slug: string }) {
     <article className="grain min-h-screen">
       <div className="mx-auto max-w-[1400px] px-6 pt-8 md:px-10">
         <header className="mono flex items-center justify-between gap-4 text-xs tracking-[0.2em]">
-          <Link href="/characters" className="text-teal hover:text-foreground">← CHARACTER ROSTER</Link>
-          <Link href="/" className="text-muted hover:text-foreground">OVS // LIKENESS</Link>
+          <Link href="/characters" className="inline-flex min-h-11 items-center px-2 py-2 text-teal hover:text-foreground">← CHARACTER ROSTER</Link>
+          <Link href="/" className="inline-flex min-h-11 items-center px-2 py-2 text-muted hover:text-foreground">OVS // LIKENESS</Link>
         </header>
       </div>
 
@@ -107,14 +107,14 @@ export function CharacterDetail({ slug }: { slug: string }) {
                 </div>
               ))}
             </div>
-            <Link href="/street" className="mono mt-10 inline-block border-b border-accent pb-2 text-xs tracking-[0.2em] text-accent">
+            <Link href="/street" className="inline-flex min-h-11 items-center px-2 py-2 mono mt-10 border-b border-accent text-xs tracking-[0.2em] text-accent">
               OPEN THE STREET RECORD →
             </Link>
           </section>
         )}
 
         <footer className="mt-14 flex flex-wrap items-end justify-between gap-8 border-t border-white/15 pt-10">
-          <Link href="/characters" className="mono text-xs tracking-[0.2em] text-muted hover:text-foreground">
+          <Link href="/characters" className="inline-flex min-h-11 items-center px-2 py-2 mono text-xs tracking-[0.2em] text-muted hover:text-foreground">
             ← ALL CHARACTERS
           </Link>
           <Link href={`/characters/${next.slug}`} className="text-right">
